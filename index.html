@@ -1,0 +1,2332 @@
+<!doctype html>
+<!--
+  Umkleide – eigenständige Version ohne Claude.
+  Alle Einträge, Fotos und Looks liegen nur im Speicher des Geräts (IndexedDB) und werden nirgendwohin gesendet.
+  Diese Datei darf jederzeit durch eine neue Version ersetzt werden; die gespeicherten Daten bleiben erhalten,
+  solange die Adresse gleich bleibt und die REGELN FÜR UPDATES im Skript (Abschnitt Gerätespeicher) eingehalten werden.
+-->
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Umkleide">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#f4f5f7">
+<meta name="referrer" content="no-referrer">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/png;base64,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">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Digitale Umkleide</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+:root {
+  /* Layout: App-Rahmen – Kopfzeile · Ansicht · Tab-Leiste. Die Anprobe ist eine Umkleidekabine: Spiegel-Bühne, Kategorie-Leiste rechts, Ablage mit Teilen darunter. */
+  --bg: #e5e8ec;
+  --surface: #f4f5f7;
+  --raised: #ffffff;
+  --ink: #121a24;
+  --ink-2: #3a4553;
+  --muted: #5f6a77;
+  --line: #d2d8de;
+  --line-2: #b9c1ca;
+  --tape: #eebd2b;
+  --tape-ink: #241d05;
+  --tape-soft: #f8ecc0;
+  --primary: #15223a;
+  --primary-ink: #ffffff;
+  --danger: #b0261f;
+  --ok: #24724a;
+  --stage-a: #eff2f5;
+  --stage-b: #d4dae2;
+  --check-a: #ffffff;
+  --check-b: #e7eaee;
+  --sw-ring: rgba(18, 26, 36, .18);
+  --scrim: rgba(10, 14, 20, .46);
+  --glass: rgba(244, 245, 247, .88);
+  --shadow-1: 0 1px 2px rgba(18, 26, 36, .06), 0 6px 18px rgba(18, 26, 36, .07);
+  --shadow-2: 0 -8px 40px rgba(18, 26, 36, .18);
+  --font-display: "Bodoni Moda", "Bodoni 72", Didot, "Times New Roman", serif;
+  --font-ui: "Instrument Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1217; --surface: #151a21; --raised: #1c222b; --ink: #e8ecf1; --ink-2: #c4ccd6; --muted: #97a2af;
+    --line: #29313b; --line-2: #3b4550; --tape: #f2c641; --tape-ink: #1c1603; --tape-soft: #3a3117;
+    --primary: #e8ecf1; --primary-ink: #0e1217; --danger: #f0756c; --ok: #5cc28a;
+    --stage-a: #1d232c; --stage-b: #11161c; --check-a: #232a33; --check-b: #1a2028; --sw-ring: rgba(255, 255, 255, .24);
+    --scrim: rgba(0, 0, 0, .6); --glass: rgba(21, 26, 33, .88);
+    --shadow-1: 0 1px 2px rgba(0, 0, 0, .35), 0 8px 22px rgba(0, 0, 0, .3); --shadow-2: 0 -8px 40px rgba(0, 0, 0, .5);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1217; --surface: #151a21; --raised: #1c222b; --ink: #e8ecf1; --ink-2: #c4ccd6; --muted: #97a2af;
+  --line: #29313b; --line-2: #3b4550; --tape: #f2c641; --tape-ink: #1c1603; --tape-soft: #3a3117;
+  --primary: #e8ecf1; --primary-ink: #0e1217; --danger: #f0756c; --ok: #5cc28a;
+  --stage-a: #1d232c; --stage-b: #11161c; --check-a: #232a33; --check-b: #1a2028; --sw-ring: rgba(255, 255, 255, .24);
+  --scrim: rgba(0, 0, 0, .6); --glass: rgba(21, 26, 33, .88);
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, .35), 0 8px 22px rgba(0, 0, 0, .3); --shadow-2: 0 -8px 40px rgba(0, 0, 0, .5);
+  color-scheme: dark;
+}
+
+html { height: 100%; box-sizing: border-box; background: var(--surface); }
+*, *::before, *::after { box-sizing: inherit; }
+body { height: 100%; margin: 0; overflow: hidden; background: var(--surface); color: var(--ink); font: 400 15px/1.45 var(--font-ui); -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; }
+button { font: inherit; color: inherit; cursor: pointer; }
+input, select, textarea { font: inherit; color: inherit; }
+img { max-width: 100%; }
+:focus-visible { outline: 2px solid var(--tape); outline-offset: 2px; }
+.vh { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.muted { color: var(--muted); }
+.small { font-size: 13px; }
+h1, h2, h3 { text-wrap: balance; }
+
+/* ---------- Rahmen ---------- */
+.app { height: 100%; max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; background: var(--bg); }
+@media (min-width: 721px) { .app { border-left: 1px solid var(--line); border-right: 1px solid var(--line); } }
+.topbar { background: var(--surface); border-bottom: 1px solid var(--line); }
+.topbar-in { display: flex; align-items: center; gap: 8px; min-height: 56px; padding-block: 6px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.title-block { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.brand { font: italic 500 12px/1 var(--font-display); color: var(--muted); letter-spacing: .03em; }
+.view-title { margin: 2px 0 0; font: 500 26px/1.05 var(--font-display); letter-spacing: -.01em; }
+.top-actions { display: flex; align-items: center; gap: 4px; }
+.notice { display: flex; align-items: center; gap: 8px; background: var(--tape-soft); color: var(--ink); font-size: 13px; padding-block: 6px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); border-bottom: 1px solid var(--line); }
+.notice span { flex: 1; min-width: 0; }
+.notice-x { width: 30px; height: 30px; flex: 0 0 auto; border: 0; border-radius: 8px; background: transparent; color: var(--ink); display: grid; place-items: center; padding: 0; }
+.notice-x svg { width: 16px; height: 16px; }
+.views { flex: 1; min-height: 0; position: relative; }
+.view { position: absolute; inset: 0; }
+.view-scroll { overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
+.view-pad { display: flex; flex-direction: column; gap: 22px; padding-block: 16px 32px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.tabbar { background: var(--surface); border-top: 1px solid var(--line); }
+.tabbar-in { display: grid; grid-template-columns: repeat(4, 1fr); padding-block: 4px 6px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.tab { display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 6px 0 5px; border: 0; background: none; color: var(--muted); font-size: 11.5px; font-weight: 500; position: relative; }
+.tab svg { width: 24px; height: 24px; }
+.tab[aria-selected="true"] { color: var(--ink); font-weight: 600; }
+.tab[aria-selected="true"]::after { content: ""; position: absolute; bottom: 0; width: 22px; height: 3px; border-radius: 2px; background: var(--tape); }
+
+/* ---------- Bausteine ---------- */
+.icon-btn { width: 40px; height: 40px; display: grid; place-items: center; border: 0; border-radius: 12px; background: transparent; color: var(--ink); flex: 0 0 auto; }
+.icon-btn:hover { background: var(--bg); }
+.icon-btn svg { width: 22px; height: 22px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 12px; border: 1px solid var(--line-2); background: var(--raised); color: var(--ink); font-weight: 600; font-size: 15px; line-height: 1.1; text-align: center; }
+.btn svg { width: 19px; height: 19px; flex: 0 0 auto; }
+.btn-sm { min-height: 36px; padding: 0 12px; font-size: 14px; border-radius: 10px; }
+.btn-primary { background: var(--primary); border-color: var(--primary); color: var(--primary-ink); }
+.btn-magic { background: var(--tape); border-color: var(--tape); color: var(--tape-ink); }
+.btn-ghost { background: transparent; border-color: transparent; }
+.btn-danger { color: var(--danger); }
+.btn-wide { width: 100%; }
+.btn:disabled { opacity: .45; cursor: default; }
+.label { margin: 0; font-size: 11.5px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
+.fset { display: flex; flex-direction: column; gap: 10px; }
+.row-between { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { border: 1px solid var(--line-2); background: var(--raised); color: var(--ink); border-radius: 999px; padding: 7px 13px; font-size: 14px; font-weight: 500; line-height: 1.2; }
+.chip[aria-pressed="true"] { background: var(--primary); border-color: var(--primary); color: var(--primary-ink); }
+.chip .n { opacity: .6; font-weight: 500; margin-left: 2px; }
+.chips-scroll { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+.chips-scroll .chip { flex: 0 0 auto; }
+.seg { display: inline-flex; flex-wrap: wrap; border: 1px solid var(--line-2); border-radius: 12px; overflow: hidden; background: var(--raised); }
+.seg button { border: 0; background: transparent; padding: 8px 12px; font-size: 13.5px; font-weight: 500; color: var(--ink-2); }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button[aria-pressed="true"] { background: var(--primary); color: var(--primary-ink); }
+.field { width: 100%; min-height: 44px; border-radius: 12px; border: 1px solid var(--line-2); background: var(--raised); padding: 10px 12px; font-size: 16px; }
+textarea.field { resize: vertical; line-height: 1.4; }
+.field-sm { min-height: 38px; padding: 7px 10px; font-size: 15px; border-radius: 10px; }
+.hint { margin: 0; font-size: 13.5px; color: var(--muted); }
+.swatches { display: flex; flex-wrap: wrap; gap: 9px; }
+.sw { width: 30px; height: 30px; border-radius: 50%; border: 0; padding: 0; background: var(--c); box-shadow: inset 0 0 0 1px var(--sw-ring); position: relative; }
+.sw[aria-pressed="true"] { box-shadow: inset 0 0 0 1px var(--sw-ring), 0 0 0 2px var(--bg), 0 0 0 4px var(--ink); }
+.sw-bunt, .dots i.bunt { background: conic-gradient(#e8823a, #f1d04a, #3f8a52, #2f62b8, #7a4ea3, #df4f8b, #e8823a); }
+.checker { background-color: var(--check-a); background-image: linear-gradient(45deg, var(--check-b) 25%, transparent 25%), linear-gradient(-45deg, var(--check-b) 25%, transparent 25%), linear-gradient(45deg, transparent 75%, var(--check-b) 75%), linear-gradient(-45deg, transparent 75%, var(--check-b) 75%); background-size: 16px 16px; background-position: 0 0, 0 8px, 8px -8px, -8px 0; }
+.dots { display: flex; gap: 3px; }
+.dots i { width: 9px; height: 9px; border-radius: 50%; background: var(--c); box-shadow: 0 0 0 1px var(--sw-ring); }
+.banner { display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; background: var(--tape-soft); border-radius: 14px; padding: 12px 14px; font-size: 14px; }
+.banner p { margin: 0; flex: 1 1 200px; }
+.skel { background: linear-gradient(90deg, var(--line) 0%, var(--surface) 50%, var(--line) 100%); background-size: 200% 100%; animation: shimmer 1.3s linear infinite; border-radius: 12px; }
+@keyframes shimmer { to { background-position: -200% 0; } }
+.empty { text-align: center; padding: 28px 12px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.empty h2 { margin: 0; font: italic 500 24px/1.15 var(--font-display); }
+.empty p { margin: 0; max-width: 34ch; color: var(--muted); }
+
+/* ---------- Anprobe ---------- */
+.mirror { display: flex; flex-direction: column; }
+.mirror-main { flex: 1; min-height: 0; display: flex; gap: 10px; padding-block: 12px 10px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.stage-wrap { flex: 1; min-width: 0; position: relative; border-radius: 20px; overflow: hidden; background: radial-gradient(120% 75% at 50% 18%, var(--stage-a), var(--stage-b)); display: grid; place-items: center; }
+.stage { position: relative; touch-action: none; user-select: none; -webkit-user-select: none; }
+.stage-photo { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; pointer-events: none; -webkit-user-drag: none; transition: opacity .25s; }
+.stage-photo.loading { opacity: 0; }
+.layers { position: absolute; inset: 0; }
+.layer { position: absolute; max-width: none; pointer-events: none; transform-origin: 50% 50%; filter: drop-shadow(0 2px 3px rgba(0, 0, 0, .2)); -webkit-user-drag: none; }
+.layer.enter { animation: fadein .28s ease-out; }
+@keyframes fadein { from { opacity: 0; } }
+.selbox { position: absolute; z-index: 2000; outline: 1.5px dashed var(--tape); box-shadow: 0 0 0 1px rgba(0, 0, 0, .3); pointer-events: none; transform-origin: 50% 50%; }
+.handle { position: absolute; right: -15px; bottom: -15px; width: 30px; height: 30px; border-radius: 50%; background: var(--tape); color: var(--tape-ink); border: 2px solid #fff; box-shadow: 0 1px 5px rgba(0, 0, 0, .35); pointer-events: auto; touch-action: none; display: grid; place-items: center; padding: 0; }
+.handle svg { width: 15px; height: 15px; }
+.stage-ui { position: absolute; inset: 0; pointer-events: none; }
+.stage-ui > * { pointer-events: auto; }
+.stage-chip { position: absolute; left: 10px; top: 10px; display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); background: var(--glass); color: var(--ink); border-radius: 999px; padding: 6px 12px 6px 9px; font-size: 13px; font-weight: 600; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.stage-chip svg { width: 17px; height: 17px; }
+.stage-badge { position: absolute; right: 10px; top: 10px; background: var(--tape); color: var(--tape-ink); font-size: 10.5px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; border-radius: 7px; padding: 4px 8px; pointer-events: none; }
+.stage-fab { position: absolute; left: 10px; bottom: 10px; min-height: 40px; padding: 0 14px; border-radius: 999px; font-size: 14px; box-shadow: var(--shadow-1); max-width: calc(100% - 20px); }
+.layerbar { position: absolute; left: 50%; top: 10px; transform: translateX(-50%); display: flex; gap: 2px; padding: 4px; border-radius: 14px; background: var(--primary); color: var(--primary-ink); box-shadow: var(--shadow-1); }
+.layerbar button { width: 38px; height: 36px; border: 0; border-radius: 10px; background: transparent; color: inherit; display: grid; place-items: center; }
+.layerbar button svg { width: 19px; height: 19px; }
+.layerbar button:hover { background: rgba(127, 127, 127, .22); }
+.guides { position: absolute; inset: 0; z-index: 3000; }
+.g-line { position: absolute; left: 0; right: 0; height: 0; border-top: 1.5px dashed var(--tape); pointer-events: none; }
+.g-sline { position: absolute; height: 0; border-top: 2px solid var(--tape); transform-origin: 0 0; pointer-events: none; }
+.g-tape { position: absolute; left: 6px; width: 12px; border-radius: 3px; pointer-events: none; background: repeating-linear-gradient(to bottom, var(--tape-ink) 0 1px, transparent 1px 7px), var(--tape); opacity: .9; }
+.g-tab { position: absolute; right: 6px; transform: translateY(-50%); border: 2px solid #fff; background: var(--tape); color: var(--tape-ink); font-size: 12px; font-weight: 700; padding: 5px 10px; border-radius: 9px; box-shadow: 0 1px 5px rgba(0, 0, 0, .35); touch-action: none; }
+.g-dot { position: absolute; width: 28px; height: 28px; margin: -14px 0 0 -14px; padding: 0; border-radius: 50%; border: 2px solid #fff; background: var(--tape); box-shadow: 0 1px 5px rgba(0, 0, 0, .4); touch-action: none; }
+.g-help { position: absolute; left: 10px; right: 10px; top: 10px; background: var(--glass); border-radius: 14px; padding: 10px 12px; font-size: 13px; line-height: 1.35; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.g-actions { position: absolute; left: 10px; right: 10px; bottom: 10px; display: flex; gap: 8px; }
+.g-actions .btn { flex: 1; min-height: 42px; }
+.rail { width: 60px; flex: 0 0 auto; display: flex; flex-direction: column; gap: 4px; overflow-y: auto; scrollbar-width: none; }
+.rail-btn { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 0 6px; border: 0; border-radius: 14px; background: transparent; color: var(--ink-2); font-size: 10.5px; font-weight: 600; position: relative; }
+.rail-btn svg { width: 24px; height: 24px; }
+.rail-btn[aria-pressed="true"] { background: var(--primary); color: var(--primary-ink); }
+.rail-btn .dot { position: absolute; top: 6px; right: 10px; width: 8px; height: 8px; border-radius: 50%; background: var(--tape); box-shadow: 0 0 0 2px var(--bg); }
+.rail-btn[aria-pressed="true"] .dot { box-shadow: 0 0 0 2px var(--primary); }
+.tray { background: var(--surface); border-top: 1px solid var(--line); padding-block: 8px 10px; }
+.tray-head { display: flex; align-items: baseline; gap: 8px; margin-bottom: 7px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.tray-title { font-weight: 600; font-size: 14px; }
+.tray-sub { color: var(--muted); font-size: 12.5px; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tray-row { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; scroll-snap-type: x proximity; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.tile { flex: 0 0 auto; width: 70px; height: 86px; border-radius: 12px; background: var(--raised); border: 1px solid var(--line); display: grid; place-items: center; padding: 6px; position: relative; scroll-snap-align: start; }
+.tile img { position: absolute; inset: 6px; width: calc(100% - 12px); height: calc(100% - 12px); max-width: none; object-fit: contain; pointer-events: none; }
+.tile[aria-pressed="true"] { border-color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--ink); }
+.tile .check { position: absolute; top: 4px; right: 4px; width: 19px; height: 19px; border-radius: 50%; background: var(--primary); color: var(--primary-ink); display: grid; place-items: center; }
+.tile .check svg { width: 12px; height: 12px; }
+.tile-add { border-style: dashed; border-color: var(--line-2); color: var(--muted); font-size: 11.5px; font-weight: 600; gap: 2px; align-content: center; }
+.tile-add svg { width: 22px; height: 22px; }
+.tile.skel { border: 0; }
+
+/* ---------- Mini-Spiegel (Karten) ---------- */
+.mini { position: relative; width: 100%; max-width: 100%; border-radius: 12px; overflow: hidden; background: radial-gradient(120% 75% at 50% 18%, var(--stage-a), var(--stage-b)); }
+.mini img { position: absolute; max-width: none; }
+.mini .mini-photo { inset: 0; width: 100%; height: 100%; }
+.mini .ly { transform-origin: 50% 50%; filter: drop-shadow(0 1px 1.5px rgba(0, 0, 0, .2)); }
+
+/* ---------- Stylist ---------- */
+.style-card { display: flex; gap: 14px; align-items: flex-start; justify-content: space-between; background: var(--raised); border: 1px solid var(--line); border-radius: 16px; padding: 14px; }
+.style-card > div { min-width: 0; display: flex; flex-direction: column; gap: 5px; }
+.style-text { margin: 0; font: italic 400 17px/1.35 var(--font-display); }
+.must-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.must { position: relative; }
+.must .tile { width: 64px; height: 78px; }
+.must .rm { position: absolute; top: -7px; right: -7px; width: 24px; height: 24px; border-radius: 50%; border: 2px solid var(--bg); background: var(--primary); color: var(--primary-ink); display: grid; place-items: center; padding: 0; }
+.must .rm svg { width: 12px; height: 12px; }
+.must-row .tile-add { width: 64px; height: 78px; }
+.results { display: flex; flex-direction: column; gap: 14px; scroll-margin-top: 12px; }
+.results-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.results-head h2 { margin: 0; font: italic 500 24px/1.1 var(--font-display); }
+.outfit { background: var(--raised); border: 1px solid var(--line); border-radius: 18px; padding: 14px; display: flex; flex-direction: column; gap: 12px; }
+.outfit-top { display: grid; grid-template-columns: minmax(96px, 34%) 1fr; gap: 14px; }
+.outfit-txt { min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+.outfit h3 { margin: 0; font: italic 500 21px/1.15 var(--font-display); }
+.outfit p { margin: 0; font-size: 14px; color: var(--ink-2); }
+.outfit .tip b { color: var(--ink); font-weight: 600; }
+.thumbs { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.thumbs button { width: 38px; height: 46px; padding: 0; border-radius: 9px; border: 1px solid var(--line); background: var(--surface); position: relative; }
+.thumbs img { position: absolute; inset: 3px; width: calc(100% - 6px); height: calc(100% - 6px); max-width: none; object-fit: contain; }
+.outfit-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.outfit-actions .btn { flex: 1 1 auto; }
+.note { background: var(--tape-soft); border-radius: 12px; padding: 10px 12px; font-size: 14px; margin: 0; }
+.err { border: 1px solid var(--danger); color: var(--ink); border-radius: 12px; padding: 12px; display: flex; gap: 10px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.err p { margin: 0; flex: 1 1 200px; }
+.thinking { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 14px; color: var(--ink-2); }
+.outfit.skel-card { min-height: 190px; }
+
+/* ---------- Schrank ---------- */
+.searchbar { display: flex; gap: 8px; align-items: center; }
+.search { position: relative; flex: 1; min-width: 0; }
+.search svg { position: absolute; left: 11px; top: 50%; width: 18px; height: 18px; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
+.search .field { padding-left: 36px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 12px 10px; }
+.icard { display: flex; flex-direction: column; gap: 6px; border: 0; padding: 0; background: none; text-align: left; min-width: 0; }
+.icard-ph { aspect-ratio: 4 / 5; max-width: 100%; border-radius: 14px; background: var(--raised); border: 1px solid var(--line); display: grid; place-items: center; padding: 10px; position: relative; }
+.icard-ph img { position: absolute; inset: 10px; width: calc(100% - 20px); height: calc(100% - 20px); max-width: none; object-fit: contain; }
+.icard-ph .dots { position: absolute; left: 8px; bottom: 8px; }
+.icard-nm { font-size: 13px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.icard[aria-pressed="true"] .icard-ph { border-color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--ink); }
+.icard .check { position: absolute; top: 6px; right: 6px; width: 22px; height: 22px; border-radius: 50%; background: var(--primary); color: var(--primary-ink); display: grid; place-items: center; }
+.icard .check svg { width: 13px; height: 13px; }
+.badge { position: absolute; top: 6px; left: 6px; font-size: 9.5px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; background: var(--tape); color: var(--tape-ink); border-radius: 6px; padding: 2px 6px; }
+.count-line { text-align: center; font-size: 13px; color: var(--muted); }
+.backup { display: flex; flex-direction: column; gap: 12px; background: var(--raised); border: 1px solid var(--line); border-radius: 16px; padding: 14px; margin-top: 8px; }
+.backup > div:first-child { display: flex; flex-direction: column; gap: 6px; }
+.backup p { margin: 0; }
+.backup-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.warn { color: var(--danger); font-weight: 600; }
+
+/* ---------- Looks ---------- */
+.looks-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px 12px; }
+.look-card { display: flex; flex-direction: column; gap: 6px; border: 0; padding: 0; background: none; text-align: left; min-width: 0; }
+.look-title { font: italic 500 17px/1.2 var(--font-display); }
+.look-meta { font-size: 12.5px; color: var(--muted); }
+
+/* ---------- Sheets ---------- */
+.sheet-scrim { position: fixed; inset: 0; background: var(--scrim); opacity: 0; transition: opacity .22s; }
+.sheet-scrim.open { opacity: 1; }
+.sheet { position: fixed; left: 0; right: 0; bottom: 0; max-width: 720px; margin: 0 auto; max-height: calc(100% - 24px - env(safe-area-inset-top, 0px)); display: flex; flex-direction: column; background: var(--surface); border-radius: 22px 22px 0 0; box-shadow: var(--shadow-2); transform: translateY(105%); transition: transform .28s cubic-bezier(.2, .8, .2, 1); padding-bottom: env(safe-area-inset-bottom, 0px); }
+.sheet.open { transform: none; }
+.sheet.full { height: calc(100% - 24px - env(safe-area-inset-top, 0px)); }
+.sheet-grip { width: 38px; height: 4px; border-radius: 2px; background: var(--line-2); margin: 8px auto 0; flex: 0 0 auto; }
+.sheet-head { display: flex; align-items: center; gap: 8px; padding-block: 8px 6px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(10px, env(safe-area-inset-right, 0px)); }
+.sheet-title { flex: 1; min-width: 0; margin: 0; font: 500 23px/1.15 var(--font-display); }
+.sheet-body { flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; display: flex; flex-direction: column; gap: 18px; padding-block: 6px 18px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.sheet-foot { display: flex; gap: 10px; align-items: center; border-top: 1px solid var(--line); padding-block: 10px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.sheet-foot .btn { flex: 1; }
+.menu-list { display: flex; flex-direction: column; gap: 2px; }
+.menu-item { display: flex; align-items: center; gap: 12px; width: 100%; min-height: 50px; padding: 0 10px; border: 0; border-radius: 12px; background: transparent; font-size: 16px; font-weight: 500; text-align: left; }
+.menu-item:hover { background: var(--bg); }
+.menu-item svg { width: 22px; height: 22px; color: var(--ink-2); }
+.menu-item.danger, .menu-item.danger svg { color: var(--danger); }
+.confirm { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; border: 1px solid var(--danger); border-radius: 14px; padding: 12px; }
+.confirm p { margin: 0; flex: 1 1 180px; font-weight: 500; }
+
+/* Import */
+.imp-list { display: flex; flex-direction: column; gap: 12px; }
+.imp-row { display: grid; grid-template-columns: 86px 1fr auto; gap: 12px; align-items: start; background: var(--raised); border: 1px solid var(--line); border-radius: 16px; padding: 10px; }
+.imp-prev { width: 86px; height: 104px; border-radius: 12px; border: 1px solid var(--line); display: grid; place-items: center; padding: 5px; position: relative; overflow: hidden; }
+.imp-prev img { position: absolute; inset: 5px; width: calc(100% - 10px); height: calc(100% - 10px); max-width: none; object-fit: contain; }
+.imp-prev .edit { position: absolute; right: 4px; bottom: 4px; width: 24px; height: 24px; border-radius: 50%; background: var(--primary); color: var(--primary-ink); display: grid; place-items: center; }
+.imp-prev .edit svg { width: 13px; height: 13px; }
+.imp-fields { min-width: 0; display: flex; flex-direction: column; gap: 7px; }
+.imp-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 12.5px; color: var(--muted); }
+.status { display: inline-flex; align-items: center; gap: 4px; }
+.status svg { width: 14px; height: 14px; }
+.status.run { color: var(--ink-2); }
+.status.need { color: var(--danger); font-weight: 600; }
+.status.retry { border: 0; background: none; padding: 0; color: var(--ink-2); text-decoration: underline; font-size: 12.5px; }
+.imp-hint { font-size: 12.5px; color: var(--muted); margin: 0; }
+.cut-view { border-radius: 16px; border: 1px solid var(--line); display: grid; place-items: center; padding: 10px; touch-action: manipulation; }
+.cut-view canvas { max-width: 100%; max-height: 46vh; cursor: crosshair; }
+.switch-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-weight: 500; }
+.switch-row input { width: 22px; height: 22px; accent-color: var(--primary); }
+.range-row { display: flex; flex-direction: column; gap: 6px; }
+.range-row input { width: 100%; accent-color: var(--primary); }
+.range-ends { display: flex; justify-content: space-between; font-size: 12.5px; color: var(--muted); }
+
+/* Detail */
+.det-img { position: relative; border-radius: 18px; border: 1px solid var(--line); height: min(42vh, 340px); flex: 0 0 auto; }
+.det-img img { position: absolute; inset: 14px; width: calc(100% - 28px); height: calc(100% - 28px); max-width: none; object-fit: contain; }
+.det-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.fld { display: flex; flex-direction: column; gap: 8px; }
+.det-foot { display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; }
+fieldset { border: 0; margin: 0; padding: 0; min-width: 0; display: flex; flex-direction: column; gap: 18px; }
+.look-big { width: min(100%, 260px); margin: 0 auto; }
+.look-text { display: flex; flex-direction: column; gap: 8px; }
+.look-text p { margin: 0; color: var(--ink-2); }
+
+.toast { position: fixed; left: 50%; bottom: calc(86px + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 16px); max-width: calc(100% - 32px); background: var(--primary); color: var(--primary-ink); padding: 10px 16px; border-radius: 12px; font-size: 14px; font-weight: 500; box-shadow: var(--shadow-1); opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 900; }
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; } }
+</style>
+<style>/* Nur Systemschriften – keine Verbindung zu Schrift-Diensten */
+:root{--font-display:"Bodoni 72",Didot,"Bodoni MT","Times New Roman",serif;--font-ui:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif}</style>
+</head>
+<body>
+
+<div class="app" id="app">
+  <header class="topbar">
+    <div class="topbar-in">
+      <div class="title-block"><span class="brand">Umkleide</span><h1 class="view-title" id="viewTitle">Anprobe</h1></div>
+      <div class="top-actions" id="topActions"></div>
+    </div>
+  </header>
+  <div class="notice" id="notice" role="status" hidden></div>
+  <main class="views">
+    <section class="view mirror" id="view-anprobe" data-view="anprobe" aria-label="Anprobe">
+      <div class="mirror-main">
+        <div class="stage-wrap" id="stageWrap">
+          <div class="stage" id="stage">
+            <img class="stage-photo" id="stagePhoto" alt="" draggable="false">
+            <div class="layers" id="layers"></div>
+            <div class="selbox" id="selBox" hidden><button class="handle" id="selHandle" type="button" aria-label="Größe und Drehung ändern"></button></div>
+            <div class="guides" id="guides" hidden></div>
+          </div>
+          <div class="stage-ui" id="stageUi"></div>
+        </div>
+        <nav class="rail" id="rail" aria-label="Kategorien"></nav>
+      </div>
+      <div class="tray">
+        <div class="tray-head"><span class="tray-title" id="trayTitle">Oberteile</span><span class="tray-sub" id="traySub"></span></div>
+        <div class="tray-row" id="trayRow"></div>
+      </div>
+    </section>
+    <section class="view view-scroll" id="view-stylist" data-view="stylist" aria-label="Stylist" hidden><div class="view-pad"></div></section>
+    <section class="view view-scroll" id="view-schrank" data-view="schrank" aria-label="Schrank" hidden><div class="view-pad"></div></section>
+    <section class="view view-scroll" id="view-looks" data-view="looks" aria-label="Looks" hidden><div class="view-pad"></div></section>
+  </main>
+  <nav class="tabbar" aria-label="Bereiche"><div class="tabbar-in" id="tabbar" role="tablist"></div></nav>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<input type="file" id="fileClothes" class="vh" accept="image/*" multiple tabindex="-1" aria-hidden="true">
+<input type="file" id="filePhoto" class="vh" accept="image/*" tabindex="-1" aria-hidden="true">
+<input type="file" id="fileBackup" class="vh" accept=".json,application/json" tabindex="-1" aria-hidden="true">
+<script>
+(() => {
+"use strict";
+/* ================= App-Version ================= */
+// Bei jeder neuen Version hochzählen. Die App zeigt nach einem Update kurz an, dass alles übernommen wurde.
+const APP_VERSION = '1.1';
+
+/* ================= Helfer ================= */
+const $ = (s, el = document) => el.querySelector(s);
+const $$ = (s, el = document) => Array.from(el.querySelectorAll(s));
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const nextFrame = () => new Promise((r) => requestAnimationFrame(() => r()));
+const rid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+const cap = (s) => (s ? s.charAt(0).toUpperCase() + s.slice(1) : '');
+const uniq = (a) => [...new Set(a)];
+const str = (v, n) => (typeof v === 'string' ? v.trim().slice(0, n) : '');
+const arr = (v) => (Array.isArray(v) ? v : v == null || v === '' ? [] : [v]);
+const fmtDate = (ts) => { try { return new Date(ts).toLocaleDateString('de-DE', { day: 'numeric', month: 'short' }); } catch (e) { return ''; } };
+const cssId = (id) => (window.CSS && CSS.escape ? CSS.escape(id) : String(id));
+const clone = (o) => JSON.parse(JSON.stringify(o));
+const jaccard = (a, b) => { const A = new Set(a), B = new Set(b); let i = 0; A.forEach((x) => { if (B.has(x)) i++; }); return i / (A.size + B.size - i || 1); };
+const LS = {
+  get(k, d) { try { const v = localStorage.getItem('umkleide.' + k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem('umkleide.' + k, JSON.stringify(v)); } catch (e) { /* ohne Browserspeicher weiter */ } },
+};
+let toastTimer = 0;
+function toast(msg, ms = 2800) {
+  const t = $('#toast'); if (!t) return;
+  t.textContent = msg; t.classList.add('show');
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove('show'), ms);
+}
+
+/* ================= Konstanten ================= */
+const CATS = [
+  { k: 'top', label: 'Oberteile', one: 'Oberteil', rail: 'Oben', z: 30 },
+  { k: 'bottom', label: 'Hosen & Röcke', one: 'Hose / Rock', rail: 'Hosen', z: 20 },
+  { k: 'dress', label: 'Kleider & Einteiler', one: 'Kleid / Einteiler', rail: 'Kleider', z: 26 },
+  { k: 'outer', label: 'Jacken & Mäntel', one: 'Jacke / Mantel', rail: 'Jacken', z: 50 },
+  { k: 'shoes', label: 'Schuhe', one: 'Schuhe', rail: 'Schuhe', z: 10 },
+  { k: 'bag', label: 'Taschen', one: 'Tasche', rail: 'Taschen', z: 70 },
+  { k: 'acc', label: 'Accessoires', one: 'Accessoire', rail: 'Extras', z: 60 },
+];
+const CAT = Object.fromEntries(CATS.map((c) => [c.k, c]));
+const AI_CAT = { oben: 'top', oberteil: 'top', unten: 'bottom', hose: 'bottom', rock: 'bottom', kleid: 'dress', einteiler: 'dress', jacke: 'outer', mantel: 'outer', schuhe: 'shoes', schuh: 'shoes', tasche: 'bag', accessoire: 'acc', accessoires: 'acc' };
+const COLORS = [
+  ['schwarz', '#1c1c1f'], ['anthrazit', '#3d4148'], ['grau', '#9a9ea4'], ['silber', '#c4c8cc'], ['weiß', '#f6f5f1'],
+  ['creme', '#efe5cf'], ['beige', '#d8c4a2'], ['camel', '#c0955f'], ['braun', '#6e4b32'], ['khaki', '#a59b6c'],
+  ['oliv', '#66683a'], ['grün', '#3f8a52'], ['türkis', '#2aa9a6'], ['hellblau', '#9cc4e8'], ['blau', '#2f62b8'],
+  ['denim', '#4b6a8f'], ['navy', '#1f2c48'], ['lila', '#7a4ea3'], ['flieder', '#c4aadb'], ['rosa', '#f1b9c7'],
+  ['pink', '#df4f8b'], ['rot', '#c6302d'], ['bordeaux', '#6b1f2d'], ['orange', '#e8823a'], ['senf', '#c8a12a'],
+  ['gelb', '#f1d04a'], ['gold', '#c8a44c'], ['bunt', null],
+].map(([n, hex]) => ({ n, hex }));
+const COLOR_HEX = Object.fromEntries(COLORS.map((c) => [c.n, c.hex]));
+const NEUTRALS = new Set(['schwarz', 'anthrazit', 'grau', 'silber', 'weiß', 'creme', 'beige', 'camel', 'braun', 'khaki', 'navy', 'denim', 'gold']);
+const COLOR_SYN = { weiss: 'weiß', 'off-white': 'creme', ecru: 'creme', elfenbein: 'creme', dunkelblau: 'navy', marine: 'navy', marineblau: 'navy', nachtblau: 'navy', jeansblau: 'denim', jeans: 'denim', hellgrau: 'grau', dunkelgrau: 'anthrazit', cognac: 'camel', karamell: 'camel', sand: 'beige', taupe: 'beige', nude: 'beige', mint: 'grün', dunkelgrün: 'grün', hellgrün: 'grün', petrol: 'türkis', weinrot: 'bordeaux', burgund: 'bordeaux', violett: 'lila', lavendel: 'flieder', altrosa: 'rosa', koralle: 'orange', ocker: 'senf', mehrfarbig: 'bunt', gemustert: 'bunt', schwarzweiß: 'schwarz' };
+const STYLES = ['casual', 'sportlich', 'elegant', 'business', 'klassisch', 'minimalistisch', 'streetwear', 'boho', 'romantisch', 'festlich', 'edgy'];
+const SEASONS = [['frühling', 'Frühling'], ['sommer', 'Sommer'], ['herbst', 'Herbst'], ['winter', 'Winter']];
+const SEASON_KEYS = SEASONS.map((s) => s[0]);
+const DC = [null, 'Leger', 'Smart Casual', 'Business', 'Cocktail', 'Abend'];
+const LENS = [['kurz', 'Kurz'], ['knie', 'Knie'], ['midi', 'Midi'], ['lang', 'Lang']];
+const LEN_L = Object.fromEntries(LENS);
+const ZONES = [['kopf', 'Kopf'], ['augen', 'Augen'], ['ohr', 'Ohren'], ['hals', 'Hals'], ['taille', 'Taille'], ['handgelenk', 'Handgelenk'], ['hand', 'Hand']];
+const ZONE_L = Object.fromEntries(ZONES);
+const OCCS = [
+  { k: 'alltag', label: 'Alltag', hint: 'entspannt, aber angezogen', dc: [1, 2], phrase: 'für jeden Tag' },
+  { k: 'chillig', label: 'Chillig', hint: 'bequem, Couch und Spaziergang', dc: [1, 1], phrase: 'zum Entspannen' },
+  { k: 'buero', label: 'Büro', hint: 'gepflegt, Business Casual', dc: [2, 3], phrase: 'fürs Büro' },
+  { k: 'business', label: 'Business', hint: 'Meeting, Präsentation, Kundentermin', dc: [3, 4], phrase: 'für den Termin' },
+  { k: 'date', label: 'Date', hint: 'attraktiv, aber nicht overdressed', dc: [2, 3], phrase: 'fürs Date' },
+  { k: 'schick', label: 'Schick essen', hint: 'gutes Restaurant, elegant', dc: [3, 4], phrase: 'zum Essen' },
+  { k: 'party', label: 'Party', hint: 'ausgehtauglich, darf auffallen', dc: [2, 4], phrase: 'für die Party' },
+  { k: 'hochzeit', label: 'Hochzeit', hint: 'als Gast, festlich, nicht ganz in Weiß', dc: [4, 5], phrase: 'für die Hochzeit' },
+  { k: 'gala', label: 'Abend & Gala', hint: 'Abendkleid oder Anzug, Black Tie', dc: [5, 5], phrase: 'für den großen Abend' },
+  { k: 'sport', label: 'Sport', hint: 'funktional und bequem', dc: [1, 1], phrase: 'zum Sport' },
+  { k: 'urlaub', label: 'Urlaub', hint: 'leicht, reisetauglich', dc: [1, 2], phrase: 'für den Urlaub' },
+];
+const OCC = Object.fromEntries(OCCS.map((o) => [o.k, o]));
+const WEATHER = {
+  warm: { label: 'Warm', hint: 'über 22 °C', seasons: ['sommer'] },
+  mild: { label: 'Mild', hint: '15–22 °C', seasons: ['frühling', 'sommer', 'herbst'] },
+  kuehl: { label: 'Kühl', hint: '5–15 °C', seasons: ['frühling', 'herbst'] },
+  kalt: { label: 'Kalt', hint: 'unter 5 °C', seasons: ['winter', 'herbst'] },
+  regen: { label: 'Regen', hint: 'nass, wetterfest anziehen', seasons: ['frühling', 'herbst', 'winter'] },
+};
+function autoWeather() { const m = new Date().getMonth(); return m <= 1 || m === 11 ? 'kalt' : m <= 3 ? 'kuehl' : m === 4 ? 'mild' : m <= 7 ? 'warm' : m === 8 ? 'mild' : 'kuehl'; }
+const STYLE_SUGGEST = ['minimalistisch', 'gedeckte Farben', 'Erdtöne', 'gern Schwarz', 'sportlich-lässig', 'klassisch-elegant', 'figurbetont', 'gern oversized', 'keine Muster-Mixe', 'bequeme Schuhe', 'gern Farbe', 'Business Casual'];
+const TITLES = { anprobe: 'Anprobe', stylist: 'Stylist', schrank: 'Schrank', looks: 'Looks' };
+const TABS = ['anprobe', 'stylist', 'schrank', 'looks'];
+
+/* ================= Icons ================= */
+const ico = (d, extra = '') => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ${extra}>${d}</svg>`;
+const I = {
+  top: ico('<path d="M8.5 3.5 4 5.8 2.6 10l3 1.1.9-1.6v11h11v-11l.9 1.6 3-1.1L20 5.8l-4.5-2.3c-.5 1.4-1.9 2.3-3.5 2.3s-3-.9-3.5-2.3Z"/>'),
+  bottom: ico('<path d="M6.5 3.5h11l1 17h-4.6L12 10.5l-1.9 10H5.5l1-17Z"/><path d="M6.4 6.5h11.2"/>'),
+  dress: ico('<path d="M9.3 3v3.3L8 9.4l1.9 1.4-4.4 9.7h13l-4.4-9.7L16 9.4l-1.3-3.1V3"/><path d="M9.3 6.3c1.7.9 3.7.9 5.4 0"/>'),
+  outer: ico('<path d="M9 3.5 5 5.6v14.9h5.3V12L12 7.2l1.7 4.8v8.5H19V5.6l-4-2.1-3 3.7-3-3.7Z"/><path d="M5 12.5h3M16 12.5h3"/>'),
+  shoes: ico('<path d="M3 16.5V9.3c1.8 0 3.2-.8 3.8-2.3l1 .5c1.2 2.1 3.4 3.4 6 3.8l4.4.8c1.5.3 2.8 1.5 2.8 3v1.4H3Z"/><path d="M3 19.5h18"/>'),
+  bag: ico('<path d="M5.2 8.5h13.6l-1.1 12H6.3l-1.1-12Z"/><path d="M9 10.5V7a3 3 0 0 1 6 0v3.5"/>'),
+  acc: ico('<circle cx="6.5" cy="13.5" r="3.5"/><circle cx="17.5" cy="13.5" r="3.5"/><path d="M10 13c1.3-.8 2.7-.8 4 0M3 13 2 9.5M21 13l1-3.5"/>'),
+  mirror: ico('<rect x="6" y="2.5" width="12" height="16" rx="6"/><path d="M9 21.5h6M12 18.5v3M9.8 8l2.2-2.2M9.8 11.2l4.6-4.6"/>'),
+  spark: ico('<path d="M11 3.5l1.6 4.4 4.4 1.6-4.4 1.6L11 15.5l-1.6-4.4L5 9.5l4.4-1.6L11 3.5Z"/><path d="M18 14l.8 2.2 2.2.8-2.2.8L18 20l-.8-2.2-2.2-.8 2.2-.8L18 14Z"/>'),
+  hanger: ico('<path d="M10.2 4.2A1.8 1.8 0 1 1 12 6.1v1.7"/><path d="M12 7.8 3 14.4c-.9.7-.4 2.1.7 2.1h16.6c1.1 0 1.6-1.4.7-2.1L12 7.8Z"/>'),
+  heart: ico('<path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7a4.3 4.3 0 0 1 7.5 2.8C19.5 15.4 12 20 12 20Z"/>'),
+  heartFill: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7a4.3 4.3 0 0 1 7.5 2.8C19.5 15.4 12 20 12 20Z"/></svg>',
+  plus: ico('<path d="M12 5v14M5 12h14"/>'),
+  x: ico('<path d="M6 6l12 12M18 6 6 18"/>'),
+  more: ico('<circle cx="5" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="19" cy="12" r="1.3"/>'),
+  check: ico('<path d="M5 12.5l4.5 4.5L19 7.5"/>', 'stroke-width="2.6"'),
+  thumbDown: ico('<path d="M7.5 13.5v-9M7.5 13.5l3.6 6.2c.4.6 1.2.8 1.8.4.6-.4.9-1.1.7-1.8l-1-4h5.6c1.2 0 2.1-1.1 1.9-2.3l-1.1-6.3c-.2-1-1-1.7-2-1.7H7.5M7.5 4.5h-3v9h3"/>'),
+  trash: ico('<path d="M4.5 7h15M10 7V4.5h4V7M6.5 7l1 13h9l1-13M10 10.5v6M14 10.5v6"/>'),
+  flip: ico('<path d="M12 3v18M9 7 4 12l5 5V7ZM15 7l5 5-5 5V7Z"/>'),
+  up: ico('<rect x="8" y="3.5" width="12" height="12" rx="2"/><path d="M4 8.5v10a2 2 0 0 0 2 2h10"/>'),
+  down: ico('<rect x="4" y="8.5" width="12" height="12" rx="2"/><path d="M8 4.5h10a2 2 0 0 1 2 2v10"/>'),
+  reset: ico('<path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3L4.5 9"/><path d="M4.5 4.5V9H9"/>'),
+  camera: ico('<path d="M4 8.5h3.2L8.8 6h6.4l1.6 2.5H20v11H4v-11Z"/><circle cx="12" cy="13.5" r="3.5"/>'),
+  user: ico('<circle cx="12" cy="8" r="3.5"/><path d="M5 20.5c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5"/>'),
+  ruler: ico('<path d="M3.5 15.5 15.5 3.5l5 5-12 12-5-5Z"/><path d="M7 12l1.5 1.5M9.5 9.5 12 12M12 7l1.5 1.5M14.5 4.5 17 7"/>'),
+  download: ico('<path d="M12 4v11M7 10.5l5 5 5-5M5 19.5h14"/>'),
+  search: ico('<circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3"/>'),
+  edit: ico('<path d="M4 20h4L19.5 8.5l-4-4L4 16v4Z"/>'),
+  undress: ico('<path d="M8.5 3.5 4 5.8 2.6 10l3 1.1.9-1.6v11h11v-11l.9 1.6 3-1.1L20 5.8l-4.5-2.3"/><path d="M3.5 3.5l17 17"/>'),
+  rotate: ico('<path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4.5h-4.5"/>', 'stroke-width="2.4"'),
+  stop: ico('<rect x="6.5" y="6.5" width="11" height="11" rx="2"/>'),
+  mannequin: ico('<circle cx="12" cy="4.5" r="2"/><path d="M8 8.5h8l-1 6h-1.5l-.5 7h-2l-.5-7H9l-1-6Z"/>'),
+};
+CATS.forEach((c) => { c.icon = I[c.k]; });
+
+/* ================= Puppe & Beispielteile ================= */
+const svgURI = (s) => 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(s.replace(/\s+/g, ' ').trim());
+const MANNEQUIN_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 1000" width="600" height="1000">
+<defs><linearGradient id="m" x1="0" x2="1"><stop offset="0" stop-color="#959ea9"/><stop offset=".5" stop-color="#b5bdc7"/><stop offset="1" stop-color="#919aa5"/></linearGradient>
+<radialGradient id="f"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient></defs>
+<ellipse cx="300" cy="962" rx="130" ry="17" fill="url(#f)"/>
+<g fill="url(#m)">
+<path d="M206 232C188 240 181 268 179 318C177 368 172 418 169 468C167 498 165 524 167 546C169 574 183 586 192 572C196 556 194 534 196 514C200 470 207 420 211 372C214 332 216 300 214 268Z"/>
+<path d="M394 232C412 240 419 268 421 318C423 368 428 418 431 468C433 498 435 524 433 546C431 574 417 586 408 572C404 556 406 534 404 514C400 470 393 420 389 372C386 332 384 300 386 268Z"/>
+<path d="M216 500C214 600 234 690 242 760C250 830 256 890 260 938L292 938C292 890 294 830 295 760C296 690 300 610 300 540Z"/>
+<path d="M384 500C386 600 366 690 358 760C350 830 344 890 340 938L308 938C308 890 306 830 305 760C304 690 300 610 300 540Z"/>
+<path d="M284 192C284 205 262 210 236 214C214 218 200 228 198 250C196 290 212 330 226 380C232 410 224 450 214 490C210 510 212 525 220 540L380 540C388 525 390 510 386 490C376 450 368 410 374 380C388 330 404 290 402 250C400 228 386 218 364 214C338 210 316 205 316 192Z"/>
+<path d="M284 156h32v46h-32z"/>
+<ellipse cx="300" cy="118" rx="40" ry="52"/>
+<ellipse cx="272" cy="947" rx="26" ry="13"/><ellipse cx="328" cy="947" rx="26" ry="13"/>
+</g></svg>`;
+const MANNEQUIN_URL = svgURI(MANNEQUIN_SVG);
+const MANNEQUIN_GUIDES = { lx: 0.34, ly: 0.226, rx: 0.66, ry: 0.226, hip: 0.46, feet: 0.955 };
+
+const DEMO_SVG = {
+  tee: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="166 190 268 300" width="268" height="300"><defs><linearGradient id="a" x1="0" x2="1"><stop offset="0" stop-color="#dedbd3"/><stop offset=".5" stop-color="#f9f8f4"/><stop offset="1" stop-color="#e2dfd8"/></linearGradient></defs>
+<path d="M262 196C276 222 324 222 338 196L372 206C392 212 404 220 412 232L432 290L400 304L392 284L390 476C340 486 260 486 210 476L208 284L200 304L168 290L188 232C196 220 208 212 228 206Z" fill="url(#a)" stroke="#c9c5bc" stroke-width="2" stroke-linejoin="round"/>
+<path d="M266 199C280 219 320 219 334 199" fill="none" stroke="#d4d0c7" stroke-width="5" stroke-linecap="round"/>
+<path d="M176 283L203 295M424 283L397 295M214 468C262 476 338 476 386 468" fill="none" stroke="#d6d2ca" stroke-width="1.6"/></svg>`,
+  hemd: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="168 182 264 318" width="264" height="318"><defs><linearGradient id="a" x1="0" x2="1"><stop offset="0" stop-color="#9dbcdd"/><stop offset=".5" stop-color="#c3d9ef"/><stop offset="1" stop-color="#9fbddb"/></linearGradient></defs>
+<path d="M264 192L300 216L336 192L374 204C394 210 404 222 408 240L428 370L398 380L392 302L392 484C350 498 250 498 208 484L208 302L202 380L172 370L192 240C196 222 206 210 226 204Z" fill="url(#a)" stroke="#7f9fc0" stroke-width="2" stroke-linejoin="round"/>
+<path d="M172 370L202 380L204 362L175 353ZM428 370L398 380L396 362L425 353Z" fill="#b3cde8" stroke="#7f9fc0" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M264 190C282 183 318 183 336 190L300 214Z" fill="#8eaed0"/>
+<path d="M264 189L300 213L286 234L255 200ZM336 189L300 213L314 234L345 200Z" fill="#cfe1f3" stroke="#7f9fc0" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M300 216V492" stroke="#7f9fc0" stroke-width="1.6"/>
+<g fill="#f3f7fb" stroke="#7f9fc0" stroke-width="1.2"><circle cx="300" cy="240" r="3.2"/><circle cx="300" cy="288" r="3.2"/><circle cx="300" cy="336" r="3.2"/><circle cx="300" cy="384" r="3.2"/><circle cx="300" cy="432" r="3.2"/></g>
+<path d="M238 262H272V298L255 304L238 298Z" fill="none" stroke="#7f9fc0" stroke-width="1.4" stroke-linejoin="round"/></svg>`,
+  jeans: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="208 446 184 500" width="184" height="500"><defs><linearGradient id="a" x1="0" x2="1"><stop offset="0" stop-color="#2a446a"/><stop offset=".5" stop-color="#3d6091"/><stop offset="1" stop-color="#284066"/></linearGradient></defs>
+<path d="M216 450L384 450L388 500C390 600 370 770 362 942L308 942C307 800 306 650 302 552L298 552C294 650 293 800 292 942L238 942C230 770 210 600 212 500Z" fill="url(#a)" stroke="#1f3352" stroke-width="2" stroke-linejoin="round"/>
+<path d="M216 450H384L385 468H215Z" fill="#2c4770" stroke="#1f3352" stroke-width="1.6"/>
+<g fill="none" stroke="#d6a65a" stroke-width="1.4" stroke-dasharray="4 3"><path d="M222 474C238 498 254 506 270 507M378 474C362 498 346 506 330 507"/><path d="M304 469V528C304 541 296 548 286 551"/><path d="M243 930H289M311 930H357"/></g>
+<g fill="#2c4770" stroke="#1f3352" stroke-width="1.2"><rect x="232" y="447" width="7" height="25" rx="1.5"/><rect x="361" y="447" width="7" height="25" rx="1.5"/></g>
+<g fill="#fff" fill-opacity=".07"><ellipse cx="262" cy="700" rx="18" ry="70"/><ellipse cx="338" cy="700" rx="18" ry="70"/></g>
+<circle cx="300" cy="459" r="4" fill="#c9a44c"/></svg>`,
+  chino: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="208 446 184 494" width="184" height="494"><defs><linearGradient id="a" x1="0" x2="1"><stop offset="0" stop-color="#c4a87f"/><stop offset=".5" stop-color="#dcc6a1"/><stop offset="1" stop-color="#c1a47b"/></linearGradient></defs>
+<path d="M216 450L384 450L388 500C390 600 368 770 354 936L308 936C307 800 306 650 302 552L298 552C294 650 293 800 292 936L246 936C232 770 210 600 212 500Z" fill="url(#a)" stroke="#a88d63" stroke-width="2" stroke-linejoin="round"/>
+<path d="M216 450H384L385 466H215Z" fill="#c9ad84" stroke="#a88d63" stroke-width="1.6"/>
+<g fill="none" stroke="#a88d63" stroke-width="1.5"><path d="M226 468L250 520M374 468L350 520"/><path d="M304 467V526C304 538 297 545 288 548"/></g>
+<g fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="2"><path d="M262 560L268 930M338 560L332 930"/></g>
+<circle cx="300" cy="458" r="3.6" fill="#7a5d3a"/></svg>`,
+  kleid: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="190 198 220 606" width="220" height="606"><defs><linearGradient id="a" x1="0" x2="1"><stop offset="0" stop-color="#141417"/><stop offset=".5" stop-color="#2b2b33"/><stop offset="1" stop-color="#131316"/></linearGradient></defs>
+<path d="M262 204L274 204C282 236 318 236 326 204L338 204C346 240 366 262 372 290C380 340 372 380 368 410C380 470 398 640 406 790C340 802 260 802 194 790C202 640 220 470 232 410C228 380 220 340 228 290C234 262 254 240 262 204Z" fill="url(#a)" stroke="#0b0b0d" stroke-width="2" stroke-linejoin="round"/>
+<path d="M232 410C270 419 330 419 368 410" fill="none" stroke="#3b3b45" stroke-width="2"/>
+<g fill="none" stroke="#fff" stroke-opacity=".07" stroke-width="7" stroke-linecap="round"><path d="M272 470C264 580 254 690 248 786"/><path d="M300 432V796"/><path d="M328 470C336 580 346 690 352 786"/></g></svg>`,
+  blazer: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="160 186 280 356" width="280" height="356"><defs><linearGradient id="a" x1="0" x2="1"><stop offset="0" stop-color="#1b2740"/><stop offset=".5" stop-color="#2b3c5f"/><stop offset="1" stop-color="#19243b"/></linearGradient></defs>
+<g stroke="#121b2d" stroke-width="2" stroke-linejoin="round">
+<path d="M206 226C190 232 183 254 181 282L164 530L196 538L212 330Z" fill="url(#a)"/>
+<path d="M394 226C410 232 417 254 419 282L436 530L404 538L388 330Z" fill="url(#a)"/>
+<path d="M324 196L304 430L296 532L390 524L394 292C396 262 398 238 394 224C372 210 348 200 324 196Z" fill="url(#a)"/>
+<path d="M276 196L296 430L304 532L210 524L206 292C204 262 202 238 206 224C228 210 252 200 276 196Z" fill="url(#a)"/>
+<path d="M276 196L254 222L262 248L244 266L296 430Z" fill="#22314f"/>
+<path d="M324 196L346 222L338 248L356 266L304 430Z" fill="#22314f"/></g>
+<g fill="none" stroke="#121b2d" stroke-width="1.8"><path d="M220 468L270 471M380 468L330 471"/><path d="M228 322L256 318"/></g>
+<g fill="#0e1524"><circle cx="300" cy="446" r="4.5"/><circle cx="300" cy="494" r="4.5"/></g></svg>`,
+  sneaker: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="240 922 120 42" width="120" height="42"><g stroke="#c4c0b7" stroke-width="1.6" stroke-linejoin="round">
+<path d="M246 952C245 936 256 925 271 925C286 925 297 936 296 952Z" fill="#f8f7f3"/><rect x="242" y="949" width="58" height="12" rx="5" fill="#e4e1d9"/>
+<path d="M304 952C303 936 314 925 329 925C344 925 355 936 354 952Z" fill="#f8f7f3"/><rect x="300" y="949" width="58" height="12" rx="5" fill="#e4e1d9"/></g>
+<g stroke="#cfcbc2" stroke-width="1.6" stroke-linecap="round"><path d="M263 933H279M261 939H281M321 933H337M319 939H339"/></g></svg>`,
+  boots: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="240 880 120 84" width="120" height="84"><defs><linearGradient id="a" x1="0" x2="1"><stop offset="0" stop-color="#18181b"/><stop offset=".5" stop-color="#34343b"/><stop offset="1" stop-color="#17171a"/></linearGradient></defs>
+<g stroke="#0a0a0b" stroke-width="1.6" stroke-linejoin="round">
+<path d="M254 884H288C291 902 293 922 295 940C296 948 296 953 294 956H246C244 950 246 942 250 935C252 918 253 900 254 884Z" fill="url(#a)"/><rect x="243" y="953" width="56" height="9" rx="4" fill="#0f0f11"/>
+<path d="M312 884H346C347 900 348 918 350 935C354 942 356 950 354 956H306C304 953 304 948 305 940C307 922 309 902 312 884Z" fill="url(#a)"/><rect x="301" y="953" width="56" height="9" rx="4" fill="#0f0f11"/></g>
+<path d="M262 888L264 924M336 888L334 924" stroke="#55555f" stroke-width="3" stroke-linecap="round"/></svg>`,
+  tote: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 140" width="112" height="140"><defs><linearGradient id="a" x1="0" x2="1"><stop offset="0" stop-color="#b98a55"/><stop offset=".5" stop-color="#d3a46c"/><stop offset="1" stop-color="#b48451"/></linearGradient></defs>
+<path d="M32 60C32 14 80 14 80 60" fill="none" stroke="#7d5530" stroke-width="7" stroke-linecap="round"/>
+<path d="M12 54H100L110 136H2Z" fill="url(#a)" stroke="#7d5530" stroke-width="2" stroke-linejoin="round"/>
+<path d="M12.5 66H99.5" stroke="#9a6c3d" stroke-width="1.6"/><g fill="#c9a44c"><circle cx="32" cy="60" r="3"/><circle cx="80" cy="60" r="3"/></g></svg>`,
+  belt: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 20" width="176" height="20"><rect x="1" y="3.5" width="174" height="13" rx="2.5" fill="#6b4329" stroke="#40271a" stroke-width="1.4"/>
+<rect x="76" y="1.5" width="24" height="17" rx="3" fill="none" stroke="#caa452" stroke-width="3"/><path d="M88 10H104" stroke="#caa452" stroke-width="2.2" stroke-linecap="round"/>
+<g fill="#40271a"><circle cx="118" cy="10" r="1.6"/><circle cx="128" cy="10" r="1.6"/><circle cx="138" cy="10" r="1.6"/></g></svg>`,
+  shades: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 29" width="84" height="29"><g fill="#16161a" stroke="#050506" stroke-width="1.5"><rect x="3" y="4" width="33" height="22" rx="10"/><rect x="48" y="4" width="33" height="22" rx="10"/></g>
+<path d="M36 10C39 6.5 45 6.5 48 10M1 7H4M80 7H83" fill="none" stroke="#050506" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M9 10L18 9M54 10L63 9" stroke="#fff" stroke-opacity=".35" stroke-width="2" stroke-linecap="round"/></svg>`,
+};
+const DEMO_DEF = [
+  ['demo-tee', 'tee', [166, 190, 268, 300], { cat: 'top', type: 'T-Shirt', name: 'Weißes T-Shirt', colors: ['weiß'], style: ['casual', 'minimalistisch'], dc: 1, season: ['frühling', 'sommer', 'herbst'] }],
+  ['demo-hemd', 'hemd', [168, 182, 264, 318], { cat: 'top', type: 'Hemd', name: 'Hellblaues Hemd', colors: ['hellblau'], style: ['klassisch', 'business'], dc: 3, season: ['frühling', 'sommer', 'herbst', 'winter'] }],
+  ['demo-jeans', 'jeans', [208, 446, 184, 500], { cat: 'bottom', type: 'Jeans', name: 'Dunkle Jeans', colors: ['denim'], style: ['casual', 'streetwear'], dc: 2, season: ['frühling', 'herbst', 'winter'], len: 'lang' }],
+  ['demo-chino', 'chino', [208, 446, 184, 494], { cat: 'bottom', type: 'Chino', name: 'Beige Chino', colors: ['beige'], style: ['klassisch', 'casual'], dc: 2, season: ['frühling', 'sommer', 'herbst'], len: 'lang' }],
+  ['demo-kleid', 'kleid', [190, 198, 220, 606], { cat: 'dress', type: 'Midikleid', name: 'Schwarzes Midikleid', colors: ['schwarz'], style: ['elegant', 'festlich', 'minimalistisch'], dc: 4, season: ['frühling', 'sommer', 'herbst', 'winter'], len: 'midi' }],
+  ['demo-blazer', 'blazer', [160, 186, 280, 356], { cat: 'outer', type: 'Blazer', name: 'Navy Blazer', colors: ['navy'], style: ['business', 'klassisch'], dc: 3, season: ['frühling', 'herbst', 'winter'] }],
+  ['demo-sneaker', 'sneaker', [240, 922, 120, 42], { cat: 'shoes', type: 'Sneaker', name: 'Weiße Sneaker', colors: ['weiß'], style: ['casual', 'sportlich', 'minimalistisch'], dc: 1, season: ['frühling', 'sommer', 'herbst'] }],
+  ['demo-boots', 'boots', [240, 880, 120, 84], { cat: 'shoes', type: 'Stiefeletten', name: 'Schwarze Stiefeletten', colors: ['schwarz'], style: ['klassisch', 'edgy', 'elegant'], dc: 3, season: ['herbst', 'winter'] }],
+  ['demo-tote', 'tote', [392, 540, 112, 140], { cat: 'bag', type: 'Shopper', name: 'Camel-Shopper', colors: ['camel'], style: ['klassisch', 'casual'], dc: 2, season: ['frühling', 'sommer', 'herbst', 'winter'] }],
+  ['demo-belt', 'belt', [212, 450, 176, 20], { cat: 'acc', type: 'Gürtel', name: 'Brauner Ledergürtel', colors: ['braun'], style: ['klassisch'], dc: 2, season: ['frühling', 'sommer', 'herbst', 'winter'], zone: 'taille' }],
+  ['demo-shades', 'shades', [258, 100, 84, 29], { cat: 'acc', type: 'Sonnenbrille', name: 'Sonnenbrille', colors: ['schwarz'], style: ['casual', 'edgy'], dc: 1, season: ['frühling', 'sommer'], zone: 'augen' }],
+];
+const DEMO_OUTFIT = ['demo-hemd', 'demo-jeans', 'demo-sneaker', 'demo-blazer'];
+
+/* ================= Farben ================= */
+const SRGB_LIN = new Float32Array(256);
+for (let i = 0; i < 256; i++) { const c = i / 255; SRGB_LIN[i] = c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4); }
+const labF = (t) => (t > 0.008856 ? Math.cbrt(t) : 7.787 * t + 16 / 116);
+function labOf(r, g, b) {
+  const R = SRGB_LIN[r], G = SRGB_LIN[g], B = SRGB_LIN[b];
+  const x = labF((R * 0.4124 + G * 0.3576 + B * 0.1805) / 0.95047);
+  const y = labF(R * 0.2126 + G * 0.7152 + B * 0.0722);
+  const z = labF((R * 0.0193 + G * 0.1192 + B * 0.9505) / 1.08883);
+  return [116 * y - 16, 500 * (x - y), 200 * (y - z)];
+}
+const d2 = (a, b) => { const x = a[0] - b[0], y = a[1] - b[1], z = a[2] - b[2]; return x * x + y * y + z * z; };
+const hexRgb = (h) => [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)];
+const rgbHex = (r, g, b) => '#' + [r, g, b].map((v) => Math.round(clamp(v, 0, 255)).toString(16).padStart(2, '0')).join('');
+const COLOR_LABS = COLORS.filter((c) => c.hex).map((c) => ({ n: c.n, lab: labOf(...hexRgb(c.hex)) }));
+function nearestColorName(lab) { let best = 'grau', bd = Infinity; for (const c of COLOR_LABS) { const d = d2(lab, c.lab); if (d < bd) { bd = d; best = c.n; } } return best; }
+function normColorName(s) {
+  const k = String(s || '').toLowerCase().trim().replace(/\s+/g, '');
+  if (COLOR_HEX[k] !== undefined) return k;
+  if (COLOR_SYN[k]) return COLOR_SYN[k];
+  for (const c of COLORS) if (k.includes(c.n)) return c.n;
+  return null;
+}
+function swatchStyle(name) { const h = COLOR_HEX[name]; return h ? `--c:${h}` : ''; }
+
+/* k-means auf Punkten [L,a,b,(r,g,b)] */
+function kmeans(pts, k, iters = 8) {
+  if (!pts.length) return [];
+  k = Math.min(k, pts.length);
+  const cs = [pts[Math.floor(pts.length / 2)].slice(0, 3)];
+  while (cs.length < k) { // weitester Punkt als nächstes Zentrum
+    let best = null, bd = -1;
+    for (let i = 0; i < pts.length; i += Math.max(1, Math.floor(pts.length / 400))) { let m = Infinity; for (const c of cs) m = Math.min(m, d2(pts[i], c)); if (m > bd) { bd = m; best = pts[i]; } }
+    if (!best || bd < 4) break; cs.push(best.slice(0, 3));
+  }
+  let assign = new Int32Array(pts.length);
+  for (let it = 0; it < iters; it++) {
+    const sum = cs.map(() => [0, 0, 0, 0, 0, 0, 0]);
+    for (let i = 0; i < pts.length; i++) {
+      let bi = 0, bd = Infinity; for (let j = 0; j < cs.length; j++) { const d = d2(pts[i], cs[j]); if (d < bd) { bd = d; bi = j; } }
+      assign[i] = bi; const s = sum[bi], p = pts[i]; s[0] += p[0]; s[1] += p[1]; s[2] += p[2]; s[3] += p[3] || 0; s[4] += p[4] || 0; s[5] += p[5] || 0; s[6]++;
+    }
+    sum.forEach((s, j) => { if (s[6]) { cs[j] = [s[0] / s[6], s[1] / s[6], s[2] / s[6]]; cs[j].rgb = [s[3] / s[6], s[4] / s[6], s[5] / s[6]]; cs[j].n = s[6]; } else { cs[j].n = 0; } });
+  }
+  return cs.map((c) => ({ lab: [c[0], c[1], c[2]], rgb: c.rgb || [0, 0, 0], n: c.n || 0 })).filter((c) => c.n > 0).sort((a, b) => b.n - a.n);
+}
+
+function dominantColors(canvas, centerOnly) {
+  const w = canvas.width, h = canvas.height; if (!w || !h) return [];
+  let d; try { d = canvas.getContext('2d', { willReadFrequently: true }).getImageData(0, 0, w, h).data; } catch (e) { return []; }
+  const pts = []; const step = Math.max(1, Math.floor(Math.sqrt((w * h) / 3500)));
+  const x0 = centerOnly ? Math.floor(w * 0.25) : 0, x1 = centerOnly ? Math.ceil(w * 0.75) : w;
+  const y0 = centerOnly ? Math.floor(h * 0.2) : 0, y1 = centerOnly ? Math.ceil(h * 0.8) : h;
+  for (let y = y0; y < y1; y += step) for (let x = x0; x < x1; x += step) {
+    const i = (y * w + x) * 4; if (d[i + 3] < 200) continue;
+    const r = d[i], g = d[i + 1], b = d[i + 2]; pts.push([...labOf(r, g, b), r, g, b]);
+  }
+  if (pts.length < 20) return [];
+  const cl = kmeans(pts, 4);
+  return cl.filter((c) => c.n / pts.length > 0.12).slice(0, 3).map((c) => ({ hex: rgbHex(...c.rgb), name: nearestColorName(c.lab), share: c.n / pts.length }));
+}
+
+/* ================= Bilder ================= */
+async function fileToCanvas(file, maxSide) {
+  let src = null, w = 0, h = 0, done = null;
+  try { const bmp = await createImageBitmap(file); src = bmp; w = bmp.width; h = bmp.height; done = () => bmp.close && bmp.close(); }
+  catch (e) {
+    const url = URL.createObjectURL(file);
+    try { const img = new Image(); img.decoding = 'async'; img.src = url; await img.decode(); src = img; w = img.naturalWidth; h = img.naturalHeight; }
+    finally { setTimeout(() => URL.revokeObjectURL(url), 2000); }
+  }
+  if (!w || !h) throw new Error('decode');
+  const s = Math.min(1, maxSide / Math.max(w, h));
+  const c = document.createElement('canvas'); c.width = Math.max(1, Math.round(w * s)); c.height = Math.max(1, Math.round(h * s));
+  const ctx = c.getContext('2d', { willReadFrequently: true }); ctx.imageSmoothingQuality = 'high';
+  ctx.drawImage(src, 0, 0, c.width, c.height);
+  if (done) done();
+  return c;
+}
+async function urlToCanvas(url, maxSide) {
+  const img = new Image(); img.decoding = 'async'; img.src = url; await img.decode();
+  const w = img.naturalWidth || 600, h = img.naturalHeight || 600; const s = Math.min(1, maxSide / Math.max(w, h));
+  const c = document.createElement('canvas'); c.width = Math.max(1, Math.round(w * s)); c.height = Math.max(1, Math.round(h * s));
+  c.getContext('2d').drawImage(img, 0, 0, c.width, c.height); return c;
+}
+function scaleCanvas(src, maxSide) {
+  const s = Math.min(1, maxSide / Math.max(src.width, src.height));
+  const c = document.createElement('canvas'); c.width = Math.max(1, Math.round(src.width * s)); c.height = Math.max(1, Math.round(src.height * s));
+  const ctx = c.getContext('2d'); ctx.imageSmoothingQuality = 'high'; ctx.drawImage(src, 0, 0, c.width, c.height); return c;
+}
+function canvasBlob(c, alpha, q = 0.86) {
+  return new Promise((res, rej) => {
+    if (alpha) c.toBlob((b) => { if (b && (b.type === 'image/webp' || b.type === 'image/png')) res(b); else c.toBlob((p) => (p ? res(p) : rej(new Error('blob'))), 'image/png'); }, 'image/webp', 0.9);
+    else c.toBlob((b) => (b ? res(b) : rej(new Error('blob'))), 'image/jpeg', q);
+  });
+}
+async function aiImageBlob(c) {
+  const s = scaleCanvas(c, 640); const o = document.createElement('canvas'); o.width = s.width; o.height = s.height;
+  const x = o.getContext('2d'); x.fillStyle = '#ececea'; x.fillRect(0, 0, o.width, o.height); x.drawImage(s, 0, 0);
+  return canvasBlob(o, false, 0.85);
+}
+function previewURL(c, max = 180) { try { return scaleCanvas(c, max).toDataURL('image/png'); } catch (e) { return ''; } }
+function hasTransparency(c) {
+  try { const d = c.getContext('2d', { willReadFrequently: true }).getImageData(0, 0, c.width, c.height).data; for (let i = 3; i < d.length; i += 16) if (d[i] < 245) return true; } catch (e) { /* ignorieren */ }
+  return false;
+}
+
+/* ================= Freistellen =================
+   Hintergrundfarben am Rand per k-means, dann Flutfüllung vom Rand:
+   ein Pixel zählt zum Hintergrund, wenn er einer Randfarbe ähnelt
+   oder sich nur sanft vom Nachbarn unterscheidet (Schatten, Verläufe). */
+function prepCut(src) {
+  const w = src.width, h = src.height, n = w * h;
+  const d = src.getContext('2d', { willReadFrequently: true }).getImageData(0, 0, w, h).data;
+  const L = new Float32Array(n), A = new Float32Array(n), B = new Float32Array(n);
+  for (let i = 0, p = 0; i < n; i++, p += 4) {
+    const R = SRGB_LIN[d[p]], G = SRGB_LIN[d[p + 1]], Bl = SRGB_LIN[d[p + 2]];
+    const x = labF((R * 0.4124 + G * 0.3576 + Bl * 0.1805) / 0.95047), y = labF(R * 0.2126 + G * 0.7152 + Bl * 0.0722), z = labF((R * 0.0193 + G * 0.1192 + Bl * 0.9505) / 1.08883);
+    L[i] = 116 * y - 16; A[i] = 500 * (x - y); B[i] = 200 * (y - z);
+  }
+  let transparentBorder = 0, borderCount = 0;
+  const bw = Math.max(2, Math.round(Math.min(w, h) * 0.02));
+  const samples = [];
+  const take = (x, y) => { const i = y * w + x; borderCount++; if (d[i * 4 + 3] < 20) transparentBorder++; samples.push([L[i], A[i], B[i]]); };
+  for (let x = 0; x < w; x += 2) for (let t = 0; t < bw; t += 2) { take(x, t); take(x, h - 1 - t); }
+  for (let y = 0; y < h; y += 2) for (let t = 0; t < bw; t += 2) { take(t, y); take(w - 1 - t, y); }
+  const preAlpha = transparentBorder / Math.max(1, borderCount) > 0.5;
+  const cl = kmeans(samples, 3, 8);
+  const bg = cl.filter((c) => c.n / samples.length > 0.12).map((c) => c.lab);
+  let spread = 0; for (const s of samples) { let m = Infinity; for (const c of bg) m = Math.min(m, d2(s, c)); spread += Math.sqrt(m); }
+  spread /= Math.max(1, samples.length);
+  return { w, h, d, L, A, B, bg, spread, preAlpha };
+}
+function runCut(prep, tol, seeds) {
+  const { w, h, L, A, B, d } = prep; const n = w * h;
+  const mark = new Uint8Array(n); // 1 = Hintergrund
+  if (prep.preAlpha) {
+    for (let i = 0; i < n; i++) if (d[i * 4 + 3] < 24) mark[i] = 1;
+  } else {
+    const bgL = [], bgA = [], bgB = [];
+    for (const c of prep.bg) { bgL.push(c[0]); bgA.push(c[1]); bgB.push(c[2]); }
+    for (const s of seeds) { const i = clamp(s.y, 0, h - 1) * w + clamp(s.x, 0, w - 1); bgL.push(L[i]); bgA.push(A[i]); bgB.push(B[i]); }
+    const K = bgL.length;
+    const t2 = tol * tol, g2 = (tol * 2.2) * (tol * 2.2), l2 = (tol * 0.3) * (tol * 0.3);
+    const q = new Int32Array(n); let qh = 0, qt = 0;
+    const dg = (i) => { let m = Infinity; for (let k = 0; k < K; k++) { const a = L[i] - bgL[k], b = A[i] - bgA[k], c = B[i] - bgB[k]; const v = a * a + b * b + c * c; if (v < m) m = v; } return m; };
+    const push = (i, from) => {
+      if (mark[i]) return;
+      const g = dg(i); let ok = g < t2;
+      if (!ok && from >= 0 && g < g2) { const a = L[i] - L[from], b = A[i] - A[from], c = B[i] - B[from]; ok = a * a + b * b + c * c < l2; }
+      if (ok) { mark[i] = 1; q[qt++] = i; }
+    };
+    for (let x = 0; x < w; x++) { push(x, -1); push((h - 1) * w + x, -1); }
+    for (let y = 0; y < h; y++) { push(y * w, -1); push(y * w + w - 1, -1); }
+    for (const s of seeds) { const i = clamp(s.y, 0, h - 1) * w + clamp(s.x, 0, w - 1); if (!mark[i]) { mark[i] = 1; q[qt++] = i; } }
+    while (qh < qt) {
+      const i = q[qh++], x = i % w;
+      if (x > 0) push(i - 1, i); if (x < w - 1) push(i + 1, i);
+      if (i >= w) push(i - w, i); if (i < n - w) push(i + w, i);
+    }
+    // kleine Inseln im Hintergrund entfernen, nur größere Teile behalten
+    const comp = new Int32Array(n).fill(-1); const sizes = []; const stack = new Int32Array(n);
+    for (let s = 0; s < n; s++) {
+      if (mark[s] || comp[s] >= 0) continue;
+      const id = sizes.length; let sp = 0, size = 0; stack[sp++] = s; comp[s] = id;
+      while (sp) {
+        const i = stack[--sp]; size++; const x = i % w;
+        if (x > 0 && !mark[i - 1] && comp[i - 1] < 0) { comp[i - 1] = id; stack[sp++] = i - 1; }
+        if (x < w - 1 && !mark[i + 1] && comp[i + 1] < 0) { comp[i + 1] = id; stack[sp++] = i + 1; }
+        if (i >= w && !mark[i - w] && comp[i - w] < 0) { comp[i - w] = id; stack[sp++] = i - w; }
+        if (i < n - w && !mark[i + w] && comp[i + w] < 0) { comp[i + w] = id; stack[sp++] = i + w; }
+      }
+      sizes.push(size);
+    }
+    let maxS = 0; for (const s of sizes) if (s > maxS) maxS = s;
+    const keepMin = Math.max(maxS * 0.04, n * 0.0015);
+    for (let i = 0; i < n; i++) if (!mark[i] && sizes[comp[i]] < keepMin) mark[i] = 1;
+  }
+  // Kante: 1 px abtragen, dann weich zeichnen
+  const a0 = new Uint8ClampedArray(n);
+  for (let i = 0; i < n; i++) {
+    if (mark[i]) continue; const x = i % w;
+    const edge = (x > 0 && mark[i - 1]) || (x < w - 1 && mark[i + 1]) || (i >= w && mark[i - w]) || (i < n - w && mark[i + w]);
+    a0[i] = edge ? 0 : 255;
+  }
+  const alpha = new Uint8ClampedArray(n);
+  let fg = 0, minX = w, minY = h, maxX = -1, maxY = -1;
+  for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+    let s = 0, c = 0;
+    for (let dy = -1; dy <= 1; dy++) { const yy = y + dy; if (yy < 0 || yy >= h) continue; for (let dx = -1; dx <= 1; dx++) { const xx = x + dx; if (xx < 0 || xx >= w) continue; s += a0[yy * w + xx]; c++; } }
+    let v = s / c; if (prep.preAlpha) v = Math.min(v, d[(y * w + x) * 4 + 3]);
+    alpha[y * w + x] = v;
+    if (v > 16) { fg++; if (x < minX) minX = x; if (x > maxX) maxX = x; if (y < minY) minY = y; if (y > maxY) maxY = y; }
+  }
+  const coverage = fg / n;
+  const ok = maxX >= 0 && coverage > 0.02 && coverage < 0.97;
+  if (maxX < 0) return { ok: false, coverage, canvas: null, bbox: null };
+  const pad = Math.round(Math.max(w, h) * 0.012);
+  const bx = Math.max(0, minX - pad), by = Math.max(0, minY - pad), bw2 = Math.min(w, maxX + pad + 1) - bx, bh2 = Math.min(h, maxY + pad + 1) - by;
+  const out = document.createElement('canvas'); out.width = bw2; out.height = bh2;
+  const octx = out.getContext('2d', { willReadFrequently: true }); const od = octx.createImageData(bw2, bh2);
+  for (let y = 0; y < bh2; y++) for (let x = 0; x < bw2; x++) {
+    const si = (by + y) * w + (bx + x), oi = (y * bw2 + x) * 4;
+    od.data[oi] = d[si * 4]; od.data[oi + 1] = d[si * 4 + 1]; od.data[oi + 2] = d[si * 4 + 2]; od.data[oi + 3] = alpha[si];
+  }
+  octx.putImageData(od, 0, 0);
+  return { ok, coverage, canvas: out, bbox: { x: bx, y: by, w: bw2, h: bh2 } };
+}
+
+/* ================= Gerätespeicher (IndexedDB) =================
+   REGELN FÜR UPDATES – damit Einträge und Bilder bei neuen Versionen erhalten bleiben:
+   1. Datenbankname 'umkleide' und die Speicher items, looks, meta, blobs nie umbenennen oder löschen.
+   2. Neue Speicher nur hinzufügen: Versionsnummer in indexedDB.open erhöhen und in onupgradeneeded
+      nur fehlende Speicher anlegen – nie deleteObjectStore oder clear aufrufen.
+   3. Felder in Teilen, Looks und Profil nur ergänzen, nie umdeuten. Fehlende Felder beim Lesen mit
+      Standardwerten auffüllen (siehe normalizeProfile, basePlace).
+   4. Bild-IDs (loc…) und Teile-IDs nie umschreiben. Looks verweisen auf Teile-IDs.
+   5. Die Seite muss unter derselben Adresse bleiben (gleiche Domain): Der Speicher hängt an der Adresse.
+   6. meta/schema zählt das Datenformat. Nötige Umbauten nur als Schritt "alt → neu", ohne Daten zu löschen. */
+const IDB = {
+  db: null,
+  open() {
+    return new Promise((res, rej) => {
+      let r;
+      try { r = indexedDB.open('umkleide', 1); } catch (e) { rej(e); return; }
+      r.onupgradeneeded = () => { const d = r.result; ['items', 'looks', 'meta', 'blobs'].forEach((n) => { if (!d.objectStoreNames.contains(n)) d.createObjectStore(n); }); };
+      r.onsuccess = () => { this.db = r.result; res(this.db); };
+      r.onerror = () => rej(r.error); r.onblocked = () => rej(new Error('blocked'));
+    });
+  },
+  run(store, mode, fn) {
+    return new Promise((res, rej) => {
+      let t; try { t = this.db.transaction(store, mode); } catch (e) { rej(e); return; }
+      const req = fn(t.objectStore(store));
+      t.oncomplete = () => res(req ? req.result : undefined);
+      t.onerror = () => rej(t.error); t.onabort = () => rej(t.error || new Error('abort'));
+    });
+  },
+  put(store, key, val) { return this.run(store, 'readwrite', (s) => s.put(val, key)); },
+  del(store, key) { return this.run(store, 'readwrite', (s) => s.delete(key)); },
+  clear(store) { return this.run(store, 'readwrite', (s) => s.clear()); },
+  async entries(store) {
+    const keys = await this.run(store, 'readonly', (s) => s.getAllKeys());
+    const vals = await this.run(store, 'readonly', (s) => s.getAll());
+    return keys.map((k, i) => [k, vals[i]]);
+  },
+};
+const isCancel = (e) => !!e && (e.code === 'declined' || e.name === 'AbortError');
+async function saveFile(filename, blob) {
+  if (DL.fn) { await DL.fn.save({ filename, data: blob }); return 'saved'; }
+  let file = null; try { file = new File([blob], filename, { type: blob.type || 'application/octet-stream' }); } catch (e) { file = null; }
+  if (file && navigator.canShare && navigator.share) { let ok = false; try { ok = navigator.canShare({ files: [file] }); } catch (e) { ok = false; } if (ok) { await navigator.share({ files: [file], title: filename }); return 'shared'; } }
+  const url = URL.createObjectURL(blob); const a = document.createElement('a');
+  a.href = url; a.download = filename; document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 5000);
+  return 'downloaded';
+}
+
+/* ================= Zustand ================= */
+function normalizeProfile(p) {
+  const g = p && p.guides;
+  const okG = g && ['lx', 'ly', 'rx', 'ry', 'hip', 'feet'].every((k) => typeof g[k] === 'number' && g[k] >= 0 && g[k] <= 1);
+  return {
+    photoId: (p && p.photoId) || null, photoThumbId: (p && p.photoThumbId) || null,
+    photoW: (p && p.photoW) || 0, photoH: (p && p.photoH) || 0,
+    guides: okG ? { lx: g.lx, ly: g.ly, rx: g.rx, ry: g.ry, hip: g.hip, feet: g.feet } : null,
+    style: (p && typeof p.style === 'string' && p.style) || '',
+    dislikes: Array.isArray(p && p.dislikes) ? p.dislikes.slice(-20) : [],
+    updatedAt: (p && p.updatedAt) || 0,
+  };
+}
+const S = {
+  tab: 'anprobe', items: new Map(), itemsLoaded: false, looks: [], looksLoaded: false,
+  profile: normalizeProfile(null), profileLoaded: false,
+  worn: [], railCat: 'top', sel: null, pendingFit: new Map(),
+  guidesMode: false, guidesDraft: null, guidesBusy: false, useMannequin: false,
+  sf: { cat: 'all', color: null, q: '' },
+  st: { occ: 'alltag', occText: '', colors: [], colorMode: 'haupt', must: [], weather: autoWeather(), loading: false, results: [], error: '', note: '', fehlt: '', source: '', ctl: null, saved: new Set() },
+  notice: '', hasItemsHint: false, hasPhotoHint: false,
+};
+const DEMO = DEMO_DEF.map(([id, key, box, meta]) => {
+  const src = svgURI(DEMO_SVG[key]);
+  return { id, demo: true, src, box, ar: box[2] / box[3], hex: meta.colors.map((c) => COLOR_HEX[c]).filter(Boolean), pattern: 'uni', ...meta };
+});
+const DEMO_MAP = new Map(DEMO.map((d) => [d.id, d]));
+const isDemo = () => S.items.size === 0 && (S.itemsLoaded || !S.hasItemsHint);
+const isLoadingItems = () => S.items.size === 0 && !S.itemsLoaded && S.hasItemsHint;
+const allItems = () => (isDemo() ? DEMO : [...S.items.values()].sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0)));
+const getItem = (id) => S.items.get(id) || (isDemo() ? DEMO_MAP.get(id) : null) || null;
+const imgSrc = (it) => (it.demo ? it.src : Store.url(it.img));
+const thumbSrc = (it) => (it.demo ? it.src : Store.url(it.thumb || it.img));
+const itemName = (it) => it.name || (CAT[it.cat] ? CAT[it.cat].one : 'Teil');
+
+/* ================= Speicher ================= */
+const Store = {
+  mode: 'init', db: null, assets: null, uid: null, canUpload: false, readOnly: false,
+  mem: { items: new Map(), looks: new Map(), profile: null, urls: new Map() },
+  chains: new Map(),
+  url(id) { if (!id) return ''; if (id.startsWith('data:')) return id; if (id.startsWith('mem') || id.startsWith('loc')) return this.mem.urls.get(id) || ''; return '/_blob/' + id; },
+  enqueue(key, fn) { const prev = this.chains.get(key) || Promise.resolve(); const next = prev.catch(() => {}).then(fn); this.chains.set(key, next); return next; },
+  base() { return 'data/users/' + this.uid; },
+  itemRef(id) { return this.db.doc(this.base() + '/closet').collection('items').doc(id); },
+  lookRef(id) { return this.db.doc(this.base() + '/closet').collection('looks').doc(id); },
+  profRef() { return this.db.doc(this.base() + '/profile'); },
+  async upload(blob) {
+    if (this.mode === 'cloud') { const r = await retryOnce(() => this.assets.upload(blob), ['store_unavailable']); return r.id; }
+    if (this.mode === 'local') {
+      const id = 'loc' + rid();
+      try { await IDB.put('blobs', id, blob); } catch (e) { throw { code: 'local_full' }; }
+      this.mem.urls.set(id, URL.createObjectURL(blob)); return id;
+    }
+    const id = 'mem' + rid(); this.mem.urls.set(id, URL.createObjectURL(blob)); return id;
+  },
+  async delAsset(id) {
+    if (!id || id.startsWith('data:')) return;
+    if (id.startsWith('mem') || id.startsWith('loc')) {
+      const u = this.mem.urls.get(id); if (u) URL.revokeObjectURL(u); this.mem.urls.delete(id);
+      if (id.startsWith('loc')) { try { await IDB.del('blobs', id); } catch (e) { /* bleibt liegen, stört nicht */ } }
+      return;
+    }
+    if (this.mode === 'cloud' && this.assets) { try { await this.assets.delete(id); } catch (e) { /* verwaistes Bild stört nicht */ } }
+  },
+  write(key, cloudFn, memFn, localFn) {
+    if (this.mode === 'cloud') return this.enqueue(key, () => retryOnce(cloudFn, ['unavailable'])).catch((e) => { handleWriteError(e); throw e; });
+    if (this.mode === 'local') return this.enqueue(key, async () => { await localFn(); memFn(); }).catch((e) => { toast('Speichern auf diesem Gerät hat nicht geklappt. Ist der Speicher voll?', 4200); throw e; });
+    memFn(); return Promise.resolve();
+  },
+  putItem(id, data) { return this.write('i/' + id, () => this.itemRef(id).set(data), () => { this.mem.items.set(id, clone(data)); emitMem('items'); }, () => IDB.put('items', id, clone(data))); },
+  patchItem(id, patch) {
+    return this.write('i/' + id, () => this.itemRef(id).update(patch), () => { const cur = this.mem.items.get(id); if (cur) { this.mem.items.set(id, { ...cur, ...clone(patch) }); emitMem('items'); } },
+      () => { const cur = this.mem.items.get(id); return cur ? IDB.put('items', id, { ...cur, ...clone(patch) }) : Promise.resolve(); });
+  },
+  delItem(id) { return this.write('i/' + id, () => this.itemRef(id).delete(), () => { this.mem.items.delete(id); emitMem('items'); }, () => IDB.del('items', id)); },
+  putLook(id, data) { return this.write('l/' + id, () => this.lookRef(id).set(data), () => { this.mem.looks.set(id, clone(data)); emitMem('looks'); }, () => IDB.put('looks', id, clone(data))); },
+  delLook(id) { return this.write('l/' + id, () => this.lookRef(id).delete(), () => { this.mem.looks.delete(id); emitMem('looks'); }, () => IDB.del('looks', id)); },
+  saveProfile(p) { return this.write('p', () => this.profRef().set(p), () => { this.mem.profile = clone(p); emitMem('profile'); }, () => IDB.put('meta', 'profile', clone(p))); },
+};
+async function retryOnce(fn, codes) {
+  try { return await fn(); }
+  catch (e) { if (e && codes.includes(e.code)) { await sleep(500 + Math.random() * 700); return fn(); } throw e; }
+}
+function handleWriteError(e) {
+  const c = e && e.code;
+  if (c === 'quota_exceeded') toast('Der Speicher ist voll. Lösch ein paar Teile oder Looks.', 4500);
+  else if (c === 'invalid_argument') { Store.readOnly = true; toast('Speichern ist für dich hier nicht erlaubt.', 4000); }
+  else if (c === 'resource_exhausted') toast('Gerade zu viele Änderungen auf einmal. Kurz warten.', 3500);
+  else if (c === 'revoked') toast('Der Zugriff wurde beendet. Lade die Seite neu.', 4000);
+  else toast('Speichern hat nicht geklappt. Versuch es gleich noch einmal.', 3500);
+}
+function emitMem(kind) {
+  queueMicrotask(() => {
+    if (kind === 'items') onItems([...Store.mem.items].map(([id, d]) => ({ id, ...clone(d) })), true);
+    if (kind === 'looks') onLooks([...Store.mem.looks].map(([id, d]) => ({ id, ...clone(d) })));
+    if (kind === 'profile') onProfile(Store.mem.profile);
+  });
+}
+function onItems(list, definitive) {
+  S.items = new Map(list.map((it) => [it.id, it]));
+  if (definitive || list.length) S.itemsLoaded = true;
+  LS.set('hasItems', S.items.size > 0);
+  reconcileWorn();
+  dataChanged('items');
+}
+function onLooks(list) {
+  S.looks = list.filter((l) => Array.isArray(l.ids)).sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+  S.looksLoaded = true; dataChanged('looks');
+}
+function onProfile(p) {
+  S.profile = normalizeProfile(p); S.profileLoaded = true;
+  LS.set('hasPhoto', !!S.profile.photoId);
+  dataChanged('profile');
+}
+function saveProfile(patch) {
+  S.profile = { ...S.profile, ...patch, updatedAt: Date.now() };
+  dataChanged('profile');
+  return Store.saveProfile(clone(S.profile));
+}
+function subscribeCloud() {
+  const base = Store.base();
+  const fail = (e) => { if (e && e.code === 'revoked') S.notice = 'Der Zugriff auf deinen Schrank wurde beendet. Lade die Seite neu.'; else S.notice = 'Verbindung zum Speicher unterbrochen. Lade die Seite neu, falls nichts mehr gespeichert wird.'; renderNotice(); };
+  Store.db.doc(base + '/profile').onSnapshot((s) => onProfile(s.exists ? s.data() : null), fail);
+  Store.db.doc(base + '/closet').collection('items').limit(1000).onSnapshot((s) => onItems(s.docs.map((d) => ({ id: d.id, ...d.data() })), !s.metadata.fromCache), fail);
+  Store.db.doc(base + '/closet').collection('looks').limit(500).onSnapshot((s) => onLooks(s.docs.map((d) => ({ id: d.id, ...d.data() }))), fail);
+}
+
+/* ================= KI ================= */
+const AI = { fn: null, images: false, maxImages: 1, off: false };
+const DL = { fn: null };
+const AI_PERMANENT = new Set(['not_granted', 'sampling_disabled', 'not_declared', 'capability_disabled', 'capability_removed']);
+const aiOn = () => !!AI.fn && !AI.off;
+const aiImagesOn = () => aiOn() && AI.images;
+function aiErrorText(code) {
+  switch (code) {
+    case 'not_granted': return 'Die KI ist für diese Ansicht nicht freigegeben.';
+    case 'sampling_disabled': case 'not_declared': case 'capability_disabled': case 'capability_removed': return 'Die KI ist hier nicht verfügbar.';
+    case 'rate_limited': return 'Gerade zu viele Anfragen. Versuch es in einer Minute noch einmal.';
+    case 'session_expired': return 'Bitte melde dich neu an.';
+    case 'image_rejected': return 'Ein Foto konnte die KI nicht lesen.';
+    case 'images_unavailable': return 'Fotos kann die KI hier nicht ansehen.';
+    case 'refused': return 'Dazu kam keine Antwort. Beschreib den Anlass etwas anders.';
+    case 'prompt_too_large': return 'Das war zu viel auf einmal. Filtere den Schrank oder wähle weniger Teile.';
+    case 'invalid_json': case 'empty_completion': return 'Die Antwort war unvollständig. Bitte noch einmal versuchen.';
+    default: return 'Die Verbindung ist abgebrochen. Bitte noch einmal versuchen.';
+  }
+}
+function aiFail(e) {
+  const code = e && e.code;
+  if (AI_PERMANENT.has(code)) AI.off = true;
+  if (code === 'images_unavailable') AI.images = false;
+  return code;
+}
+function normalizeAIItem(o) {
+  if (!o || typeof o !== 'object') return null;
+  const kat = String(o.kat || o.kategorie || '').toLowerCase().trim();
+  const cat = AI_CAT[kat] || null;
+  const colors = uniq(arr(o.farben).map(normColorName).filter(Boolean)).slice(0, 3);
+  const style = uniq(arr(o.stil).map((s) => String(s).toLowerCase().trim()).filter((s) => STYLES.includes(s))).slice(0, 3);
+  const season = uniq(arr(o.saison).map((s) => String(s).toLowerCase().trim().replace('fruehling', 'frühling')).filter((s) => SEASON_KEYS.includes(s)));
+  const dcN = Math.round(Number(o.dresscode)); const dc = dcN >= 1 && dcN <= 5 ? dcN : null;
+  const len = LEN_L[o.laenge] ? o.laenge : null;
+  const zone = ZONE_L[o.zone] ? o.zone : null;
+  return { cat, type: str(o.typ, 40), name: str(o.name, 48), colors, style, season, dc, len, zone, pattern: str(o.muster, 24), material: str(o.material, 30) };
+}
+async function aiAnalyze(canvases) {
+  const blobs = await Promise.all(canvases.map((c) => aiImageBlob(c)));
+  const n = canvases.length;
+  const prompt = [
+    `Du bekommst ${n} Foto${n > 1 ? 's' : ''} einzelner Kleidungsstücke aus dem Kleiderschrank einer Person (Bild 1${n > 1 ? ' bis ' + n : ''}, in dieser Reihenfolge). Bestimme für jedes Bild das Kleidungsstück.`,
+    `Antworte nur mit einem JSON-Array mit genau ${n} Objekt${n > 1 ? 'en' : ''} in Bildreihenfolge:`,
+    '[{"kat":"oben|unten|kleid|jacke|schuhe|tasche|accessoire","typ":"z. B. T-Shirt, Bluse, Jeans, Rock, Sneaker, Clutch, Gürtel","name":"kurzer deutscher Name, max. 4 Wörter, z. B. Weiße Leinenbluse","farben":["1–3 Farben aus der Liste, Hauptfarbe zuerst"],"muster":"uni|gestreift|kariert|geblümt|gepunktet|Print|Struktur","stil":["1–3 aus: casual, sportlich, elegant, business, klassisch, minimalistisch, streetwear, boho, romantisch, festlich, edgy"],"dresscode":1,"saison":["frühling","sommer","herbst","winter"],"laenge":"kurz|knie|midi|lang oder null","zone":"kopf|augen|ohr|hals|taille|handgelenk|hand oder null","material":"falls erkennbar, sonst null"}]',
+    'Farbliste: schwarz, anthrazit, grau, silber, weiß, creme, beige, camel, braun, khaki, oliv, grün, türkis, hellblau, blau, denim, navy, lila, flieder, rosa, pink, rot, bordeaux, orange, senf, gelb, gold, bunt.',
+    'Dresscode: 1 = leger, 2 = Smart Casual, 3 = Business, 4 = Cocktail/festlich, 5 = Abendgarderobe.',
+    '"kat": oben = Shirts, Blusen, Hemden, Pullover, Tops; unten = Hosen, Jeans, Shorts, Röcke; kleid = Kleider, Jumpsuits, Overalls; jacke = Jacken, Mäntel, Blazer, Cardigans.',
+    '"laenge" nur bei Kleidern, Röcken, Hosen und Mänteln, sonst null. "zone" nur bei Accessoires: wo am Körper es getragen wird.',
+    'Ist auf einem Bild kein Kleidungsstück zu erkennen, setze "kat": null.',
+  ].join('\n');
+  const res = await AI.fn.json(prompt, { images: blobs, modelTier: 'default' });
+  const list = Array.isArray(res) ? res : Array.isArray(res && res.teile) ? res.teile : Array.isArray(res && res.items) ? res.items : null;
+  if (!list) throw { code: 'invalid_json' };
+  return canvases.map((_, i) => normalizeAIItem(list[i]));
+}
+async function aiBody(blob) {
+  const prompt = [
+    'Das Bild zeigt eine Person, möglichst als Ganzkörperfoto. Bestimme diese Punkte als Anteile der Bildbreite (x) und Bildhöhe (y), jeweils von 0 bis 1, gemessen von links oben:',
+    '- "ls": die Schulter, die im Bild links liegt (äußere Schulterkante), als [x, y]',
+    '- "rs": die Schulter, die im Bild rechts liegt, als [x, y]',
+    '- "huefte": die Höhe, auf der ein Hosenbund sitzen würde (etwa Hüftknochen), als y',
+    '- "fuesse": die Höhe der Fußsohlen, als y',
+    'Antworte nur mit JSON: {"ls":[0.4,0.22],"rs":[0.6,0.22],"huefte":0.47,"fuesse":0.95}. Ist keine Person zu erkennen: {"fehler":"keine Person"}.',
+  ].join('\n');
+  const r = await AI.fn.json(prompt, { images: [blob], modelTier: 'default' });
+  const num = (v) => (typeof v === 'number' && v >= 0 && v <= 1 ? v : null);
+  if (!r || r.fehler || !Array.isArray(r.ls) || !Array.isArray(r.rs)) return null;
+  let ls = [num(r.ls[0]), num(r.ls[1])], rs = [num(r.rs[0]), num(r.rs[1])];
+  const hip = num(r.huefte), feet = num(r.fuesse);
+  if ([...ls, ...rs, hip, feet].some((v) => v == null)) return null;
+  if (ls[0] > rs[0]) [ls, rs] = [rs, ls];
+  const sy = (ls[1] + rs[1]) / 2;
+  if (!(hip > sy + 0.04 && feet > hip + 0.05)) return null;
+  return { lx: ls[0], ly: ls[1], rx: rs[0], ry: rs[1], hip, feet };
+}
+
+/* ================= Körper & Platzierung ================= */
+function defaultGuidesFor(W, H) {
+  const sw = clamp(0.25 * (H / W) * 0.9, 0.15, 0.6);
+  return { lx: 0.5 - sw / 2, ly: 0.21, rx: 0.5 + sw / 2, ry: 0.21, hip: 0.47, feet: 0.95 };
+}
+function photoInfo() {
+  const p = S.profile;
+  if (p.photoId && p.photoW && p.photoH && !S.useMannequin) {
+    const guides = S.guidesMode && S.guidesDraft ? S.guidesDraft : p.guides || defaultGuidesFor(p.photoW, p.photoH);
+    return { src: Store.url(p.photoId), thumb: Store.url(p.photoThumbId || p.photoId), W: p.photoW, H: p.photoH, guides, real: true };
+  }
+  return { src: MANNEQUIN_URL, thumb: MANNEQUIN_URL, W: 600, H: 1000, guides: MANNEQUIN_GUIDES, real: false };
+}
+const MANNEQUIN_P = { W: 600, H: 1000, guides: MANNEQUIN_GUIDES };
+function bodyPx(P) {
+  const g = P.guides;
+  const lx = g.lx * P.W, ly = g.ly * P.H, rx = g.rx * P.W, ry = g.ry * P.H;
+  const sy = (ly + ry) / 2, cx = (lx + rx) / 2, sw = Math.max(8, Math.hypot(rx - lx, ry - ly));
+  const hy = g.hip * P.H, fy = g.feet * P.H;
+  return { cx, sy, hy, fy, sw, torso: Math.max(10, hy - sy), leg: Math.max(10, fy - hy) };
+}
+function guessZone(type) {
+  const t = String(type || '').toLowerCase();
+  if (/hut|mütze|cap|kappe|beanie|stirnband|haarreif/.test(t)) return 'kopf';
+  if (/brille/.test(t)) return 'augen';
+  if (/ohrring|ohrstecker|creole/.test(t)) return 'ohr';
+  if (/kette|collier|schal|tuch|krawatte|fliege|anhänger/.test(t)) return 'hals';
+  if (/gürtel/.test(t)) return 'taille';
+  if (/uhr|armband|armreif|ring/.test(t)) return 'handgelenk';
+  if (/clutch|handschuh/.test(t)) return 'hand';
+  return 'sonst';
+}
+const LEN_DRESS = { kurz: 0.3, knie: 0.58, midi: 0.76, lang: 0.97 };
+const LEN_BOTTOM = { kurz: 0.34, knie: 0.58, midi: 0.76, lang: 1.0 };
+const ZONE_PLACE = { // [dx in Schulterbreiten, dy in Rumpflängen, Breite in Schulterbreiten, Bezug]
+  kopf: [0, -0.66, 0.62, 's'], augen: [0, -0.45, 0.45, 's'], ohr: [0, -0.36, 0.5, 's'], hals: [0, 0.1, 0.5, 's'],
+  taille: [0, 0.03, 0.9, 'h'], handgelenk: [-0.62, 0.27, 0.16, 'h'], hand: [-0.66, 0.42, 0.45, 'h'], sonst: [0.62, 0.35, 0.32, 's'],
+};
+const ZONE_Z = { kopf: 80, augen: 85, ohr: 82, hals: 45, taille: 40, handgelenk: 65, hand: 75, sonst: 60 };
+function basePlace(it, B) {
+  const ar = it.ar > 0 ? it.ar : 1; const t = String(it.type || '').toLowerCase();
+  let cx = B.cx, cy = null, top = 0, h = 0, w = 0;
+  if (it.cat === 'top') {
+    h = B.torso * 1.25; top = B.sy - B.torso * 0.12; w = h * ar;
+    if (w > B.sw * 2.6) { w = B.sw * 2.6; h = w / ar; }
+  } else if (it.cat === 'outer') {
+    const long = it.len === 'lang' || it.len === 'midi' || it.len === 'knie' || /mantel|trench|parka/.test(t);
+    h = long ? B.torso * 1.2 + B.leg * (LEN_DRESS[it.len] || 0.62) : B.torso * 1.45; top = B.sy - B.torso * 0.12; w = h * ar;
+    if (w > B.sw * 2.8) { w = B.sw * 2.8; h = w / ar; }
+  } else if (it.cat === 'dress') {
+    const L = LEN_DRESS[it.len] != null ? LEN_DRESS[it.len] : /jumpsuit|overall|einteiler/.test(t) ? 0.97 : 0.62;
+    top = B.sy - B.torso * 0.1; h = B.hy - top + B.leg * L; w = h * ar;
+    if (w > B.sw * 2.6) { w = B.sw * 2.6; h = w / ar; }
+  } else if (it.cat === 'bottom') {
+    const L = LEN_BOTTOM[it.len] != null ? LEN_BOTTOM[it.len] : /shorts|bermuda/.test(t) ? 0.34 : /rock/.test(t) ? 0.58 : 1.0;
+    top = B.hy - B.leg * 0.02; h = B.leg * (L + 0.02); w = h * ar;
+    if (w > B.sw * 1.8) { w = B.sw * 1.8; h = w / ar; }
+  } else if (it.cat === 'shoes') {
+    w = B.sw * 0.78; h = w / ar; if (h > B.leg * 0.22) { h = B.leg * 0.22; w = h * ar; }
+    top = B.fy + B.leg * 0.012 - h;
+  } else if (it.cat === 'bag') {
+    w = B.sw * 0.62; h = w / ar; if (h > B.torso * 0.9) { h = B.torso * 0.9; w = h * ar; }
+    cx = B.cx + B.sw * 0.86; cy = B.hy + B.torso * 0.42;
+  } else {
+    const z = ZONE_PLACE[it.zone || guessZone(it.type)] || ZONE_PLACE.sonst;
+    w = B.sw * z[2]; h = w / ar; if (h > B.torso * 0.8) { h = B.torso * 0.8; w = h * ar; }
+    cx = B.cx + B.sw * z[0]; cy = (z[3] === 'h' ? B.hy : B.sy) + B.torso * z[1];
+  }
+  if (cy == null) cy = top + h / 2;
+  return { cx, cy, w, h };
+}
+function zBase(it) { if (it.cat === 'acc') return ZONE_Z[it.zone || guessZone(it.type)] || 60; return (CAT[it.cat] || { z: 40 }).z; }
+function fitOf(id) { const f = S.pendingFit.get(id) || (getItem(id) || {}).fit; return f ? { ...f } : {}; }
+function layerGeom(it, P, fitOverride) {
+  const B = bodyPx(P); const b = basePlace(it, B);
+  const f = fitOverride || S.pendingFit.get(it.id) || it.fit || {};
+  const s = f.s > 0 ? f.s : 1;
+  return { cx: b.cx + (f.dx || 0) * B.sw, cy: b.cy + (f.dy || 0) * B.sw, w: b.w * s, h: b.h * s, r: f.r || 0, flip: !!f.flip, z: zBase(it) * 10 + (f.z || 0) };
+}
+const pc = (v) => (+v).toFixed(3) + '%';
+function layerStyle(g, P, withFlip = true) {
+  return `left:${pc(((g.cx - g.w / 2) / P.W) * 100)};top:${pc(((g.cy - g.h / 2) / P.H) * 100)};width:${pc((g.w / P.W) * 100)};height:${pc((g.h / P.H) * 100)};z-index:${Math.round(g.z)};transform:rotate(${(+g.r).toFixed(2)}deg)${withFlip && g.flip ? ' scaleX(-1)' : ''}`;
+}
+// Beispielteile sitzen auf der Puppe genau dort, wo sie gezeichnet sind
+DEMO.forEach((it) => {
+  const B = bodyPx(MANNEQUIN_P); const b = basePlace(it, B);
+  const s = it.box[2] / b.w;
+  it.fit = { dx: (it.box[0] + it.box[2] / 2 - b.cx) / B.sw, dy: (it.box[1] + it.box[3] / 2 - b.cy) / B.sw, s, r: 0 };
+});
+function miniStageHTML(ids, cls = '') {
+  const P = photoInfo();
+  const layers = ids.map(getItem).filter(Boolean).map((it) => ({ it, g: layerGeom(it, P) })).sort((a, b) => a.g.z - b.g.z);
+  return `<div class="mini ${cls}" style="aspect-ratio:${P.W} / ${P.H}"><img class="mini-photo" src="${esc(P.thumb)}" alt="" loading="lazy">${layers.map(({ it, g }) => `<img class="ly" src="${esc(thumbSrc(it))}" style="${layerStyle(g, P)}" alt="" loading="lazy">`).join('')}</div>`;
+}
+
+/* ================= Rahmen ================= */
+function renderTabs() {
+  const ICON = { anprobe: I.mirror, stylist: I.spark, schrank: I.hanger, looks: I.heart };
+  $('#tabbar').innerHTML = TABS.map((t) => `<button class="tab" role="tab" data-act="tab" data-tab="${t}" aria-selected="${S.tab === t}">${ICON[t]}<span>${TITLES[t]}</span></button>`).join('');
+}
+function renderHeader() {
+  $('#viewTitle').textContent = TITLES[S.tab];
+  let a = '';
+  if (S.tab === 'anprobe') a = `<button class="icon-btn" data-act="save-look" aria-label="Look speichern">${I.heart}</button><button class="icon-btn" data-act="mirror-menu" aria-label="Mehr Optionen">${I.more}</button>`;
+  if (S.tab === 'schrank' && Store.canUpload) a = `<button class="btn btn-primary btn-sm" data-act="add-items">${I.plus}Hinzufügen</button>`;
+  if (S.tab === 'stylist' && aiOn()) a = `<button class="icon-btn" data-act="edit-style" aria-label="Deinen Stil beschreiben">${I.edit}</button>`;
+  $('#topActions').innerHTML = a;
+}
+function renderNotice() {
+  const n = $('#notice'); const hide = !S.notice || LS.get('noticeHidden', '') === S.notice;
+  n.innerHTML = S.notice ? `<span>${esc(S.notice)}</span><button class="notice-x" data-act="notice-x" aria-label="Hinweis ausblenden">${I.x}</button>` : ''; n.hidden = hide;
+}
+function switchTab(t, opts = {}) {
+  if (!TABS.includes(t)) t = 'anprobe';
+  if (S.tab !== t && S.guidesMode) exitGuides(false);
+  S.tab = t; LS.set('tab', t);
+  $$('.tab').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.tab === t)));
+  $$('.view').forEach((v) => { v.hidden = v.dataset.view !== t; });
+  renderHeader(); renderView(t);
+  if (opts.top) { const v = $('#view-' + t); if (v) v.scrollTop = 0; }
+}
+function renderView(t = S.tab) {
+  if (t === 'anprobe') renderMirror();
+  else if (t === 'stylist') renderStylist();
+  else if (t === 'schrank') renderSchrank();
+  else if (t === 'looks') renderLooks();
+}
+function dataChanged(kind) {
+  if (S.tab === 'anprobe') { if (kind !== 'looks') renderMirror(); }
+  else if (S.tab === 'stylist') { if (kind !== 'looks' || !S.st.loading) renderStylist(); }
+  else if (S.tab === 'schrank') { if (kind === 'items' || kind === 'profile') renderSchrank(); }
+  else if (S.tab === 'looks') renderLooks();
+  if (kind === 'items' || kind === 'profile') renderHeader();
+}
+const demoBanner = () => `<div class="banner"><p><b>Das sind Beispielteile.</b> Fotografiere deine eigene Kleidung – sobald das erste Teil gespeichert ist, verschwinden die Beispiele.</p>${Store.canUpload ? `<button class="btn btn-sm btn-primary" data-act="add-items">${I.camera}Eigene Fotos</button>` : ''}</div>`;
+const dotsHTML = (it) => `<span class="dots">${(it.colors || []).slice(0, 3).map((c) => (c === 'bunt' ? '<i class="bunt"></i>' : `<i style="${swatchStyle(c)}"></i>`)).join('')}</span>`;
+
+/* ================= Anprobe ================= */
+let curP = photoInfo();
+const stageEl = () => $('#stage');
+function reconcileWorn() {
+  if (!S.itemsLoaded && S.hasItemsHint) return; // erst abgleichen, wenn der Schrank geladen ist
+  const before = S.worn.length;
+  S.worn = S.worn.filter((id) => getItem(id));
+  if (!S.worn.length && isDemo() && !LS.get('demoTouched', false)) S.worn = DEMO_OUTFIT.slice();
+  if (S.sel && !S.worn.includes(S.sel)) S.sel = null;
+  S.st.must = S.st.must.filter((id) => getItem(id));
+  if (before !== S.worn.length) persistWorn();
+}
+function persistWorn() { if (!isDemo()) LS.set('worn', S.worn); }
+function sizeStage() {
+  const wrap = $('#stageWrap'); if (!wrap) return;
+  const cw = wrap.clientWidth, ch = wrap.clientHeight; if (!cw || !ch) return;
+  const ar = curP.W / curP.H; const pad = 8;
+  let w = cw - pad * 2, h = w / ar; if (h > ch - pad * 2) { h = ch - pad * 2; w = h * ar; }
+  const st = stageEl(); st.style.width = Math.max(10, Math.floor(w)) + 'px'; st.style.height = Math.max(10, Math.floor(h)) + 'px';
+}
+function renderMirror() {
+  curP = photoInfo();
+  const ph = $('#stagePhoto');
+  if (ph.dataset.src !== curP.src) { ph.dataset.src = curP.src; ph.classList.add('loading'); ph.onload = () => ph.classList.remove('loading'); ph.onerror = () => ph.classList.remove('loading'); ph.src = curP.src; }
+  if (!curP.real && S.hasPhotoHint && !S.profileLoaded) ph.classList.add('loading');
+  sizeStage(); updateLayers(); renderGuides(); renderRail(); renderTray(); renderStageUi();
+}
+const alphaMaps = new Map(); const AM = 48;
+function buildAlpha(img) {
+  const key = img.currentSrc || img.src; if (alphaMaps.has(key)) return;
+  try { const c = document.createElement('canvas'); c.width = AM; c.height = AM; const x = c.getContext('2d', { willReadFrequently: true }); x.drawImage(img, 0, 0, AM, AM); const d = x.getImageData(0, 0, AM, AM).data; const a = new Uint8Array(AM * AM); for (let i = 0; i < a.length; i++) a[i] = d[i * 4 + 3]; alphaMaps.set(key, a); } catch (e) { /* ohne Alpha: Rechteck zählt */ }
+}
+function updateLayers() {
+  const box = $('#layers'); const existing = new Map($$('.layer', box).map((el) => [el.dataset.id, el]));
+  for (const id of S.worn) {
+    const it = getItem(id); if (!it) continue;
+    const src = imgSrc(it); let el = existing.get(id);
+    if (!el) {
+      el = document.createElement('img'); el.className = 'layer enter'; el.dataset.id = id; el.alt = itemName(it); el.draggable = false;
+      el.addEventListener('load', () => buildAlpha(el)); el.addEventListener('animationend', () => el.classList.remove('enter'));
+      el.src = src; box.appendChild(el);
+    } else { existing.delete(id); if (el.getAttribute('src') !== src) el.src = src; }
+    el.style.cssText = layerStyle(layerGeom(it, curP), curP);
+  }
+  existing.forEach((el) => el.remove());
+  updateSelBox();
+}
+function updateLayer(id) {
+  const it = getItem(id); const el = $(`.layer[data-id="${cssId(id)}"]`);
+  if (it && el) el.style.cssText = layerStyle(layerGeom(it, curP), curP);
+  if (id === S.sel) updateSelBox();
+}
+function updateSelBox() {
+  const sb = $('#selBox'); const it = S.sel && getItem(S.sel);
+  if (!it || S.guidesMode || !S.worn.includes(S.sel)) { sb.hidden = true; return; }
+  const g = layerGeom(it, curP); sb.style.cssText = layerStyle({ ...g, z: 2000 }, curP, false); sb.hidden = false;
+  $('#selHandle').innerHTML = I.rotate;
+}
+function renderRail() {
+  const wornCats = new Set(S.worn.map((id) => (getItem(id) || {}).cat));
+  $('#rail').innerHTML = CATS.map((c) => `<button class="rail-btn" data-act="rail" data-cat="${c.k}" aria-pressed="${S.railCat === c.k}" aria-label="${esc(c.label)}">${c.icon}<span>${c.rail}</span>${wornCats.has(c.k) ? '<span class="dot"></span>' : ''}</button>`).join('');
+}
+function renderTray() {
+  const cat = CAT[S.railCat]; $('#trayTitle').textContent = cat.label;
+  const row = $('#trayRow');
+  if (isLoadingItems()) { $('#traySub').textContent = 'wird geladen…'; row.innerHTML = '<div class="tile skel"></div>'.repeat(5); return; }
+  const list = allItems().filter((it) => it.cat === S.railCat);
+  $('#traySub').textContent = !S.worn.length && list.length ? 'Tippe ein Teil an, um es anzuziehen' : list.length === 1 ? '1 Teil' : `${list.length} Teile`;
+  const add = Store.canUpload ? `<button class="tile tile-add" data-act="add-items" data-cat="${cat.k}" aria-label="${esc(cat.one)} hinzufügen">${I.plus}<span>Neu</span></button>` : '';
+  row.innerHTML = list.map((it) => { const on = S.worn.includes(it.id); return `<button class="tile" data-act="wear" data-id="${esc(it.id)}" aria-pressed="${on}" aria-label="${esc(itemName(it))}"><img src="${esc(thumbSrc(it))}" alt="" loading="lazy">${on ? `<span class="check">${I.check}</span>` : ''}</button>`; }).join('') + add;
+}
+function renderStageUi() {
+  const ui = $('#stageUi');
+  if (S.guidesMode) {
+    ui.innerHTML = `<div class="g-help">Zieh die gelben Punkte auf deine <b>Schultern</b> und die Linien auf <b>Hosenbund</b> und <b>Fußsohlen</b>. Die Kleidung richtet sich danach.</div>
+      <div class="g-actions">${aiImagesOn() ? `<button class="btn" data-act="guides-auto" ${S.guidesBusy ? 'disabled' : ''}>${I.spark}${S.guidesBusy ? 'Erkenne…' : 'Automatisch'}</button>` : ''}<button class="btn btn-primary" data-act="guides-done">Fertig</button></div>`;
+    return;
+  }
+  let h = '';
+  const selOn = !!(S.sel && getItem(S.sel));
+  if (!curP.real && !selOn) h += `<button class="stage-chip" data-act="pick-photo">${I.camera}Foto von dir</button>`;
+  if (isDemo() && !selOn) h += '<span class="stage-badge">Beispielteile</span>';
+  if (selOn) {
+    h += `<div class="layerbar" role="toolbar" aria-label="Ausgewähltes Teil"><button data-act="ly-up" aria-label="Nach vorne">${I.up}</button><button data-act="ly-down" aria-label="Nach hinten">${I.down}</button><button data-act="ly-flip" aria-label="Spiegeln">${I.flip}</button><button data-act="ly-reset" aria-label="Position zurücksetzen">${I.reset}</button><button data-act="ly-off" aria-label="Ausziehen">${I.undress}</button></div>`;
+  }
+  const label = S.sel ? 'Mit diesem Teil stylen' : S.worn.length ? 'Passend ergänzen' : 'Outfit vorschlagen';
+  h += `<button class="btn btn-magic stage-fab" data-act="style-rest">${I.spark}${label}</button>`;
+  ui.innerHTML = h;
+}
+function renderGuides() {
+  const el = $('#guides');
+  if (!S.guidesMode || !S.guidesDraft) { el.hidden = true; el.innerHTML = ''; return; }
+  el.hidden = false;
+  const g = S.guidesDraft; const st = stageEl(); const sw = st.clientWidth, sh = st.clientHeight;
+  const x1 = g.lx * sw, y1 = g.ly * sh, x2 = g.rx * sw, y2 = g.ry * sh;
+  const len = Math.hypot(x2 - x1, y2 - y1), ang = (Math.atan2(y2 - y1, x2 - x1) * 180) / Math.PI, sy = (g.ly + g.ry) / 2;
+  el.innerHTML = `<div class="g-tape" style="top:${pc(sy * 100)};height:${pc(Math.max(0, g.feet - sy) * 100)}"></div>
+    <div class="g-sline" style="left:${x1}px;top:${y1}px;width:${len}px;transform:rotate(${ang}deg)"></div>
+    <div class="g-line" style="top:${pc(g.hip * 100)}"></div><div class="g-line" style="top:${pc(g.feet * 100)}"></div>
+    <button class="g-tab" data-g="hip" style="top:${pc(g.hip * 100)}">Bund</button>
+    <button class="g-tab" data-g="feet" style="top:${pc(g.feet * 100)}">Füße</button>
+    <button class="g-dot" data-g="ls" style="left:${pc(g.lx * 100)};top:${pc(g.ly * 100)}" aria-label="Schulter links"></button>
+    <button class="g-dot" data-g="rs" style="left:${pc(g.rx * 100)};top:${pc(g.ry * 100)}" aria-label="Schulter rechts"></button>`;
+}
+function enterGuides() {
+  const p = S.profile; if (!p.photoId || S.useMannequin) return;
+  S.guidesDraft = { ...(p.guides || defaultGuidesFor(p.photoW, p.photoH)) }; S.guidesMode = true; S.sel = null;
+  switchTab('anprobe');
+}
+function exitGuides(save) {
+  if (save && S.guidesDraft) saveProfile({ guides: { ...S.guidesDraft } }).catch(() => {});
+  S.guidesMode = false; S.guidesDraft = null; S.guidesBusy = false;
+  if (S.tab === 'anprobe') renderMirror();
+}
+function toggleWear(id) {
+  const it = getItem(id); if (!it) return;
+  if (isDemo()) LS.set('demoTouched', true);
+  if (S.worn.includes(id)) { S.worn = S.worn.filter((x) => x !== id); if (S.sel === id) S.sel = null; }
+  else {
+    const zoneOf = (o) => o.zone || guessZone(o.type);
+    S.worn = S.worn.filter((x) => {
+      const o = getItem(x); if (!o) return false;
+      if (it.cat === 'dress') return !['top', 'bottom', 'dress'].includes(o.cat);
+      if (it.cat === 'top' || it.cat === 'bottom') return o.cat !== it.cat && o.cat !== 'dress';
+      if (it.cat === 'acc') return !(o.cat === 'acc' && zoneOf(o) === zoneOf(it) && zoneOf(it) !== 'sonst');
+      return o.cat !== it.cat;
+    });
+    S.worn.push(id);
+  }
+  persistWorn(); renderMirror();
+}
+function selectLayer(id) { if (S.sel === id) return; S.sel = id; updateSelBox(); renderStageUi(); }
+
+/* ================= Stylist ================= */
+function renderStylist() {
+  const v = $('#view-stylist .view-pad'); const st = S.st;
+  if (isLoadingItems()) { v.innerHTML = '<div class="skel" style="height:120px"></div><div class="skel" style="height:220px"></div>'; return; }
+  const must = st.must.map(getItem).filter(Boolean);
+  const nLooks = S.looks.length, nNo = (S.profile.dislikes || []).length;
+  const colorsSel = st.colors.length ? 'Gewählt: ' + st.colors.map(cap).join(', ') : 'Optional – tippe bis zu drei Farben an.';
+  v.innerHTML = `${isDemo() ? demoBanner() : ''}
+  ${aiOn() ? '' : '<p class="note">Ohne KI kombiniert der Stylist nach festen Regeln: Anlass, Dresscode, Farben, Wetter und deine Pflichtteile.</p>'}
+  ${!aiOn() ? '' : `<section class="style-card"><div><span class="label">Dein Stil</span><p class="style-text">${S.profile.style ? esc(S.profile.style) : 'Noch nicht beschrieben.'}</p><span class="small muted">${S.profile.style ? '' : 'Erzähl kurz, was du gern trägst – die Vorschläge werden persönlicher. '}Lernt aus ${nLooks} gespeicherten Look${nLooks === 1 ? '' : 's'}${nNo ? ` und ${nNo} Absage${nNo === 1 ? '' : 'n'}` : ''}.</span></div><button class="btn btn-sm" data-act="edit-style">${I.edit}Bearbeiten</button></section>`}
+  <section class="fset" aria-labelledby="lbOcc"><h2 class="label" id="lbOcc">Anlass</h2>
+    <div class="chips">${OCCS.map((o) => `<button class="chip" data-act="st-occ" data-k="${o.k}" aria-pressed="${st.occ === o.k}">${o.label}</button>`).join('')}</div>
+    <label class="vh" for="occText">Anlass selbst beschreiben</label><input id="occText" class="field" placeholder="Oder beschreib ihn: z. B. Taufe im Garten, 14 Uhr" value="${esc(st.occText)}" autocomplete="off"></section>
+  <section class="fset" aria-labelledby="lbCol"><div class="row-between"><h2 class="label" id="lbCol">Farben</h2><div class="seg" role="group" aria-label="Farbwunsch"><button data-act="st-cmode" data-k="haupt" aria-pressed="${st.colorMode === 'haupt'}">Bestimmend</button><button data-act="st-cmode" data-k="akzent" aria-pressed="${st.colorMode === 'akzent'}">Als Akzent</button></div></div>
+    <div class="swatches">${COLORS.filter((c) => c.hex).map((c) => `<button class="sw" style="--c:${c.hex}" data-act="st-color" data-k="${c.n}" aria-pressed="${st.colors.includes(c.n)}" aria-label="${cap(c.n)}" title="${cap(c.n)}"></button>`).join('')}</div>
+    <p class="hint">${esc(colorsSel)}</p></section>
+  <section class="fset" aria-labelledby="lbMust"><h2 class="label" id="lbMust">Muss rein</h2>
+    <div class="must-row">${must.map((it) => `<div class="must"><button class="tile" data-act="open-item" data-id="${esc(it.id)}" aria-label="${esc(itemName(it))}"><img src="${esc(thumbSrc(it))}" alt=""></button><button class="rm" data-act="st-unmust" data-id="${esc(it.id)}" aria-label="${esc(itemName(it))} entfernen">${I.x}</button></div>`).join('')}<button class="tile tile-add" data-act="pick-must">${I.plus}<span>Teil wählen</span></button></div>
+    ${must.length ? '' : '<p class="hint">Zum Beispiel deine Lieblingshose – der Rest wird passend dazu kombiniert.</p>'}</section>
+  <section class="fset" aria-labelledby="lbWx"><h2 class="label" id="lbWx">Wetter</h2><div class="chips">${Object.entries(WEATHER).map(([k, w]) => `<button class="chip" data-act="st-wx" data-k="${k}" aria-pressed="${st.weather === k}" title="${esc(w.hint)}">${w.label}</button>`).join('')}</div></section>
+  <button class="btn btn-magic btn-wide" data-act="generate" ${st.loading ? 'disabled' : ''}>${I.spark}${st.loading ? 'Stylist arbeitet…' : '3 Outfits vorschlagen'}</button>
+  <div class="results" id="results">${resultsHTML()}</div>`;
+}
+function resultsHTML() {
+  const st = S.st;
+  if (st.loading) return `<div class="thinking"><span>Der Stylist kombiniert deinen Schrank. Das dauert meist 10 bis 40 Sekunden.</span><button class="btn btn-sm" data-act="st-stop">${I.stop}Stopp</button></div>${'<div class="outfit skel-card skel"></div>'.repeat(2)}`;
+  if (st.error) return `<div class="err" role="alert"><p>${esc(st.error)}</p><button class="btn btn-sm" data-act="generate">Noch einmal</button></div>`;
+  if (!st.results.length) return '';
+  const head = `<div class="results-head"><h2>Vorschläge</h2><button class="btn btn-sm btn-ghost" data-act="generate">${I.reset}Neue</button></div>`;
+  const notes = [st.note && `<p class="note">${esc(st.note)}</p>`, st.fehlt && `<p class="note"><b>Fehlt noch:</b> ${esc(st.fehlt)}</p>`].filter(Boolean).join('');
+  return head + notes + st.results.map((o) => outfitCardHTML(o)).join('');
+}
+function outfitCardHTML(o) {
+  const saved = S.st.saved.has(o.key);
+  return `<article class="outfit" data-key="${o.key}"><div class="outfit-top">${miniStageHTML(o.ids)}<div class="outfit-txt"><h3>${esc(o.title)}</h3>${o.why ? `<p>${esc(o.why)}</p>` : ''}${o.tip ? `<p class="tip"><b>Tipp:</b> ${esc(o.tip)}</p>` : ''}
+    <div class="thumbs">${o.ids.map(getItem).filter(Boolean).map((it) => `<button data-act="open-item" data-id="${esc(it.id)}" aria-label="${esc(itemName(it))}"><img src="${esc(thumbSrc(it))}" alt=""></button>`).join('')}</div></div></div>
+    <div class="outfit-actions"><button class="btn btn-primary" data-act="res-try" data-key="${o.key}">${I.mirror}Anprobieren</button><button class="btn" data-act="res-save" data-key="${o.key}" ${saved ? 'disabled' : ''}>${saved ? I.heartFill + 'Gespeichert' : I.heart + 'Speichern'}</button><button class="btn btn-ghost" data-act="res-no" data-key="${o.key}" aria-label="Passt nicht zu mir">${I.thumbDown}Passt nicht</button></div></article>`;
+}
+
+/* ================= Schrank ================= */
+function renderSchrank() {
+  const v = $('#view-schrank .view-pad');
+  if (!v.dataset.built) {
+    v.dataset.built = '1';
+    v.innerHTML = `<div id="skBanner"></div><div class="searchbar"><div class="search">${I.search}<label class="vh" for="skSearch">Im Schrank suchen</label><input id="skSearch" class="field" type="search" placeholder="Suchen: Jeans, rot, Leinen…" autocomplete="off"></div></div>
+      <div class="chips chips-scroll" id="skCats"></div><div class="swatches" id="skColors"></div><div id="skGrid"></div><div id="skBackup"></div>`;
+    $('#skSearch').addEventListener('input', (e) => { S.sf.q = e.target.value; renderSchrankGrid(); });
+  }
+  $('#skBanner').innerHTML = isDemo() ? demoBanner() : '';
+  $('#skBackup').innerHTML = backupCardHTML();
+  renderSchrankGrid();
+}
+function renderSchrankGrid() {
+  if (isLoadingItems()) { $('#skCats').innerHTML = ''; $('#skColors').innerHTML = ''; $('#skGrid').innerHTML = `<div class="grid">${'<div class="skel" style="aspect-ratio:4/5"></div>'.repeat(6)}</div>`; return; }
+  const all = allItems(); const f = S.sf;
+  const count = (k) => all.filter((it) => it.cat === k).length;
+  $('#skCats').innerHTML = [`<button class="chip" data-act="sk-cat" data-k="all" aria-pressed="${f.cat === 'all'}">Alle<span class="n">${all.length}</span></button>`]
+    .concat(CATS.map((c) => `<button class="chip" data-act="sk-cat" data-k="${c.k}" aria-pressed="${f.cat === c.k}">${c.label}<span class="n">${count(c.k)}</span></button>`)).join('');
+  const present = uniq(all.flatMap((it) => it.colors || [])).filter((c) => COLOR_HEX[c]);
+  $('#skColors').innerHTML = present.length > 1 ? present.map((c) => `<button class="sw" style="--c:${COLOR_HEX[c]}" data-act="sk-color" data-k="${c}" aria-pressed="${f.color === c}" aria-label="Farbe ${cap(c)}" title="${cap(c)}"></button>`).join('') : '';
+  const q = f.q.trim().toLowerCase();
+  const list = all.filter((it) => (f.cat === 'all' || it.cat === f.cat) && (!f.color || (it.colors || []).includes(f.color)) && (!q || [it.name, it.type, it.material, it.pattern, ...(it.colors || []), ...(it.style || []), CAT[it.cat] && CAT[it.cat].label].join(' ').toLowerCase().includes(q)));
+  $('#skGrid').innerHTML = list.length
+    ? `<div class="grid">${list.map((it) => itemCardHTML(it)).join('')}</div><p class="count-line">${list.length} von ${all.length} Teilen</p>`
+    : `<div class="empty"><h2>Nichts gefunden</h2><p>Kein Teil passt zu diesen Filtern.</p><button class="btn btn-sm" data-act="sk-clear">Filter zurücksetzen</button></div>`;
+}
+function itemCardHTML(it, picked) {
+  const p = picked !== undefined;
+  return `<button class="icard" data-act="${p ? 'pick-toggle' : 'open-item'}" data-id="${esc(it.id)}" ${p ? `aria-pressed="${picked}"` : ''}><span class="icard-ph">${it.demo ? '<span class="badge">Beispiel</span>' : ''}<img src="${esc(thumbSrc(it))}" alt="" loading="lazy">${dotsHTML(it)}${p && picked ? `<span class="check">${I.check}</span>` : ''}</span><span class="icard-nm">${esc(itemName(it))}</span></button>`;
+}
+
+/* ================= Looks ================= */
+function renderLooks() {
+  const v = $('#view-looks .view-pad');
+  if (!S.looksLoaded && Store.mode === 'cloud') { v.innerHTML = `<div class="looks-grid">${'<div class="skel" style="aspect-ratio:3/5"></div>'.repeat(4)}</div>`; return; }
+  const looks = S.looks.filter((l) => l.ids.some((id) => getItem(id)));
+  if (!looks.length) {
+    v.innerHTML = `<div class="empty"><h2>Noch keine Looks</h2><p>Speichere ein Outfit in der Anprobe mit dem Herz – oder lass dir im Stylist welche vorschlagen.</p><div class="chips" style="justify-content:center"><button class="btn btn-sm btn-primary" data-act="tab" data-tab="anprobe">${I.mirror}Zur Anprobe</button><button class="btn btn-sm btn-magic" data-act="tab" data-tab="stylist">${I.spark}Zum Stylist</button></div></div>`;
+    return;
+  }
+  v.innerHTML = `<div class="looks-grid">${looks.map((l) => `<button class="look-card" data-act="open-look" data-id="${esc(l.id)}">${miniStageHTML(l.ids)}<span class="look-title">${esc(l.title || 'Look')}</span><span class="look-meta">${esc([OCC[l.occ] && OCC[l.occ].label, fmtDate(l.createdAt)].filter(Boolean).join(' · '))}</span></button>`).join('')}</div>`;
+}
+
+/* ================= Sheets ================= */
+const sheets = [];
+function openSheet({ title, html, foot = '', cls = '', onMount, onClose, onAct }) {
+  const z = 100 + sheets.length * 2;
+  const scrim = document.createElement('div'); scrim.className = 'sheet-scrim'; scrim.style.zIndex = z;
+  const el = document.createElement('section'); el.className = 'sheet ' + cls; el.style.zIndex = z + 1;
+  el.setAttribute('role', 'dialog'); el.setAttribute('aria-modal', 'true'); el.setAttribute('aria-label', title);
+  el.innerHTML = `<div class="sheet-grip"></div><header class="sheet-head"><h2 class="sheet-title">${esc(title)}</h2><button class="icon-btn" data-sheet-close aria-label="Schließen">${I.x}</button></header><div class="sheet-body">${html}</div>${foot ? `<footer class="sheet-foot">${foot}</footer>` : ''}`;
+  document.body.append(scrim, el);
+  const rec = { el, scrim, onClose, closed: false, body: el.querySelector('.sheet-body') };
+  sheets.push(rec);
+  scrim.addEventListener('click', () => closeSheet(rec));
+  el.addEventListener('click', (e) => {
+    if (e.target.closest('[data-sheet-close]')) { closeSheet(rec); return; }
+    const b = e.target.closest('[data-sact]'); if (b && onAct) onAct(b.dataset.sact, b, e, rec);
+  });
+  requestAnimationFrame(() => requestAnimationFrame(() => { scrim.classList.add('open'); el.classList.add('open'); }));
+  if (onMount) onMount(el, rec);
+  return rec;
+}
+function closeSheet(rec = sheets[sheets.length - 1], force = false) {
+  if (!rec || rec.closed) return;
+  if (!force && rec.onClose && rec.onClose() === false) return;
+  rec.closed = true; sheets.splice(sheets.indexOf(rec), 1);
+  rec.el.classList.remove('open'); rec.scrim.classList.remove('open');
+  setTimeout(() => { rec.el.remove(); rec.scrim.remove(); }, 300);
+}
+const closeAllSheets = () => { while (sheets.length) closeSheet(sheets[sheets.length - 1], true); };
+
+/* ---------- Anprobe-Menü ---------- */
+function openMirrorMenu() {
+  const p = S.profile; const has = !!p.photoId;
+  const items = [
+    ['m-photo', I.camera, has ? 'Anderes Foto von dir' : 'Foto von dir hochladen'],
+    has && !S.useMannequin && ['m-guides', I.ruler, 'Körperpunkte anpassen'],
+    has && ['m-toggle', I.mannequin, S.useMannequin ? 'Mein Foto verwenden' : 'Puppe verwenden'],
+    S.worn.length && ['m-undress', I.undress, 'Alles ausziehen'],
+    S.worn.length && ['m-export', I.download, 'Als Bild speichern'],
+    has && ['m-delphoto', I.trash, 'Foto löschen', 'danger'],
+  ].filter(Boolean);
+  const tips = has ? '' : '<p class="hint">Am besten ein Ganzkörperfoto: frontal, gerade stehen, Arme leicht vom Körper, eng anliegende Kleidung, ruhiger Hintergrund.</p>';
+  openSheet({
+    title: 'Anprobe', html: `${tips}<div class="menu-list" id="mmList">${items.map(([a, ic, t, cls]) => `<button class="menu-item ${cls || ''}" data-sact="${a}">${ic}${t}</button>`).join('')}</div>`,
+    onAct: async (a, b, e, rec) => {
+      if (a === 'm-photo') { closeSheet(rec); pickFile('photo'); }
+      else if (a === 'm-guides') { closeSheet(rec); enterGuides(); }
+      else if (a === 'm-toggle') { S.useMannequin = !S.useMannequin; LS.set('mannequin', S.useMannequin); closeSheet(rec); renderMirror(); }
+      else if (a === 'm-undress') { S.worn = []; S.sel = null; if (isDemo()) LS.set('demoTouched', true); persistWorn(); closeSheet(rec); renderMirror(); }
+      else if (a === 'm-export') { closeSheet(rec); exportLook(); }
+      else if (a === 'm-delphoto') {
+        $('#mmList', rec.el).insertAdjacentHTML('afterend', `<div class="confirm"><p>Dein Foto wirklich löschen?</p><button class="btn btn-sm" data-sact="m-cancel">Abbrechen</button><button class="btn btn-sm btn-primary" data-sact="m-delyes">Löschen</button></div>`);
+        b.disabled = true;
+      } else if (a === 'm-cancel') { closeSheet(rec); }
+      else if (a === 'm-delyes') {
+        const old = [S.profile.photoId, S.profile.photoThumbId];
+        try { await saveProfile({ photoId: null, photoThumbId: null, photoW: 0, photoH: 0, guides: null }); old.forEach((o) => Store.delAsset(o)); toast('Foto gelöscht'); } catch (err) { /* Meldung kam schon */ }
+        closeSheet(rec); renderMirror();
+      }
+    },
+  });
+}
+
+/* ---------- Look speichern ---------- */
+function openSaveLook(preset) {
+  const ids = preset ? preset.ids : S.worn.slice();
+  if (!ids.length) { toast('Zieh zuerst etwas an.'); return; }
+  if (ids.some((id) => (getItem(id) || {}).demo)) { toast('Speichern geht mit deinen eigenen Teilen. Lade zuerst Fotos hoch.', 3800); return; }
+  let occ = preset ? preset.occ : S.st.occ;
+  const def = preset ? preset.title : 'Look vom ' + fmtDate(Date.now());
+  const chips = () => OCCS.map((o) => `<button class="chip" data-sact="sl-occ" data-k="${o.k}" aria-pressed="${occ === o.k}">${o.label}</button>`).join('');
+  openSheet({
+    title: 'Look speichern',
+    html: `<div class="look-big">${miniStageHTML(ids)}</div><div class="fld"><label class="label" for="slName">Name</label><input id="slName" class="field" value="${esc(def)}" maxlength="60"></div><div class="fld"><span class="label">Anlass</span><div class="chips" id="slOcc">${chips()}</div></div>`,
+    foot: `<button class="btn btn-primary" data-sact="sl-save">${I.heart}Speichern</button>`,
+    onAct: async (a, b, e, rec) => {
+      if (a === 'sl-occ') { occ = occ === b.dataset.k ? '' : b.dataset.k; $('#slOcc', rec.el).innerHTML = chips(); }
+      if (a === 'sl-save') {
+        b.disabled = true;
+        const title = ($('#slName', rec.el).value || '').trim().slice(0, 60) || def;
+        try { await Store.putLook(rid(), { title, occ: occ || '', ids, why: (preset && preset.why) || '', tip: (preset && preset.tip) || '', source: preset ? 'stylist' : 'anprobe', createdAt: Date.now() }); toast('Look gespeichert'); closeSheet(rec); }
+        catch (err) { b.disabled = false; }
+      }
+    },
+  });
+}
+
+/* ---------- Stil beschreiben ---------- */
+function openStyleSheet() {
+  openSheet({
+    title: 'Dein Stil',
+    html: `<p class="hint">Beschreib in ein, zwei Sätzen, was du gern trägst und was gar nicht geht. Der Stylist berücksichtigt das bei jedem Vorschlag.</p>
+      <div class="fld"><label class="label" for="styleText">Mein Stil</label><textarea id="styleText" class="field" rows="4" maxlength="400" placeholder="z. B. eher minimalistisch, gedeckte Farben, gern Erdtöne. Keine Muster-Mixe, lieber bequeme Schuhe.">${esc(S.profile.style)}</textarea></div>
+      <div class="fld"><span class="label">Antippen zum Ergänzen</span><div class="chips">${STYLE_SUGGEST.map((s) => `<button class="chip" data-sact="sty-add" data-k="${esc(s)}">${esc(s)}</button>`).join('')}</div></div>`,
+    foot: `<button class="btn btn-primary" data-sact="sty-save">Speichern</button>`,
+    onAct: async (a, b, e, rec) => {
+      const ta = $('#styleText', rec.el);
+      if (a === 'sty-add') { const v = ta.value.trim(); ta.value = (v ? v.replace(/[.,;\s]+$/, '') + ', ' : '') + b.dataset.k; ta.focus(); }
+      if (a === 'sty-save') {
+        if (Store.mode === 'init') { toast('Einen Moment, der Speicher lädt noch.'); return; }
+        b.disabled = true;
+        try { await saveProfile({ style: ta.value.trim().slice(0, 400) }); toast('Stil gespeichert'); closeSheet(rec); } catch (err) { b.disabled = false; }
+      }
+    },
+  });
+}
+
+/* ---------- Teile auswählen ---------- */
+function openPicker() {
+  const sel = new Set(S.st.must); let cat = 'all';
+  const grid = () => {
+    const list = allItems().filter((it) => cat === 'all' || it.cat === cat);
+    return list.length ? `<div class="grid">${list.map((it) => itemCardHTML(it, sel.has(it.id))).join('')}</div>` : '<p class="hint">In dieser Kategorie ist noch nichts.</p>';
+  };
+  const cats = () => [`<button class="chip" data-sact="pk-cat" data-k="all" aria-pressed="${cat === 'all'}">Alle</button>`].concat(CATS.map((c) => `<button class="chip" data-sact="pk-cat" data-k="${c.k}" aria-pressed="${cat === c.k}">${c.label}</button>`)).join('');
+  const foot = () => `<button class="btn btn-primary" data-sact="pk-ok">Übernehmen${sel.size ? ` (${sel.size})` : ''}</button>`;
+  openSheet({
+    title: 'Was muss rein?', cls: 'full',
+    html: `<div class="chips chips-scroll" id="pkCats">${cats()}</div><div id="pkGrid">${grid()}</div>`, foot: foot(),
+    onMount: (el) => {
+      el.addEventListener('click', (e) => {
+        const t = e.target.closest('[data-act="pick-toggle"]'); if (!t) return;
+        e.stopPropagation(); const id = t.dataset.id; if (sel.has(id)) sel.delete(id); else sel.add(id);
+        $('#pkGrid', el).innerHTML = grid(); $('.sheet-foot', el).innerHTML = foot();
+      }, true);
+    },
+    onAct: (a, b, e, rec) => {
+      if (a === 'pk-cat') { cat = b.dataset.k; $('#pkCats', rec.el).innerHTML = cats(); $('#pkGrid', rec.el).innerHTML = grid(); }
+      if (a === 'pk-ok') { S.st.must = [...sel]; closeSheet(rec); renderStylist(); }
+    },
+  });
+}
+
+/* ---------- Teil im Detail ---------- */
+function openItemSheet(id) {
+  const it = getItem(id); if (!it) return;
+  const demo = !!it.demo; const d = clone(it); let confirmDel = false;
+  const segBtns = (group, list, val) => list.map(([k, l]) => `<button data-sact="d-set" data-g="${group}" data-k="${k}" aria-pressed="${val === k}">${l}</button>`).join('');
+  const body = () => `<div class="det-img checker"><img src="${esc(imgSrc(it))}" alt=""></div>
+    ${demo ? '<p class="note">Beispielteil – lade eigene Fotos hoch, dann verschwinden die Beispiele.</p>' : ''}
+    <div class="det-actions"><button class="btn btn-primary" data-sact="d-wear">${I.mirror}Anziehen</button><button class="btn btn-magic" data-sact="d-style">${I.spark}Outfit damit</button></div>
+    <fieldset ${demo ? 'disabled' : ''}>
+      <div class="fld"><label class="label" for="dName">Name</label><input id="dName" class="field" value="${esc(d.name || '')}" maxlength="48"></div>
+      <div class="fld"><span class="label">Kategorie</span><div class="chips">${CATS.map((c) => `<button class="chip" data-sact="d-set" data-g="cat" data-k="${c.k}" aria-pressed="${d.cat === c.k}">${c.label}</button>`).join('')}</div></div>
+      <div class="fld"><label class="label" for="dType">Art</label><input id="dType" class="field" value="${esc(d.type || '')}" maxlength="40" placeholder="z. B. Bluse, Chino, Sneaker"></div>
+      <div class="fld"><span class="label">Farben</span><div class="swatches">${COLORS.map((c) => `<button class="sw ${c.hex ? '' : 'sw-bunt'}" ${c.hex ? `style="--c:${c.hex}"` : ''} data-sact="d-color" data-k="${c.n}" aria-pressed="${(d.colors || []).includes(c.n)}" aria-label="${cap(c.n)}" title="${cap(c.n)}"></button>`).join('')}</div><p class="hint">${(d.colors || []).length ? (d.colors || []).map(cap).join(', ') : 'Keine Farbe gewählt'}</p></div>
+      <div class="fld"><span class="label">Stil</span><div class="chips">${STYLES.map((s) => `<button class="chip" data-sact="d-tog" data-g="style" data-k="${s}" aria-pressed="${(d.style || []).includes(s)}">${cap(s)}</button>`).join('')}</div></div>
+      <div class="fld"><span class="label">Dresscode</span><div class="seg">${segBtns('dc', DC.slice(1).map((l, i) => [String(i + 1), l]), String(d.dc || ''))}</div></div>
+      <div class="fld"><span class="label">Saison</span><div class="chips">${SEASONS.map(([k, l]) => `<button class="chip" data-sact="d-tog" data-g="season" data-k="${k}" aria-pressed="${(d.season || []).includes(k)}">${l}</button>`).join('')}</div></div>
+      ${['dress', 'bottom', 'outer'].includes(d.cat) ? `<div class="fld"><span class="label">Länge</span><div class="seg">${segBtns('len', LENS, d.len || '')}</div></div>` : ''}
+      ${d.cat === 'acc' ? `<div class="fld"><span class="label">Wo getragen</span><div class="chips">${ZONES.map(([k, l]) => `<button class="chip" data-sact="d-set" data-g="zone" data-k="${k}" aria-pressed="${(d.zone || guessZone(d.type)) === k}">${l}</button>`).join('')}</div></div>` : ''}
+      <div class="fld"><label class="label" for="dNotes">Notiz</label><textarea id="dNotes" class="field" rows="2" maxlength="200" placeholder="z. B. nur mit Gürtel, knittert schnell">${esc(d.notes || '')}</textarea></div>
+    </fieldset>
+    ${demo ? '' : confirmDel ? `<div class="confirm"><p>„${esc(itemName(d))}“ wirklich löschen?</p><button class="btn btn-sm" data-sact="d-nodel">Abbrechen</button><button class="btn btn-sm btn-primary" data-sact="d-delyes">Löschen</button></div>` : `<div class="det-foot">${aiImagesOn() ? `<button class="btn btn-ghost" data-sact="d-ai">${I.spark}Neu erkennen</button>` : '<span></span>'}<button class="btn btn-ghost btn-danger" data-sact="d-del">${I.trash}Löschen</button></div>`}`;
+  const readInputs = (el) => { const n = $('#dName', el), t = $('#dType', el), no = $('#dNotes', el); if (n) d.name = n.value.trim(); if (t) d.type = t.value.trim(); if (no) d.notes = no.value.trim(); };
+  const rerender = (rec) => { readInputs(rec.el); const top = rec.body.scrollTop; rec.body.innerHTML = body(); rec.body.scrollTop = top; };
+  const dirty = () => JSON.stringify({ ...d, fit: null }) !== JSON.stringify({ ...it, fit: null });
+  let deleted = false; let recRef = null;
+  recRef = openSheet({
+    title: itemName(it), cls: 'full', html: body(),
+    onClose: () => {
+      if (recRef) readInputs(recRef.el);
+      if (!demo && !deleted && dirty()) { const { id: _id, ...data } = d; data.updatedAt = Date.now(); Store.putItem(it.id, data).then(() => toast('Änderungen gespeichert')).catch(() => {}); }
+    },
+    onAct: async (a, b, e, rec) => {
+      if (a === 'd-wear') { closeSheet(rec); if (!S.worn.includes(it.id)) toggleWear(it.id); S.railCat = it.cat; switchTab('anprobe'); return; }
+      if (a === 'd-style') { closeSheet(rec); S.st.must = [it.id]; S.st.results = []; S.st.error = ''; switchTab('stylist', { top: true }); toast('Gesetzt – wähle jetzt den Anlass.'); return; }
+      if (demo) return;
+      if (a === 'd-set') { const g = b.dataset.g, k = b.dataset.k; if (g === 'dc') d.dc = d.dc === +k ? null : +k; else d[g] = d[g] === k ? (g === 'cat' ? d.cat : null) : k; rerender(rec); }
+      else if (a === 'd-tog') { const g = b.dataset.g, k = b.dataset.k; const s = new Set(d[g] || []); if (s.has(k)) s.delete(k); else s.add(k); d[g] = [...s]; rerender(rec); }
+      else if (a === 'd-color') { const k = b.dataset.k; let c = d.colors || []; c = c.includes(k) ? c.filter((x) => x !== k) : [...c, k].slice(-3); d.colors = c; rerender(rec); }
+      else if (a === 'd-del') { confirmDel = true; rerender(rec); }
+      else if (a === 'd-nodel') { confirmDel = false; rerender(rec); }
+      else if (a === 'd-delyes') {
+        b.disabled = true;
+        try {
+          await Store.delItem(it.id); deleted = true;
+          Store.delAsset(it.img); if (it.thumb && it.thumb !== it.img) Store.delAsset(it.thumb);
+          S.worn = S.worn.filter((x) => x !== it.id); S.st.must = S.st.must.filter((x) => x !== it.id); persistWorn();
+          closeSheet(rec, true); toast('Gelöscht');
+        } catch (err) { b.disabled = false; }
+      } else if (a === 'd-ai') {
+        b.disabled = true; b.innerHTML = I.spark + 'Erkenne…';
+        try {
+          const c = await urlToCanvas(imgSrc(it), 640); const [m] = await aiAnalyze([c]);
+          if (m) { readInputs(rec.el); ['name', 'type', 'pattern', 'material'].forEach((k) => { if (m[k]) d[k] = m[k]; }); ['colors', 'style', 'season'].forEach((k) => { if (m[k] && m[k].length) d[k] = m[k]; }); if (m.cat) d.cat = m.cat; if (m.dc) d.dc = m.dc; d.len = m.len || d.len || null; d.zone = m.zone || d.zone || null; rerender(rec); toast('Erkannt – prüf kurz die Angaben.'); }
+          else { toast('Auf dem Foto war nichts eindeutig zu erkennen.'); b.disabled = false; }
+        } catch (err) { toast(aiErrorText(aiFail(err))); rerender(rec); }
+      }
+    },
+  });
+}
+
+/* ---------- Look im Detail ---------- */
+function openLookSheet(id) {
+  const l = S.looks.find((x) => x.id === id); if (!l) return;
+  let confirm = false;
+  const body = () => `<div class="look-big">${miniStageHTML(l.ids)}</div>
+    <div class="look-text"><span class="label">${esc([OCC[l.occ] && OCC[l.occ].label, fmtDate(l.createdAt)].filter(Boolean).join(' · '))}</span>${l.why ? `<p>${esc(l.why)}</p>` : ''}${l.tip ? `<p><b>Tipp:</b> ${esc(l.tip)}</p>` : ''}</div>
+    <div class="thumbs">${l.ids.map(getItem).filter(Boolean).map((it) => `<button data-sact="lk-item" data-id="${esc(it.id)}" aria-label="${esc(itemName(it))}"><img src="${esc(thumbSrc(it))}" alt=""></button>`).join('')}</div>
+    ${confirm ? `<div class="confirm"><p>Diesen Look löschen? Die Teile bleiben im Schrank.</p><button class="btn btn-sm" data-sact="lk-no">Abbrechen</button><button class="btn btn-sm btn-primary" data-sact="lk-yes">Löschen</button></div>` : ''}`;
+  openSheet({
+    title: l.title || 'Look', html: body(),
+    foot: `<button class="btn btn-ghost btn-danger" data-sact="lk-del" aria-label="Look löschen">${I.trash}</button><button class="btn btn-primary" data-sact="lk-try">${I.mirror}Anprobieren</button>`,
+    onAct: async (a, b, e, rec) => {
+      if (a === 'lk-try') { S.worn = l.ids.filter((x) => getItem(x)); S.sel = null; persistWorn(); closeSheet(rec); switchTab('anprobe'); }
+      if (a === 'lk-item') { openItemSheet(b.dataset.id); }
+      if (a === 'lk-del') { confirm = true; rec.body.innerHTML = body(); }
+      if (a === 'lk-no') { confirm = false; rec.body.innerHTML = body(); }
+      if (a === 'lk-yes') { b.disabled = true; try { await Store.delLook(l.id); closeSheet(rec); toast('Look gelöscht'); } catch (err) { b.disabled = false; } }
+    },
+  });
+}
+
+/* ================= Fotos importieren ================= */
+const IMP = { entries: [], rec: null, saving: false, aiBusy: false, askDiscard: false };
+const MAX_IMPORT = 24;
+let pendingPick = { kind: 'clothes', cat: '' };
+function pickFile(kind, cat = '') {
+  if (!Store.canUpload) { toast(Store.mode === 'init' ? 'Einen Moment, der Speicher lädt noch.' : 'Fotos hochladen ist hier nicht möglich.'); return; }
+  pendingPick = { kind, cat };
+  const inp = kind === 'photo' ? $('#filePhoto') : $('#fileClothes'); inp.value = ''; inp.click();
+}
+async function startImport(files, presetCat) {
+  let list = Array.from(files || []).filter((f) => /^image\//.test(f.type) || /\.(jpe?g|png|webp|gif|heic|heif|avif)$/i.test(f.name));
+  if (!list.length) return;
+  const room = MAX_IMPORT - IMP.entries.length;
+  if (list.length > room) { toast(`Höchstens ${MAX_IMPORT} Fotos auf einmal – speichere erst diese.`, 3800); list = list.slice(0, Math.max(0, room)); }
+  const fresh = list.map((file) => ({
+    key: rid(), file, status: 'load', ai: 'wait', useCut: true, tol: 22, seeds: [], manual: false, nameEdited: false, catPreset: !!presetCat,
+    meta: { cat: presetCat || '', name: '', type: '', colors: [], hex: [], style: [], season: [], dc: null, len: null, zone: null, pattern: '', material: '' },
+  }));
+  IMP.entries.push(...fresh);
+  openImportSheet();
+  for (const e of fresh) { await nextFrame(); await processEntry(e); renderImportRow(e); }
+  updateImportFoot(); queueAI();
+}
+async function processEntry(e) {
+  try {
+    e.src = await fileToCanvas(e.file, 800); e.file = null;
+    e.alphaSrc = hasTransparency(e.src);
+    const prep = prepCut(e.src);
+    applyCut(e, prep);
+    // Empfindlichkeit automatisch nachregeln, wenn zu viel oder zu wenig weg ist
+    if (e.cut && !e.cut.ok && !prep.preAlpha) {
+      const tries = e.cut.coverage <= 0.02 ? [14, 9] : [32, 44];
+      for (const t of tries) { const r = runCut(prep, t, e.seeds); if (r.ok) { e.tol = t; e.useCut = true; applyCut(e, prep); break; } }
+    }
+    if (e.cut && !e.cut.ok) e.hint = 'Hintergrund nicht sicher erkannt – Original wird verwendet. Tippe aufs Bild zum Anpassen.';
+    else if (prep.spread > 14 && !prep.preAlpha) e.hint = 'Unruhiger Hintergrund – prüf das Freistellen.';
+    e.status = 'ready';
+  } catch (err) { e.status = 'error'; e.hint = 'Dieses Foto kann der Browser nicht öffnen. Speichere es als JPG und versuch es noch einmal.'; }
+}
+function applyCut(e, prep) {
+  if (e.useCut) {
+    const r = runCut(prep, e.tol, e.seeds); e.cut = r;
+    if (!r.ok && !e.manual) e.useCut = false;
+  }
+  e.out = e.useCut && e.cut && e.cut.ok ? e.cut.canvas : e.src;
+  e.preview = previewURL(e.out, 200);
+  const dc = dominantColors(e.out, !(e.useCut && e.cut && e.cut.ok) && !e.alphaSrc);
+  e.meta.hex = dc.map((c) => c.hex);
+  if (e.ai !== 'done') e.meta.colors = uniq(dc.map((c) => c.name)).slice(0, 2);
+}
+const outHasAlpha = (e) => (e.useCut && e.cut && e.cut.ok) || e.alphaSrc;
+function openImportSheet() {
+  if (IMP.rec && !IMP.rec.closed) { renderImportList(); return; }
+  IMP.askDiscard = false;
+  IMP.rec = openSheet({
+    title: 'Neue Teile', cls: 'full',
+    html: `<p class="hint">Am besten: ein Teil pro Foto, flach auf einfarbigem Untergrund, von oben, bei Tageslicht. Shop-Fotos mit weißem Hintergrund klappen perfekt.</p><div id="impAsk"></div><div class="imp-list" id="impList"></div>`,
+    foot: `<button class="btn" data-sact="imp-more">${I.plus}Mehr Fotos</button><button class="btn btn-primary" id="impSave" data-sact="imp-save">Speichern</button>`,
+    onMount: (el) => {
+      el.addEventListener('input', (ev) => { const t = ev.target; const e = IMP.entries.find((x) => x.key === t.dataset.key); if (!e) return; if (t.dataset.imp === 'name') { e.meta.name = t.value; e.nameEdited = true; } });
+      el.addEventListener('change', (ev) => { const t = ev.target; const e = IMP.entries.find((x) => x.key === t.dataset.key); if (!e) return; if (t.dataset.imp === 'cat') { e.meta.cat = t.value; e.catPreset = true; renderImportRow(e); updateImportFoot(); } });
+    },
+    onClose: () => {
+      if (IMP.saving) { toast('Einen Moment, es wird noch gespeichert.'); return false; }
+      if (IMP.entries.length && !IMP.askDiscard) { IMP.askDiscard = true; $('#impAsk').innerHTML = `<div class="confirm"><p>${IMP.entries.length} ungespeicherte Teile verwerfen?</p><button class="btn btn-sm" data-sact="imp-keep">Weiter bearbeiten</button><button class="btn btn-sm btn-primary" data-sact="imp-discard">Verwerfen</button></div>`; IMP.rec.body.scrollTop = 0; return false; }
+      IMP.entries = []; IMP.rec = null; return true;
+    },
+    onAct: (a, b, ev, rec) => {
+      const e = IMP.entries.find((x) => x.key === b.dataset.key);
+      if (a === 'imp-more') pickFile('clothes');
+      else if (a === 'imp-save') saveImport();
+      else if (a === 'imp-keep') { IMP.askDiscard = false; $('#impAsk').innerHTML = ''; }
+      else if (a === 'imp-discard') { IMP.entries = []; closeSheet(rec, true); IMP.rec = null; }
+      else if (a === 'imp-del' && e) { IMP.entries = IMP.entries.filter((x) => x !== e); const row = $(`.imp-row[data-key="${e.key}"]`); if (row) row.remove(); updateImportFoot(); if (!IMP.entries.length) { closeSheet(rec, true); IMP.rec = null; } }
+      else if (a === 'imp-edit' && e && e.status === 'ready') openCutEditor(e);
+      else if (a === 'imp-retry' && e) { e.ai = 'wait'; renderImportRow(e); queueAI(); }
+    },
+  });
+  renderImportList();
+}
+function importRowHTML(e) {
+  const m = e.meta;
+  const status = e.status === 'load' ? `<span class="status run">${I.spark}Lade…</span>`
+    : e.status === 'error' ? '<span class="status need">Nicht lesbar</span>'
+    : e.ai === 'run' ? `<span class="status run">${I.spark}KI erkennt…</span>`
+    : e.ai === 'done' ? `<span class="status">${I.check}Erkannt</span>`
+    : e.ai === 'fail' ? `<button class="status retry" data-sact="imp-retry" data-key="${e.key}">Erneut erkennen</button>`
+    : e.ai === 'wait' && aiImagesOn() ? `<span class="status run">${I.spark}Wartet…</span>` : '';
+  const need = e.status === 'ready' && !m.cat ? '<span class="status need">Kategorie wählen</span>' : '';
+  return `<div class="imp-row" data-key="${e.key}">
+    <button class="imp-prev ${outHasAlpha(e) ? 'checker' : ''}" data-sact="imp-edit" data-key="${e.key}" aria-label="Freistellen anpassen">${e.preview ? `<img src="${e.preview}" alt="">` : '<span class="skel" style="width:100%;height:100%"></span>'}${e.status === 'ready' ? `<span class="edit">${I.edit}</span>` : ''}</button>
+    <div class="imp-fields">
+      <label class="vh" for="n-${e.key}">Name</label><input id="n-${e.key}" class="field field-sm" data-imp="name" data-key="${e.key}" value="${esc(m.name)}" placeholder="Name, z. B. Blaue Jeans" maxlength="48" autocomplete="off">
+      <label class="vh" for="c-${e.key}">Kategorie</label><select id="c-${e.key}" class="field field-sm" data-imp="cat" data-key="${e.key}"><option value="">Kategorie wählen…</option>${CATS.map((c) => `<option value="${c.k}" ${m.cat === c.k ? 'selected' : ''}>${c.label}</option>`).join('')}</select>
+      <div class="imp-meta">${dotsHTML(m)}${status}${need}</div>
+      ${e.hint ? `<p class="imp-hint">${esc(e.hint)}</p>` : ''}
+    </div>
+    <button class="icon-btn" data-sact="imp-del" data-key="${e.key}" aria-label="Foto entfernen">${I.trash}</button></div>`;
+}
+function renderImportList() { const l = $('#impList'); if (!l) return; l.innerHTML = IMP.entries.map(importRowHTML).join(''); updateImportFoot(); }
+function renderImportRow(e) {
+  const row = $(`.imp-row[data-key="${e.key}"]`); if (!row) { renderImportList(); return; }
+  const focused = row.contains(document.activeElement) ? document.activeElement : null;
+  if (!focused) { row.outerHTML = importRowHTML(e); return; }
+  // Während getippt wird nur Vorschau und Status erneuern
+  const tmp = document.createElement('div'); tmp.innerHTML = importRowHTML(e); const nr = tmp.firstElementChild;
+  row.querySelector('.imp-prev').replaceWith(nr.querySelector('.imp-prev'));
+  row.querySelector('.imp-meta').replaceWith(nr.querySelector('.imp-meta'));
+  if (focused.dataset.imp !== 'cat') row.querySelector('select').value = e.meta.cat;
+  if (focused.dataset.imp !== 'name' && !e.nameEdited) row.querySelector('input').value = e.meta.name;
+}
+function updateImportFoot() {
+  const b = $('#impSave'); if (!b) return;
+  const ready = IMP.entries.filter((e) => e.status === 'ready');
+  const missing = ready.filter((e) => !e.meta.cat).length;
+  b.disabled = IMP.saving || !ready.length || IMP.entries.some((e) => e.status === 'load');
+  b.textContent = IMP.saving ? b.textContent : missing ? `Noch ${missing} ohne Kategorie` : ready.length === 1 ? '1 Teil speichern' : `${ready.length} Teile speichern`;
+  if (missing && !IMP.saving) b.disabled = true;
+}
+async function queueAI() {
+  if (IMP.aiBusy) return; IMP.aiBusy = true;
+  try {
+    for (;;) {
+      const pend = IMP.entries.filter((e) => e.status === 'ready' && e.ai === 'wait');
+      if (!pend.length) break;
+      if (!aiImagesOn()) { pend.forEach((e) => { e.ai = 'off'; renderImportRow(e); }); break; }
+      const batch = pend.slice(0, AI.maxImages); batch.forEach((e) => { e.ai = 'run'; renderImportRow(e); });
+      try {
+        const res = await aiAnalyze(batch.map((e) => e.out));
+        batch.forEach((e, i) => { applyAIMeta(e, res[i]); e.ai = res[i] && res[i].cat ? 'done' : 'fail'; renderImportRow(e); });
+      } catch (err) {
+        const code = aiFail(err);
+        batch.forEach((e) => { e.ai = AI.off ? 'off' : 'fail'; renderImportRow(e); });
+        if (AI.off) IMP.entries.forEach((e) => { if (e.ai === 'wait') { e.ai = 'off'; renderImportRow(e); } });
+        toast(aiErrorText(code) + (AI.off ? ' Wähl die Kategorie bitte selbst.' : ''), 4200);
+        break;
+      }
+    }
+  } finally { IMP.aiBusy = false; updateImportFoot(); }
+}
+function applyAIMeta(e, m) {
+  if (!m || !m.cat) return;
+  const keepCat = e.catPreset && e.meta.cat;
+  e.meta = { ...e.meta, ...Object.fromEntries(Object.entries(m).filter(([k, v]) => v != null && v !== '' && !(Array.isArray(v) && !v.length))) };
+  if (keepCat) e.meta.cat = keepCat;
+  if (e.nameEdited) e.meta.name = $(`#n-${e.key}`) ? $(`#n-${e.key}`).value : e.meta.name;
+}
+async function saveImport() {
+  const ready = IMP.entries.filter((e) => e.status === 'ready');
+  if (!ready.length || ready.some((e) => !e.meta.cat)) { toast('Bitte für jedes Teil eine Kategorie wählen.'); return; }
+  IMP.saving = true; const b = $('#impSave'); let done = 0;
+  const wasDemo = isDemo();
+  for (const e of ready) {
+    if (b) { b.disabled = true; b.textContent = `Speichere ${done + 1} von ${ready.length}…`; }
+    try {
+      const alpha = outHasAlpha(e);
+      const big = scaleCanvas(e.out, 800), small = scaleCanvas(e.out, 320);
+      const [b1, b2] = await Promise.all([canvasBlob(big, alpha), canvasBlob(small, alpha)]);
+      const img = await Store.upload(b1); const thumb = await Store.upload(b2);
+      const now = Date.now(); const m = e.meta;
+      const data = { name: (m.name || '').trim() || (m.type ? cap(m.type) : CAT[m.cat].one), cat: m.cat, type: m.type || '', colors: m.colors || [], hex: m.hex || [], style: m.style || [], season: m.season || [], dc: m.dc || null, len: m.len || null, zone: m.zone || null, pattern: m.pattern || '', material: m.material || '', notes: '', img, thumb, ar: +(big.width / big.height).toFixed(4), cut: !!alpha, createdAt: now + done, updatedAt: now };
+      await Store.putItem(rid(), data);
+      done++; IMP.entries = IMP.entries.filter((x) => x !== e);
+      const row = $(`.imp-row[data-key="${e.key}"]`); if (row) row.remove();
+    } catch (err) {
+      const c = err && err.code;
+      toast(c === 'quota_or_state' || c === 'local_full' ? 'Der Speicher ist voll. Lösch ein paar Teile.' : c === 'rate_limited' ? 'Zu viele Uploads auf einmal – tippe gleich noch einmal auf Speichern.' : c === 'too_large' ? 'Ein Foto ist zu groß.' : 'Hochladen hat nicht geklappt. Tippe noch einmal auf Speichern.', 4500);
+      break;
+    }
+  }
+  IMP.saving = false;
+  if (done && wasDemo) { S.worn = []; S.sel = null; LS.set('demoTouched', true); }
+  if (!IMP.entries.length) { if (IMP.rec) closeSheet(IMP.rec, true); IMP.rec = null; toast(done === 1 ? '1 Teil gespeichert' : `${done} Teile gespeichert`); }
+  else updateImportFoot();
+}
+
+/* ---------- Freistellen anpassen ---------- */
+function openCutEditor(e) {
+  let prep = prepCut(e.src); let timer = 0;
+  const draw = (rec) => {
+    const cv = $('#cutCanvas', rec.el); const src = e.out;
+    cv.width = src.width; cv.height = src.height; cv.getContext('2d').drawImage(src, 0, 0);
+    $('#cutView', rec.el).classList.toggle('checker', outHasAlpha(e));
+    $('#cutState', rec.el).textContent = e.useCut && e.cut && !e.cut.ok ? 'Mit dieser Einstellung bleibt kaum etwas übrig – regle die Empfindlichkeit herunter.' : e.useCut ? 'Tippe ins Bild auf Reste vom Hintergrund – sie werden mit entfernt.' : 'Originalfoto ohne Freistellen.';
+  };
+  const recut = (rec) => { e.manual = true; e.hint = ''; applyCut(e, prep); draw(rec); };
+  openSheet({
+    title: 'Freistellen',
+    html: `<div class="cut-view" id="cutView"><canvas id="cutCanvas" aria-label="Vorschau"></canvas></div>
+      <p class="hint" id="cutState"></p>
+      <label class="switch-row" for="cutOn"><span>Hintergrund entfernen</span><input type="checkbox" id="cutOn" ${e.useCut ? 'checked' : ''}></label>
+      <div class="range-row"><label class="label" for="cutTol">Empfindlichkeit</label><input type="range" id="cutTol" min="6" max="60" step="1" value="${e.tol}"><div class="range-ends"><span>behutsam</span><span>kräftig</span></div></div>
+      <button class="btn btn-ghost" data-sact="cut-reset">${I.reset}Zurücksetzen</button>`,
+    foot: '<button class="btn btn-primary" data-sheet-close>Fertig</button>',
+    onMount: (el, rec) => {
+      draw(rec);
+      $('#cutOn', el).addEventListener('change', (ev) => { e.useCut = ev.target.checked; recut(rec); });
+      $('#cutTol', el).addEventListener('input', (ev) => { e.tol = +ev.target.value; if (!e.useCut) { e.useCut = true; $('#cutOn', el).checked = true; } clearTimeout(timer); timer = setTimeout(() => recut(rec), 120); });
+      $('#cutCanvas', el).addEventListener('click', (ev) => {
+        if (!e.useCut || !e.cut || !e.cut.ok) return;
+        const cv = ev.currentTarget; const r = cv.getBoundingClientRect();
+        const x = Math.round(((ev.clientX - r.left) / r.width) * cv.width), y = Math.round(((ev.clientY - r.top) / r.height) * cv.height);
+        e.seeds.push({ x: e.cut.bbox.x + x, y: e.cut.bbox.y + y }); recut(rec);
+      });
+    },
+    onAct: (a, b, ev, rec) => { if (a === 'cut-reset') { e.seeds = []; e.tol = 22; e.useCut = true; $('#cutTol', rec.el).value = 22; $('#cutOn', rec.el).checked = true; recut(rec); } },
+    onClose: () => { prep = null; renderImportRow(e); return true; },
+  });
+}
+
+/* ================= Gerätespeicher: Laden & Sicherung ================= */
+async function startLocal() {
+  await IDB.open();
+  const items = await IDB.entries('items'), looks = await IDB.entries('looks'), meta = await IDB.entries('meta'), blobs = await IDB.entries('blobs');
+  blobs.forEach(([id, b]) => { if (b instanceof Blob) Store.mem.urls.set(id, URL.createObjectURL(b)); });
+  items.forEach(([id, d]) => { if (d && typeof d === 'object') Store.mem.items.set(id, d); });
+  looks.forEach(([id, d]) => { if (d && typeof d === 'object') Store.mem.looks.set(id, d); });
+  const prof = meta.find(([k]) => k === 'profile'); Store.mem.profile = prof ? prof[1] : null;
+  if (!meta.some(([k]) => k === 'schema')) { try { await IDB.put('meta', 'schema', 1); } catch (e) { /* nicht kritisch */ } }
+  Store.mode = 'local'; Store.canUpload = true;
+  try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {}); } catch (e) { /* optional */ }
+  emitMem('items'); emitMem('looks'); emitMem('profile');
+}
+function blobToDataURL(b) { return new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(r.result); r.onerror = () => rej(r.error); r.readAsDataURL(b); }); }
+function dataURLToBlob(u) {
+  const i = u.indexOf(','); const type = u.slice(5, i).split(';')[0] || 'application/octet-stream';
+  const bin = atob(u.slice(i + 1)); const a = new Uint8Array(bin.length);
+  for (let k = 0; k < bin.length; k++) a[k] = bin.charCodeAt(k);
+  return new Blob([a], { type });
+}
+async function exportBackup(btn) {
+  if (Store.mode !== 'local') return;
+  if (btn) { btn.disabled = true; btn.textContent = 'Erstelle…'; }
+  try {
+    const p = Store.mem.profile;
+    const ids = new Set();
+    Store.mem.items.forEach((it) => { if (it.img) ids.add(it.img); if (it.thumb) ids.add(it.thumb); });
+    if (p && p.photoId) ids.add(p.photoId); if (p && p.photoThumbId) ids.add(p.photoThumbId);
+    const all = new Map(await IDB.entries('blobs')); const blobs = {};
+    for (const id of ids) { const b = all.get(id); if (b) blobs[id] = await blobToDataURL(b); }
+    const data = { app: 'umkleide', version: 1, exportedAt: Date.now(), profile: p || null, items: Object.fromEntries(Store.mem.items), looks: Object.fromEntries(Store.mem.looks), blobs };
+    const day = new Date().toISOString().slice(0, 10);
+    const how = await saveFile(`Umkleide-Sicherung-${day}.json`, new Blob([JSON.stringify(data)], { type: 'application/json' }));
+    LS.set('lastBackup', Date.now());
+    toast(how === 'shared' ? 'Tippe auf „In Dateien sichern“, dann liegt die Sicherung auf dem Handy.' : 'Sicherung gespeichert', 4500);
+  } catch (e) { if (!isCancel(e)) toast('Die Sicherung hat nicht geklappt.', 3500); }
+  if (S.tab === 'schrank') renderSchrank();
+}
+async function importBackupFile(file) {
+  let data = null;
+  try { data = JSON.parse(await file.text()); } catch (e) { data = null; }
+  if (!data || data.app !== 'umkleide' || !data.items || typeof data.items !== 'object') { toast('Diese Datei ist keine Umkleide-Sicherung.', 3500); return; }
+  const nI = Object.keys(data.items).length, nL = Object.keys(data.looks || {}).length;
+  openSheet({
+    title: 'Sicherung laden',
+    html: `<p>Die Sicherung vom ${esc(fmtDate(data.exportedAt))} enthält ${nI} Teil${nI === 1 ? '' : 'e'} und ${nL} Look${nL === 1 ? '' : 's'}.</p><p class="hint">Sie ersetzt alles, was gerade auf diesem Gerät im Schrank liegt.</p>`,
+    foot: '<button class="btn" data-sheet-close>Abbrechen</button><button class="btn btn-primary" data-sact="bk-load">Laden</button>',
+    onAct: async (a, b, e, rec) => {
+      if (a !== 'bk-load') return;
+      b.disabled = true; b.textContent = 'Lade…';
+      try { await restoreBackup(data); closeSheet(rec, true); toast(`${nI} Teil${nI === 1 ? '' : 'e'} geladen`); }
+      catch (err) { toast('Laden hat nicht geklappt. Ist genug Speicher frei?', 4000); b.disabled = false; b.textContent = 'Laden'; }
+    },
+  });
+}
+async function restoreBackup(data) {
+  for (const s of ['items', 'looks', 'meta', 'blobs']) await IDB.clear(s);
+  Store.mem.urls.forEach((u) => URL.revokeObjectURL(u)); Store.mem.urls.clear(); Store.mem.items.clear(); Store.mem.looks.clear();
+  for (const [id, u] of Object.entries(data.blobs || {})) {
+    if (typeof u !== 'string' || !u.startsWith('data:image/') || !/^loc[a-z0-9]+$/i.test(id)) continue;
+    const b = dataURLToBlob(u); await IDB.put('blobs', id, b); Store.mem.urls.set(id, URL.createObjectURL(b));
+  }
+  for (const [id, d] of Object.entries(data.items || {})) { if (d && typeof d === 'object' && /^[a-z0-9]+$/i.test(id)) { await IDB.put('items', id, d); Store.mem.items.set(id, d); } }
+  for (const [id, d] of Object.entries(data.looks || {})) { if (d && typeof d === 'object' && Array.isArray(d.ids) && /^[a-z0-9]+$/i.test(id)) { await IDB.put('looks', id, d); Store.mem.looks.set(id, d); } }
+  Store.mem.profile = data.profile && typeof data.profile === 'object' ? data.profile : null;
+  if (Store.mem.profile) await IDB.put('meta', 'profile', Store.mem.profile);
+  S.worn = []; S.sel = null; LS.set('worn', []); LS.set('demoTouched', true);
+  emitMem('items'); emitMem('looks'); emitMem('profile');
+}
+function backupCardHTML() {
+  if (Store.mode !== 'local') return '';
+  const last = LS.get('lastBackup', 0); const n = Store.mem.items.size;
+  const old = n && (!last || Date.now() - last > 14 * 864e5);
+  return `<section class="backup" aria-labelledby="bkTitle"><div><h2 class="label" id="bkTitle">Gespeichert auf diesem Gerät</h2>
+    <p class="hint">Fotos und Looks liegen nur hier im Browser. Eine Sicherung schützt vor Verlust und bringt deinen Schrank auf ein neues Handy.</p>
+    <p class="small ${old ? 'warn' : 'muted'}">Letzte Sicherung: ${last ? esc(fmtDate(last)) : 'noch keine'}${old ? ' – Zeit für eine neue' : ''}</p>
+    <p class="small muted">App-Version ${APP_VERSION}</p></div>
+    <div class="backup-actions">${n ? `<button class="btn btn-sm btn-primary" data-act="backup-save">${I.download}Sicherung speichern</button>` : ''}<button class="btn btn-sm" data-act="backup-load">Sicherung laden</button></div></section>`;
+}
+
+/* ================= Stylist-Logik ================= */
+const enoughForOutfit = (items) => items.some((i) => i.cat === 'dress') || (items.some((i) => i.cat === 'top') && items.some((i) => i.cat === 'bottom'));
+function itemLine(ref, it) {
+  const extra = it.cat === 'acc' ? ZONE_L[it.zone || guessZone(it.type)] || '-' : it.len ? LEN_L[it.len] : '-';
+  return [ref, CAT[it.cat] ? CAT[it.cat].one : it.cat, it.type || '-', it.name || '-', (it.colors || []).join('/') || '-', it.pattern || 'uni', (it.style || []).join('/') || '-', it.dc || '-', (it.season || []).join('/') || 'ganzjährig', extra].join(' | ') + (it.notes ? ` | Notiz: ${it.notes.slice(0, 80)}` : '');
+}
+function buildOutfitPrompt(p, items) {
+  const refs = new Map(), rev = new Map(); const lines = [];
+  items.forEach((it, i) => { const r = 'K' + (i + 1); refs.set(r, it.id); rev.set(it.id, r); lines.push(itemLine(r, it)); });
+  const occ = OCC[p.occ]; const wx = WEATHER[p.weather] || WEATHER.mild;
+  const occLine = p.occText.trim() ? `${p.occText.trim()}${occ ? ` (gewählte Richtung: ${occ.label})` : ''}` : `${occ.label} – ${occ.hint}`;
+  const colorLine = !p.colors.length ? 'kein Farbwunsch' : p.colorMode === 'akzent' ? `Mindestens ein Teil soll ${p.colors.map(cap).join(' oder ')} sein, der Rest gern neutral.` : `Das Outfit soll von diesen Farben bestimmt sein: ${p.colors.map(cap).join(', ')}. Neutrale Töne als Ergänzung sind okay.`;
+  const must = p.must.map((id) => rev.get(id)).filter(Boolean);
+  const nameOf = (id) => (getItem(id) || {}).name;
+  const liked = S.looks.slice(0, 8).map((l) => `- ${l.title || 'Look'}${OCC[l.occ] ? ` (${OCC[l.occ].label})` : ''}: ${l.ids.map(nameOf).filter(Boolean).join(', ')}`);
+  const disliked = (S.profile.dislikes || []).slice(-8).map((d) => (d.ids || []).map(nameOf).filter(Boolean).join(', ')).filter(Boolean).map((s) => '- ' + s);
+  const prompt = [
+    'Du bist ein erfahrener Personal Stylist. Stelle aus dem Kleiderschrank unten 3 Outfits zusammen. Schreibe auf Deutsch und sprich die Person mit Du an.',
+    '',
+    `ANLASS: ${occLine}`,
+    occ ? `Passender Dresscode: etwa ${occ.dc[0] === occ.dc[1] ? occ.dc[0] : occ.dc[0] + ' bis ' + occ.dc[1]} auf der Skala.` : null,
+    `WETTER: ${wx.label} (${wx.hint})`,
+    `FARBEN: ${colorLine}`,
+    `PFLICHTTEILE (müssen in JEDEM Outfit vorkommen): ${must.length ? must.join(', ') : 'keine'}`,
+    '',
+    `STIL DER PERSON: ${S.profile.style.trim() || 'nicht beschrieben – orientiere dich an den Teilen im Schrank'}`,
+    liked.length ? 'Looks, die der Person gefallen haben:\n' + liked.join('\n') : null,
+    disliked.length ? 'Kombinationen, die der Person NICHT gefallen haben (nicht wiederholen):\n' + disliked.join('\n') : null,
+    '',
+    'KLEIDERSCHRANK (Ref | Kategorie | Art | Name | Farben | Muster | Stil | Dresscode 1–5 | Saison | Länge oder Trageort):',
+    ...lines,
+    '',
+    'Dresscode-Skala: 1 leger, 2 Smart Casual, 3 Business, 4 Cocktail/festlich, 5 Abendgarderobe.',
+    'REGELN:',
+    '- Verwende nur Refs aus der Liste.',
+    '- Jedes Outfit: Oberteil + Hose/Rock ODER ein Kleid/Einteiler; dazu Schuhe, wenn vorhanden. Jacke/Mantel nur, wenn es zu Wetter oder Anlass passt. 0–3 Accessoires oder Tasche.',
+    '- Pro Kategorie höchstens ein Teil (Accessoires bis zu 3).',
+    '- Achte auf Dresscode, Farbharmonie, Muster und Stil. Bei Hochzeiten als Gast kein komplett weißes Outfit.',
+    '- Die 3 Outfits sollen sich deutlich voneinander unterscheiden.',
+    '- Fehlt für den Anlass etwas Wichtiges (z. B. festliche Schuhe), nenne es knapp in "fehlt", sonst leer lassen.',
+    '',
+    'Antworte nur mit JSON in genau dieser Form:',
+    '{"outfits":[{"titel":"kurzer Name, max. 5 Wörter","refs":["K1","K7"],"warum":"1–2 Sätze, warum die Kombination funktioniert","tipp":"ein konkreter Styling-Tipp"}],"fehlt":""}',
+  ].filter((x) => x !== null).join('\n');
+  return { prompt, refs };
+}
+function enforceSlots(ids, must) {
+  const out = []; const used = {}; const mustSet = new Set(must);
+  const ordered = [...ids.filter((id) => mustSet.has(id)), ...ids.filter((id) => !mustSet.has(id))];
+  const catOf = (id) => (getItem(id) || {}).cat;
+  const mustSeparates = must.some((id) => ['top', 'bottom'].includes(catOf(id)));
+  const hasDress = !mustSeparates && ordered.some((id) => catOf(id) === 'dress');
+  for (const id of ordered) {
+    const it = getItem(id); if (!it) continue; const c = it.cat;
+    if (mustSeparates && c === 'dress' && !mustSet.has(id)) continue;
+    if (hasDress && (c === 'top' || c === 'bottom') && !mustSet.has(id)) continue;
+    const lim = c === 'acc' ? 3 : 1; used[c] = used[c] || 0; if (used[c] >= lim) continue;
+    used[c]++; out.push(id);
+  }
+  return out;
+}
+function parseOutfits(res, refs, p) {
+  const list = Array.isArray(res && res.outfits) ? res.outfits : Array.isArray(res) ? res : [];
+  const out = [];
+  for (const o of list.slice(0, 4)) {
+    if (!o || typeof o !== 'object') continue;
+    let ids = arr(o.refs || o.ids || o.teile).map((r) => refs.get(String(r).trim().toUpperCase())).filter(Boolean);
+    ids = uniq([...p.must.filter((m) => getItem(m)), ...ids]);
+    ids = enforceSlots(ids, p.must);
+    if (!ids.some((id) => ['top', 'dress', 'bottom'].includes((getItem(id) || {}).cat))) continue;
+    out.push({ key: rid(), ids, title: str(o.titel || o.title, 60) || 'Outfit', why: str(o.warum || o.why, 400), tip: str(o.tipp || o.tip, 300), occ: p.occ });
+  }
+  return out;
+}
+function localOutfits(p, items) {
+  const occ = OCC[p.occ] || OCC.alltag; const [d0, d1] = occ.dc; const target = (d0 + d1) / 2;
+  const seasonsNow = (WEATHER[p.weather] || {}).seasons || [];
+  const by = (k) => items.filter((i) => i.cat === k); const pick = (a) => a[Math.floor(Math.random() * a.length)];
+  const fixed = {}; p.must.map(getItem).filter(Boolean).forEach((m) => { (fixed[m.cat] = fixed[m.cat] || []).push(m); });
+  const dcOff = (it) => { const d = it.dc || target; return d < d0 ? d0 - d : d > d1 ? d - d1 : 0; };
+  const cands = [];
+  for (let t = 0; t < 700; t++) {
+    const o = [];
+    const dressOk = by('dress').length && !fixed.top && !fixed.bottom;
+    const useDress = fixed.dress || (dressOk && (!by('top').length || !by('bottom').length || Math.random() < (target >= 4 ? 0.6 : 0.25)));
+    if (useDress) { const d = (fixed.dress || [])[0] || pick(by('dress')); if (!d) continue; o.push(d); }
+    else { const tp = (fixed.top || [])[0] || pick(by('top')), bt = (fixed.bottom || [])[0] || pick(by('bottom')); if (!tp || !bt) continue; o.push(tp, bt); }
+    const sh = (fixed.shoes || [])[0] || pick(by('shoes')); if (sh) o.push(sh);
+    if (fixed.outer || ['kuehl', 'kalt', 'regen'].includes(p.weather) || (target >= 3 && Math.random() < 0.5)) { const ou = (fixed.outer || [])[0] || pick(by('outer')); if (ou) o.push(ou); }
+    if (fixed.bag || Math.random() < 0.45) { const b = (fixed.bag || [])[0] || pick(by('bag')); if (b) o.push(b); }
+    (fixed.acc || []).forEach((a) => o.push(a));
+    if (!fixed.acc && Math.random() < 0.45) { const a = pick(by('acc')); if (a) o.push(a); }
+    let s = 0;
+    o.forEach((it) => { s -= dcOff(it) * 2.2; if (seasonsNow.length && (it.season || []).length && !it.season.some((x) => seasonsNow.includes(x))) s -= 1.4; });
+    const cols = o.flatMap((it) => it.colors || []); const loud = new Set(cols.filter((c) => !NEUTRALS.has(c)));
+    s -= Math.max(0, loud.size - 2) * 1.6;
+    if (p.colors.length) { const hits = o.filter((it) => (it.colors || []).some((c) => p.colors.includes(c))).length; s += p.colorMode === 'akzent' ? (hits ? 3 : -3) : hits * 1.6 - (o.length - hits) * 0.3; }
+    const sc = {}; o.flatMap((it) => it.style || []).forEach((x) => { sc[x] = (sc[x] || 0) + 1; }); s += Math.max(0, ...Object.values(sc)) * 0.5;
+    (S.profile.dislikes || []).forEach((d) => { if ((d.ids || []).filter((id) => o.some((it) => it.id === id)).length >= 3) s -= 4; });
+    cands.push({ ids: o.map((it) => it.id), s: s + Math.random() * 0.6 });
+  }
+  cands.sort((a, b) => b.s - a.s);
+  const chosen = [];
+  for (const c of cands) { if (chosen.length >= 3) break; if (chosen.some((x) => jaccard(x.ids, c.ids) > 0.5)) continue; chosen.push(c); }
+  return chosen.map((c) => {
+    const its = c.ids.map(getItem); const main = its.filter((it) => ['top', 'dress', 'bottom', 'outer'].includes(it.cat));
+    const cols = uniq(main.flatMap((it) => (it.colors || []).slice(0, 1))).slice(0, 2).map(cap);
+    return { key: rid(), ids: c.ids, title: `${cols.join(' & ') || 'Neutral'} ${occ.phrase}`, why: `Passt zum Dresscode „${DC[Math.round(target)] || 'Leger'}“ und hält die Farben ruhig.`, tip: '', occ: p.occ };
+  });
+}
+async function generate() {
+  const st = S.st; const items = allItems();
+  if (st.loading) return;
+  st.error = ''; st.note = ''; st.fehlt = ''; st.results = []; st.saved = new Set();
+  if (!enoughForOutfit(items)) { st.error = 'Für Outfits brauche ich mindestens ein Oberteil und eine Hose (oder ein Kleid). Lade dafür ein paar Teile hoch.'; renderStylist(); return; }
+  const p = { occ: st.occ, occText: st.occText, colors: st.colors.slice(), colorMode: st.colorMode, must: st.must.slice(), weather: st.weather };
+  LS.set('st', { occ: st.occ, colorMode: st.colorMode });
+  st.loading = true; renderStylist(); scrollResults();
+  if (aiOn()) {
+    const ctl = new AbortController(); st.ctl = ctl;
+    try {
+      const { prompt, refs } = buildOutfitPrompt(p, items);
+      const res = await AI.fn.json(prompt, { modelTier: 'default', cache: false, signal: ctl.signal });
+      const outs = parseOutfits(res, refs, p);
+      if (!outs.length) throw { code: 'empty_completion' };
+      st.results = outs; st.fehlt = str(res && res.fehlt, 220); st.source = 'ai';
+    } catch (e) {
+      const code = aiFail(e);
+      if (code === 'cancelled') { st.loading = false; st.ctl = null; renderStylist(); return; }
+      if (AI.off) { st.results = localOutfits(p, items); st.source = 'local'; st.note = aiErrorText(code) + ' Diese Vorschläge sind nach Regeln zusammengestellt (Dresscode, Farben, Saison).'; }
+      else st.error = aiErrorText(code);
+    }
+  } else {
+    st.results = localOutfits(p, items); st.source = 'local';
+    st.note = 'Ohne KI nach Regeln zusammengestellt: Dresscode, Farben und Saison.';
+  }
+  st.loading = false; st.ctl = null;
+  if (S.tab === 'stylist') { renderStylist(); scrollResults(); }
+}
+function scrollResults() { requestAnimationFrame(() => { const r = $('#results'); if (r && r.firstElementChild) r.scrollIntoView({ block: 'start', behavior: 'smooth' }); }); }
+function findResult(key) { return S.st.results.find((o) => o.key === key); }
+
+/* ================= Gesten auf der Bühne ================= */
+const G = { pointers: new Map(), mode: null, id: null };
+function stageXY(e) { const r = stageEl().getBoundingClientRect(); return { x: ((e.clientX - r.left) / r.width) * curP.W, y: ((e.clientY - r.top) / r.height) * curP.H, sx: e.clientX, sy: e.clientY }; }
+function hitTest(x, y) {
+  const list = S.worn.map(getItem).filter(Boolean).map((it) => ({ it, g: layerGeom(it, curP) })).sort((a, b) => b.g.z - a.g.z);
+  for (const { it, g } of list) {
+    const rad = (-g.r * Math.PI) / 180; const lx = x - g.cx, ly = y - g.cy;
+    const rx = lx * Math.cos(rad) - ly * Math.sin(rad), ry = lx * Math.sin(rad) + ly * Math.cos(rad);
+    let u = rx / g.w + 0.5; const v = ry / g.h + 0.5; if (g.flip) u = 1 - u;
+    if (u < 0 || u > 1 || v < 0 || v > 1) continue;
+    const el = $(`.layer[data-id="${cssId(it.id)}"]`); const am = el && alphaMaps.get(el.currentSrc || el.src);
+    if (!am) return it.id;
+    const ax = Math.min(AM - 1, Math.floor(u * AM)), ay = Math.min(AM - 1, Math.floor(v * AM));
+    for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) { const xx = ax + dx, yy = ay + dy; if (xx >= 0 && yy >= 0 && xx < AM && yy < AM && am[yy * AM + xx] > 60) return it.id; }
+  }
+  return null;
+}
+const snapAngle = (r) => { const m = ((r % 360) + 540) % 360 - 180; return Math.abs(m) < 4 ? 0 : m; };
+function setFit(id, f) { S.pendingFit.set(id, f); updateLayer(id); }
+const fitTimers = new Map();
+function scheduleFitSave(id) {
+  clearTimeout(fitTimers.get(id));
+  fitTimers.set(id, setTimeout(() => {
+    const f = S.pendingFit.get(id); const it = getItem(id); if (!f || !it) return;
+    if (it.demo) { it.fit = f; S.pendingFit.delete(id); return; }
+    const clean = Object.fromEntries(Object.entries(f).filter(([, v]) => v !== undefined && v !== null && v !== 0 && v !== false));
+    Store.patchItem(id, { fit: clean }).then(() => { if (S.pendingFit.get(id) === f) S.pendingFit.delete(id); }).catch(() => {});
+  }, 700));
+}
+function initStageGestures() {
+  const st = stageEl();
+  st.addEventListener('pointerdown', (e) => {
+    if (e.button > 0) return;
+    const pt = stageXY(e); G.pointers.set(e.pointerId, pt);
+    try { st.setPointerCapture(e.pointerId); } catch (err) { /* egal */ }
+    if (S.guidesMode) { const h = e.target.closest('[data-g]'); if (h) { G.mode = 'guide'; G.guide = h.dataset.g; e.preventDefault(); } return; }
+    if (e.target.closest('.handle') && S.sel) {
+      const g = layerGeom(getItem(S.sel), curP);
+      Object.assign(G, { mode: 'rotscale', id: S.sel, fit0: fitOf(S.sel), c: { x: g.cx, y: g.cy }, d0: Math.max(4, Math.hypot(pt.x - g.cx, pt.y - g.cy)), a0: Math.atan2(pt.y - g.cy, pt.x - g.cx) });
+      e.preventDefault(); return;
+    }
+    if (G.pointers.size === 2 && S.sel) {
+      const [p1, p2] = [...G.pointers.values()];
+      Object.assign(G, { mode: 'pinch', id: S.sel, fit0: fitOf(S.sel), pd0: Math.max(10, Math.hypot(p2.x - p1.x, p2.y - p1.y)), pa0: Math.atan2(p2.y - p1.y, p2.x - p1.x), pm0: { x: (p1.x + p2.x) / 2, y: (p1.y + p2.y) / 2 } });
+      return;
+    }
+    if (G.pointers.size > 1) return;
+    const hit = hitTest(pt.x, pt.y);
+    if (hit) { selectLayer(hit); Object.assign(G, { mode: 'drag', id: hit, start: pt, fit0: fitOf(hit), moved: false }); }
+    else { selectLayer(null); G.mode = null; G.id = null; }
+  });
+  st.addEventListener('pointermove', (e) => {
+    if (!G.pointers.has(e.pointerId)) return;
+    const pt = stageXY(e); G.pointers.set(e.pointerId, pt);
+    if (G.mode === 'guide') { moveGuide(pt); return; }
+    if (!G.id || !getItem(G.id)) return;
+    const B = bodyPx(curP); const f0 = G.fit0;
+    if (G.mode === 'drag') {
+      if (!G.moved && Math.hypot(pt.sx - G.start.sx, pt.sy - G.start.sy) < 4) return;
+      G.moved = true; setFit(G.id, { ...f0, dx: (f0.dx || 0) + (pt.x - G.start.x) / B.sw, dy: (f0.dy || 0) + (pt.y - G.start.y) / B.sw });
+    } else if (G.mode === 'rotscale') {
+      const d = Math.hypot(pt.x - G.c.x, pt.y - G.c.y), a = Math.atan2(pt.y - G.c.y, pt.x - G.c.x);
+      setFit(G.id, { ...f0, s: clamp((f0.s || 1) * (d / G.d0), 0.15, 6), r: snapAngle((f0.r || 0) + ((a - G.a0) * 180) / Math.PI) });
+    } else if (G.mode === 'pinch' && G.pointers.size >= 2) {
+      const [p1, p2] = [...G.pointers.values()];
+      const d = Math.hypot(p2.x - p1.x, p2.y - p1.y), a = Math.atan2(p2.y - p1.y, p2.x - p1.x), mx = (p1.x + p2.x) / 2, my = (p1.y + p2.y) / 2;
+      setFit(G.id, { ...f0, s: clamp((f0.s || 1) * (d / G.pd0), 0.15, 6), r: snapAngle((f0.r || 0) + ((a - G.pa0) * 180) / Math.PI), dx: (f0.dx || 0) + (mx - G.pm0.x) / B.sw, dy: (f0.dy || 0) + (my - G.pm0.y) / B.sw });
+    }
+  });
+  const end = (e) => {
+    if (!G.pointers.has(e.pointerId)) return;
+    G.pointers.delete(e.pointerId);
+    if (G.mode === 'guide') { if (!G.pointers.size) { G.mode = null; G.guide = null; } return; }
+    if (G.mode === 'pinch' && G.pointers.size === 1) { const [pt] = [...G.pointers.values()]; Object.assign(G, { mode: 'drag', start: pt, fit0: fitOf(G.id), moved: true }); return; }
+    if (!G.pointers.size) { if (G.id && (G.mode !== 'drag' || G.moved)) scheduleFitSave(G.id); G.mode = null; G.id = null; }
+  };
+  st.addEventListener('pointerup', end); st.addEventListener('pointercancel', end);
+  st.addEventListener('wheel', (e) => {
+    if (!S.sel || S.guidesMode) return; e.preventDefault();
+    const f = fitOf(S.sel); setFit(S.sel, { ...f, s: clamp((f.s || 1) * Math.exp(-e.deltaY * 0.0015), 0.15, 6) }); scheduleFitSave(S.sel);
+  }, { passive: false });
+}
+function moveGuide(pt) {
+  const g = S.guidesDraft; if (!g) return;
+  const nx = clamp(pt.x / curP.W, 0.02, 0.98), ny = clamp(pt.y / curP.H, 0.01, 0.995);
+  if (G.guide === 'ls') { g.lx = nx; g.ly = clamp(ny, 0.02, g.hip - 0.04); }
+  else if (G.guide === 'rs') { g.rx = nx; g.ry = clamp(ny, 0.02, g.hip - 0.04); }
+  else if (G.guide === 'hip') g.hip = clamp(ny, Math.max(g.ly, g.ry) + 0.04, g.feet - 0.05);
+  else if (G.guide === 'feet') g.feet = clamp(ny, g.hip + 0.05, 0.995);
+  curP = photoInfo(); renderGuides(); updateLayers();
+}
+function layerAction(a) {
+  const id = S.sel; const it = id && getItem(id); if (!it) return;
+  const f = fitOf(id);
+  if (a === 'ly-off') { toggleWear(id); return; }
+  if (a === 'ly-flip') f.flip = !f.flip;
+  if (a === 'ly-reset') { setFit(id, {}); scheduleFitSave(id); return; }
+  if (a === 'ly-up' || a === 'ly-down') {
+    const me = layerGeom(it, curP).z; const base = zBase(it) * 10;
+    const others = S.worn.filter((x) => x !== id).map(getItem).filter(Boolean).map((o) => layerGeom(o, curP).z).sort((x, y) => x - y);
+    if (a === 'ly-up') { const above = others.find((z) => z >= me); if (above == null) { toast('Liegt schon ganz oben.'); return; } f.z = above + 1 - base; }
+    else { const below = [...others].reverse().find((z) => z <= me); if (below == null) { toast('Liegt schon ganz unten.'); return; } f.z = below - 1 - base; }
+  }
+  setFit(id, f); scheduleFitSave(id);
+}
+
+/* ================= Bild exportieren ================= */
+async function exportLook() {
+  try {
+    const P = curP; const scale = Math.min(1, 1600 / P.H); const W = Math.round(P.W * scale), H = Math.round(P.H * scale);
+    const c = document.createElement('canvas'); c.width = W; c.height = H; const x = c.getContext('2d');
+    const bg = x.createRadialGradient(W / 2, H * 0.18, 10, W / 2, H * 0.4, H); bg.addColorStop(0, '#eff2f5'); bg.addColorStop(1, '#d4dae2'); x.fillStyle = bg; x.fillRect(0, 0, W, H);
+    const photo = $('#stagePhoto'); if (photo.decode) await photo.decode().catch(() => {});
+    x.drawImage(photo, 0, 0, W, H);
+    const layers = S.worn.map(getItem).filter(Boolean).map((it) => ({ g: layerGeom(it, P), el: $(`.layer[data-id="${cssId(it.id)}"]`) })).sort((a, b) => a.g.z - b.g.z);
+    for (const { g, el } of layers) {
+      if (!el || !el.complete || !el.naturalWidth) continue;
+      x.save(); x.translate(g.cx * scale, g.cy * scale); x.rotate((g.r * Math.PI) / 180); if (g.flip) x.scale(-1, 1);
+      x.shadowColor = 'rgba(0,0,0,.2)'; x.shadowBlur = 6 * scale; x.shadowOffsetY = 3 * scale;
+      x.drawImage(el, (-g.w * scale) / 2, (-g.h * scale) / 2, g.w * scale, g.h * scale); x.restore();
+    }
+    const blob = await canvasBlob(c, false, 0.9);
+    const day = new Date().toISOString().slice(0, 10);
+    const how = await saveFile(`Umkleide-Look-${day}.jpg`, blob);
+    toast(how === 'shared' ? 'Tippe auf „Bild sichern“, dann landet der Look in deinen Fotos.' : 'Bild gespeichert', 4000);
+  } catch (e) {
+    const c = e && e.code;
+    if (isCancel(e)) return;
+    toast(c === 'rate_limited' ? 'Es ist schon ein Speichern-Dialog offen.' : 'Das Bild konnte nicht gespeichert werden.');
+  }
+}
+
+/* ================= Eigenes Foto ================= */
+async function onPhotoFile(file) {
+  if (!file) return;
+  toast('Foto wird vorbereitet…', 6000);
+  try {
+    const c = await fileToCanvas(file, 1600); const t = scaleCanvas(c, 640);
+    const [b1, b2] = await Promise.all([canvasBlob(c, false, 0.88), canvasBlob(t, false, 0.82)]);
+    const id = await Store.upload(b1); const tid = await Store.upload(b2);
+    const old = [S.profile.photoId, S.profile.photoThumbId];
+    S.useMannequin = false; LS.set('mannequin', false);
+    await saveProfile({ photoId: id, photoThumbId: tid, photoW: c.width, photoH: c.height, guides: defaultGuidesFor(c.width, c.height) });
+    old.forEach((o) => Store.delAsset(o));
+    toast('Foto gespeichert. Jetzt kurz die Körperpunkte setzen.', 3500);
+    enterGuides();
+  } catch (e) {
+    const code = e && e.code;
+    toast(code === 'quota_or_state' || code === 'local_full' ? 'Der Speicher ist voll.' : code ? 'Hochladen hat nicht geklappt. Versuch es noch einmal.' : 'Dieses Foto kann der Browser nicht öffnen. Versuch ein JPG.', 4200);
+  }
+}
+async function autoGuides() {
+  if (!aiImagesOn() || S.guidesBusy) return;
+  S.guidesBusy = true; renderStageUi();
+  try {
+    const c = await urlToCanvas(curP.src, 1024); const blob = await canvasBlob(c, false, 0.85);
+    const g = await aiBody(blob);
+    if (g && S.guidesMode) { S.guidesDraft = g; curP = photoInfo(); renderGuides(); updateLayers(); toast('Punkte gesetzt – prüf kurz, ob sie passen.'); }
+    else if (!g) toast('Keine Person sicher erkannt. Setz die Punkte bitte von Hand.', 3800);
+  } catch (e) { toast(aiErrorText(aiFail(e))); }
+  S.guidesBusy = false; if (S.guidesMode) renderStageUi();
+}
+
+/* ================= Klicks ================= */
+document.addEventListener('click', (e) => {
+  const b = e.target.closest('[data-act]'); if (!b || b.disabled) return;
+  const a = b.dataset.act, id = b.dataset.id, k = b.dataset.k;
+  switch (a) {
+    case 'tab': closeAllSheets(); switchTab(b.dataset.tab); break;
+    case 'rail': S.railCat = b.dataset.cat; renderRail(); renderTray(); $('#trayRow').scrollLeft = 0; break;
+    case 'wear': toggleWear(id); break;
+    case 'add-items': pickFile('clothes', b.dataset.cat || ''); break;
+    case 'pick-photo': pickFile('photo'); break;
+    case 'mirror-menu': openMirrorMenu(); break;
+    case 'save-look': openSaveLook(); break;
+    case 'style-rest': {
+      const must = S.sel ? [S.sel] : S.worn.filter((x) => getItem(x));
+      S.st.must = must; S.st.results = []; S.st.error = ''; S.sel = null;
+      switchTab('stylist', { top: true });
+      toast(must.length ? 'Diese Teile sind gesetzt – wähle Anlass und los.' : 'Wähle Anlass und Farben.');
+      break;
+    }
+    case 'ly-up': case 'ly-down': case 'ly-flip': case 'ly-reset': case 'ly-off': layerAction(a); break;
+    case 'guides-done': exitGuides(true); toast('Körperpunkte gespeichert'); break;
+    case 'guides-auto': autoGuides(); break;
+    case 'edit-style': openStyleSheet(); break;
+    case 'st-occ': S.st.occ = k; S.st.occText = $('#occText') ? $('#occText').value : S.st.occText; renderStylist(); break;
+    case 'st-cmode': S.st.colorMode = k; renderStylist(); break;
+    case 'st-color': { const c = S.st.colors; S.st.colors = c.includes(k) ? c.filter((x) => x !== k) : [...c, k].slice(-3); renderStylist(); break; }
+    case 'st-wx': S.st.weather = k; renderStylist(); break;
+    case 'st-unmust': S.st.must = S.st.must.filter((x) => x !== id); renderStylist(); break;
+    case 'pick-must': openPicker(); break;
+    case 'generate': if ($('#occText')) S.st.occText = $('#occText').value; generate(); break;
+    case 'st-stop': if (S.st.ctl) S.st.ctl.abort(); break;
+    case 'res-try': { const o = findResult(b.dataset.key); if (!o) break; S.worn = o.ids.filter((x) => getItem(x)); S.sel = null; if (isDemo()) LS.set('demoTouched', true); persistWorn(); switchTab('anprobe'); break; }
+    case 'res-save': { const o = findResult(b.dataset.key); if (!o) break; if (o.ids.some((x) => (getItem(x) || {}).demo)) { toast('Speichern geht mit deinen eigenen Teilen. Lade zuerst Fotos hoch.', 3800); break; } b.disabled = true; Store.putLook(rid(), { title: o.title, occ: o.occ || '', ids: o.ids, why: o.why || '', tip: o.tip || '', source: 'stylist', createdAt: Date.now() }).then(() => { S.st.saved.add(o.key); toast('Look gespeichert'); if (S.tab === 'stylist') { const card = $(`.outfit[data-key="${o.key}"]`); if (card) card.outerHTML = outfitCardHTML(o); } }).catch(() => { b.disabled = false; }); break; }
+    case 'res-no': {
+      const o = findResult(b.dataset.key); if (!o) break;
+      S.st.results = S.st.results.filter((x) => x !== o);
+      if (!o.ids.some((x) => (getItem(x) || {}).demo)) { const dl = [...(S.profile.dislikes || []), { ids: o.ids, title: o.title, at: Date.now() }].slice(-20); saveProfile({ dislikes: dl }).catch(() => {}); }
+      toast('Verstanden – solche Kombinationen schlage ich seltener vor.'); renderStylist(); break;
+    }
+    case 'open-item': openItemSheet(id); break;
+    case 'open-look': openLookSheet(id); break;
+    case 'sk-cat': S.sf.cat = k; LS.set('skCat', k); renderSchrankGrid(); break;
+    case 'sk-color': S.sf.color = S.sf.color === k ? null : k; renderSchrankGrid(); break;
+    case 'notice-x': LS.set('noticeHidden', S.notice); renderNotice(); break;
+    case 'backup-save': exportBackup(b); break;
+    case 'backup-load': { const inp = $('#fileBackup'); inp.value = ''; inp.click(); break; }
+    case 'sk-clear': S.sf = { cat: 'all', color: null, q: '' }; if ($('#skSearch')) $('#skSearch').value = ''; renderSchrankGrid(); break;
+    default: break;
+  }
+});
+document.addEventListener('input', (e) => { if (e.target.id === 'occText') S.st.occText = e.target.value; });
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') { if (sheets.length) { closeSheet(); return; } if (S.guidesMode) { exitGuides(false); return; } if (S.sel) selectLayer(null); return; }
+  if (sheets.length || S.tab !== 'anprobe' || !S.sel || /input|textarea|select/i.test((document.activeElement || {}).tagName || '')) return;
+  if (e.key === 'Delete' || e.key === 'Backspace') { e.preventDefault(); layerAction('ly-off'); return; }
+  const step = e.shiftKey ? 0.1 : 0.02; const mv = { ArrowLeft: [-step, 0], ArrowRight: [step, 0], ArrowUp: [0, -step], ArrowDown: [0, step] }[e.key];
+  if (mv) { e.preventDefault(); const f = fitOf(S.sel); setFit(S.sel, { ...f, dx: (f.dx || 0) + mv[0], dy: (f.dy || 0) + mv[1] }); scheduleFitSave(S.sel); }
+});
+$('#fileClothes').addEventListener('change', (e) => { const fs = e.target.files; if (fs && fs.length) startImport(fs, pendingPick.cat); });
+$('#filePhoto').addEventListener('change', (e) => { const f = e.target.files && e.target.files[0]; if (f) onPhotoFile(f); });
+$('#fileBackup').addEventListener('change', (e) => { const f = e.target.files && e.target.files[0]; if (f) importBackupFile(f); });
+
+/* ================= Start ================= */
+function startMemory(reason) {
+  Store.mode = 'memory'; Store.canUpload = true;
+  S.notice = reason === 'signedout' ? 'Melde dich an, damit dein Schrank gespeichert wird. Bis dahin geht nichts verloren, solange diese Seite offen ist.'
+    : reason === 'nodb' ? 'Speichern ist in dieser Ansicht nicht verfügbar. Alles bleibt nur, solange die Seite offen ist.'
+    : 'Vorschau: Fotos und Looks bleiben nur, solange diese Seite offen ist.';
+  S.itemsLoaded = true; S.looksLoaded = true; S.profileLoaded = true; S.hasItemsHint = false; S.hasPhotoHint = false;
+}
+async function init() {
+  S.hasItemsHint = !!LS.get('hasItems', false); S.hasPhotoHint = !!LS.get('hasPhoto', false);
+  S.useMannequin = !!LS.get('mannequin', false);
+  const savedWorn = LS.get('worn', []); S.worn = Array.isArray(savedWorn) ? savedWorn.filter((x) => typeof x === 'string') : [];
+  const stp = LS.get('st', null); if (stp && OCC[stp.occ]) { S.st.occ = stp.occ; if (stp.colorMode === 'akzent') S.st.colorMode = 'akzent'; }
+  const skc = LS.get('skCat', 'all'); if (skc === 'all' || CAT[skc]) S.sf.cat = skc;
+  let start = LS.get('tab', 'anprobe'); const h = (location.hash || '').slice(1); if (TABS.includes(h)) start = h;
+  renderTabs(); initStageGestures();
+  if (window.ResizeObserver) new ResizeObserver(() => { if (S.tab === 'anprobe') { sizeStage(); renderGuides(); } }).observe($('#stageWrap'));
+  reconcileWorn(); switchTab(TABS.includes(start) ? start : 'anprobe');
+
+  const cl = window.claude;
+  if (!cl || typeof cl.use !== 'function') { await startDevice('standalone'); return; }
+  const names = ['db', 'user', 'assets', 'sample', 'downloads'];
+  const caps = await Promise.all(names.map((n) => Promise.resolve().then(() => cl.use(n)).catch(() => null)));
+  const [db, user, assets, sample, downloads] = caps;
+  AI.fn = sample || null; DL.fn = downloads || null;
+  if (AI.fn) { try { const lim = await AI.fn.limits(); AI.images = !!(lim && lim.images); AI.maxImages = clamp((lim && lim.images && lim.images.maxCount) || 1, 1, 6); } catch (e) { AI.images = false; } }
+  let uid = null; if (user) { try { uid = await user.id(); } catch (e) { uid = null; } }
+  if (db && uid && assets) {
+    Store.mode = 'cloud'; Store.db = db; Store.uid = uid; Store.assets = assets; Store.canUpload = true;
+    subscribeCloud();
+    renderNotice(); renderHeader(); renderView();
+  } else await startDevice(db && uid ? 'guest' : 'nodb');
+}
+async function startDevice(reason) {
+  try {
+    await startLocal();
+    const ios = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    const inSafariTab = reason === 'standalone' && ios && navigator.standalone === false;
+    S.notice = inSafariTab
+      ? 'Leg die App auf den Home-Bildschirm (Teilen → „Zum Home-Bildschirm“) und öffne sie nur dort. Safari und die Home-Bildschirm-App speichern getrennt.'
+      : 'Dein Schrank wird nur auf diesem Gerät gespeichert. Speichere ab und zu eine Sicherung – im Schrank ganz unten.';
+    const prevV = LS.get('appVersion', null);
+    if (prevV && prevV !== APP_VERSION && (Store.mem.items.size || Store.mem.looks.size)) setTimeout(() => toast(`App aktualisiert auf Version ${APP_VERSION} – deine Sachen sind alle noch da.`, 4500), 600);
+    LS.set('appVersion', APP_VERSION);
+  } catch (e) { startMemory(reason === 'standalone' ? 'preview' : reason); }
+  reconcileWorn(); renderNotice(); renderHeader(); renderView();
+}
+init();
+
+})();
+</script>
+</body>
+</html>
